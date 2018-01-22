@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0160374F-61DA-40E9-AEE9-624D234C66A3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Otanix</RootNamespace>
+    <AssemblyName>Otanix</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>50</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>analyzeset.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Butterfly.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconeotanix.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>analyzeset.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Azure.Encryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Azure.Encryption.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\RsaKeyHolder.cs" />
+    <Compile Include="Cache\UsersCache.cs" />
+    <Compile Include="HabboHotel\Achievements\Achievement.cs" />
+    <Compile Include="HabboHotel\Achievements\AchievementManager.cs" />
+    <Compile Include="HabboHotel\Achievements\Composer\AchievementListComposer.cs" />
+    <Compile Include="HabboHotel\Achievements\Composer\AchievementProgressComposer.cs" />
+    <Compile Include="HabboHotel\Achievements\Composer\AchievementScoreUpdateComposer.cs" />
+    <Compile Include="HabboHotel\Achievements\Composer\AchievementStatic.cs" />
+    <Compile Include="HabboHotel\Achievements\Composer\AchievementUnlockedComposer.cs" />
+    <Compile Include="HabboHotel\Achievements\UserAchievement.cs" />
+    <Compile Include="HabboHotel\Alfas\AlfaManager.cs" />
+    <Compile Include="HabboHotel\Alfas\Manager\Bully\Bully.cs" />
+    <Compile Include="HabboHotel\Alfas\Manager\Bully\BullyManager.cs" />
+    <Compile Include="HabboHotel\Alfas\Manager\Bully\BullyState.cs" />
+    <Compile Include="HabboHotel\Alfas\Manager\Help\Help.cs" />
+    <Compile Include="HabboHotel\Alfas\Manager\Help\HelpChatMessage.cs" />
+    <Compile Include="HabboHotel\Alfas\Manager\Help\HelpManager.cs" />
+    <Compile Include="HabboHotel\Alfas\Manager\Help\HelpState.cs" />
+    <Compile Include="HabboHotel\Alfas\Manager\Tour\TourManager.cs" />
+    <Compile Include="HabboHotel\Camera\Camera.cs" />
+    <Compile Include="HabboHotel\Camera\URLPost.cs" />
+    <Compile Include="HabboHotel\Catalogs\Bundles\BundleContent.cs" />
+    <Compile Include="HabboHotel\Catalogs\Bundles\BundleFloorMobis.cs" />
+    <Compile Include="HabboHotel\Catalogs\Bundles\BundleParedeMobis.cs" />
+    <Compile Include="HabboHotel\Catalogs\Bundles\BundleQuarto.cs" />
+    <Compile Include="HabboHotel\Catalogs\Bundles\BundleQuartoManager.cs" />
+    <Compile Include="HabboHotel\Catalogs\CatalogPageExtra.cs" />
+    <Compile Include="HabboHotel\ChatMessageStorage\ChatColorido\CorManager.cs" />
+    <Compile Include="HabboHotel\ChatMessageStorage\SpyChatMessage.cs" />
+    <Compile Include="HabboHotel\Misc\AntiMutant.cs" />
+    <Compile Include="HabboHotel\Misc\APIexterna.cs" />
+    <Compile Include="HabboHotel\Misc\API\InfoModelo.cs" />
+    <Compile Include="HabboHotel\Misc\MensagensAutomaticas.cs" />
+    <Compile Include="HabboHotel\Misc\Moedas.cs" />
+    <Compile Include="HabboHotel\Misc\NotificaStaff.cs" />
+    <Compile Include="HabboHotel\Navigators\Bonus\BonusManager.cs" />
+    <Compile Include="HabboHotel\Navigators\Landing\LandingTopUsers.cs" />
+    <Compile Include="HabboHotel\Premiums\Catalog\CatalogPremium.cs" />
+    <Compile Include="HabboHotel\Premiums\Catalog\CatalogPremiumItem.cs" />
+    <Compile Include="HabboHotel\Premiums\Catalog\CatalogPremiumPage.cs" />
+    <Compile Include="HabboHotel\Catalogs\TargetedOffer.cs" />
+    <Compile Include="HabboHotel\Filter\BlackWords.cs" />
+    <Compile Include="HabboHotel\Filter\Filter.cs" />
+    <Compile Include="HabboHotel\Group\GroupForum.cs" />
+    <Compile Include="HabboHotel\Group\GroupPost.cs" />
+    <Compile Include="HabboHotel\Group\GroupSubPost.cs" />
+    <Compile Include="HabboHotel\Items\Core\Furnidata.cs" />
+    <Compile Include="HabboHotel\Items\Craftable\CraftableProduct.cs" />
+    <Compile Include="HabboHotel\Items\Craftable\CraftableProductsManager.cs" />
+    <Compile Include="HabboHotel\Items\ItemCoords.cs" />
+    <Compile Include="HabboHotel\Items\UsersLock.cs" />
+    <Compile Include="HabboHotel\Misc\Diamonds.cs" />
+    <Compile Include="HabboHotel\Misc\LowPriorityWorker.cs" />
+    <Compile Include="HabboHotel\Misc\Ranks.cs" />
+    <Compile Include="HabboHotel\Mutes\MuteManager.cs" />
+    <Compile Include="HabboHotel\Mutes\MuteUser.cs" />
+    <Compile Include="HabboHotel\Navigators\New Navigator\NewNavigatorCategory.cs" />
+    <Compile Include="HabboHotel\Navigators\New Navigator\NewNavigatorManager.cs" />
+    <Compile Include="HabboHotel\Navigators\PromCat.cs" />
+    <Compile Include="HabboHotel\Navigators\RoomQueue\RoomQueue.cs" />
+    <Compile Include="HabboHotel\Navigators\RoomQueue\RoomQueueManager.cs" />
+    <Compile Include="HabboHotel\Navigators\SearchResultList.cs" />
+    <Compile Include="HabboHotel\Pathfinding\MinHeap.cs" />
+    <Compile Include="HabboHotel\Pathfinding\PathFinder.cs" />
+    <Compile Include="HabboHotel\Pathfinding\PathFinderNode.cs" />
+    <Compile Include="HabboHotel\Pathfinding\Vector2D.cs" />
+    <Compile Include="HabboHotel\Pets\PetBreeding.cs" />
+    <Compile Include="HabboHotel\Pets\PetOrders.cs" />
+    <Compile Include="HabboHotel\Pets\Plantas\PlantsName.cs" />
+    <Compile Include="HabboHotel\Premiums\Clothes\ClothingItem.cs" />
+    <Compile Include="HabboHotel\Premiums\Clothes\ClothingManager.cs" />
+    <Compile Include="HabboHotel\Premiums\PremiumManager.cs" />
+    <Compile Include="HabboHotel\Premiums\Users\Premium.cs" />
+    <Compile Include="HabboHotel\Roles\Rank.cs" />
+    <Compile Include="HabboHotel\RoomBots\FrankBot.cs" />
+    <Compile Include="HabboHotel\RoomBots\SoplonBot.cs" />
+    <Compile Include="HabboHotel\Rooms\Extras\DeveloperCommand.cs" />
+    <Compile Include="HabboHotel\Rooms\Games\BolasMovimento\IMovimentos.cs" />
+    <Compile Include="HabboHotel\Rooms\Games\BolasMovimento\TodosMovimentos.cs" />
+    <Compile Include="HabboHotel\Rooms\Games\ComeDirection.cs" />
+    <Compile Include="HabboHotel\Rooms\Games\Banzai.cs" />
+    <Compile Include="HabboHotel\Rooms\Games\Freeze.cs" />
+    <Compile Include="HabboHotel\Rooms\Games\GameManager.cs" />
+    <Compile Include="HabboHotel\Rooms\Polls\IRoomPolls.cs" />
+    <Compile Include="HabboHotel\Rooms\Polls\PollQuestion.cs" />
+    <Compile Include="HabboHotel\Rooms\Polls\PollType.cs" />
+    <Compile Include="HabboHotel\Rooms\Polls\RoomQuestionary.cs" />
+    <Compile Include="HabboHotel\Rooms\Polls\VoteQuestionary.cs" />
+    <Compile Include="HabboHotel\Rooms\RoomChat.cs" />
+    <Compile Include="HabboHotel\Rooms\RoomModel.cs" />
+    <Compile Include="HabboHotel\Rooms\RoomVisits.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\OriginalItemLocation.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredActReward.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Classifications\PuntuationRow.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Classifications\Puntuations.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\ActorInGroup.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\ActorInTeam.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\DateRangeActive.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\HandleItemUser.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\NotActorInGroup.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\NotActorInTeam.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\NotFurniHasFurni.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\NotFurniHasUser.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\NotFurniStatePosMatch.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\NotLessThanTimer.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\NotMoreThanTimer.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\NotStuffIs.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\NotTriggerUserIsOnFurni.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\NotUserCountIn.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\StuffIs.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\UserCountIn.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\UserNotWearingBadge.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\UserNotWearingEffect.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\UserWearingBadge.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\UserWearingEffect.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\BotChangeLook.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\BotFollowUser.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\BotGiveHandItem.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\BotMove.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\BotTalkToAll.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\BotTalkToUser.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\BotTeleport.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\CallStacks.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\Chase.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\DanceCustom.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\DiamantesCustom.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\EffectCustom.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\Escape.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\FastWalkCustom.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\FreezeCustom.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\GiveTeamScore.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\HandiCustom.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\JoinToTeam.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\KickUser.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\LeaveTeam.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\MoveToDir.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\MoveToFurni.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\MuteTriggerer.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\BotAlcanzaFurni.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\BotAlcanzaUsuario.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\Collision.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\FurniHasFurni.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\LongRepeater.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredLoaderSQL.cs" />
+    <Compile Include="HabboHotel\Support\Ban.cs" />
+    <Compile Include="HabboHotel\Support\ModActions\ModCategory.cs" />
+    <Compile Include="HabboHotel\Support\ModActions\ModSubCategory.cs" />
+    <Compile Include="HabboHotel\Support\ModerationBanType.cs" />
+    <Compile Include="HabboHotel\Users\Badges\PromotionalBadges.cs" />
+    <Compile Include="HabboHotel\Users\Chat\ChatSettings.cs" />
+    <Compile Include="HabboHotel\Users\Chat\ChatSettingsManager.cs" />
+    <Compile Include="HabboHotel\Users\Clothing\Clothes.cs" />
+    <Compile Include="HabboHotel\Users\Clothing\Palette.cs" />
+    <Compile Include="HabboHotel\Users\Clothing\UserClothing.cs" />
+    <Compile Include="HabboHotel\Users\Clothing\UserLook.cs" />
+    <Compile Include="HabboHotel\Users\Gifts\GiftModelo.cs" />
+    <Compile Include="HabboHotel\Users\Gifts\GiftModeloManager.cs" />
+    <Compile Include="HabboHotel\Users\HabboQuiz\Quiz.cs" />
+    <Compile Include="HabboHotel\Users\Messenger\MessengerChat.cs" />
+    <Compile Include="HabboHotel\Users\Messenger\StaffChat.cs" />
+    <Compile Include="HabboHotel\Users\Navigator\NaviLogs.cs" />
+    <Compile Include="HabboHotel\Users\Nux\NuxUserInformation.cs" />
+    <Compile Include="HabboHotel\Users\Prisao\PrisaoManager.cs" />
+    <Compile Include="HabboHotel\Users\Prisao\PrisaoUsuario.cs" />
+    <Compile Include="HabboHotel\Users\Talents\TalentManager.cs" />
+    <Compile Include="HabboHotel\Users\Talents\TalentTrackLevel.cs" />
+    <Compile Include="HabboHotel\Users\Talents\TalentTrackSubLevel.cs" />
+    <Compile Include="OtanixEnvironment.cs" />
+    <Compile Include="Core\ConfigurationData.cs" />
+    <Compile Include="Core\ConnectionHandeling.cs" />
+    <Compile Include="Core\ConsoleCommandHandeling.cs" />
+    <Compile Include="Cache\EmuSettings.cs" />
+    <Compile Include="Core\IniReader.cs" />
+    <Compile Include="Core\LanguageLocale.cs" />
+    <Compile Include="Core\Logging.cs" />
+    <Compile Include="HabboHotel\Catalogs\FreeItemsPatch.cs" />
+    <Compile Include="HabboHotel\Group\GroupUser.cs" />
+    <Compile Include="HabboHotel\Group\GroupItem.cs" />
+    <Compile Include="HabboHotel\Group\GroupManager.cs" />
+    <Compile Include="HabboHotel\Group\GuildsParts.cs" />
+    <Compile Include="HabboHotel\Items\Piñata.cs" />
+    <Compile Include="HabboHotel\Items\WallCoordinate.cs" />
+    <Compile Include="HabboHotel\Items\YoutubeTV.cs" />
+    <Compile Include="HabboHotel\News\NewsManager.cs" />
+    <Compile Include="HabboHotel\Pets\PetRace.cs" />
+    <Compile Include="HabboHotel\Quests\Composer\QuestAbortedComposer.cs" />
+    <Compile Include="HabboHotel\Quests\Composer\QuestCompletedComposer.cs" />
+    <Compile Include="HabboHotel\Quests\Composer\QuestListComposer.cs" />
+    <Compile Include="HabboHotel\Quests\Composer\QuestStartedComposer.cs" />
+    <Compile Include="HabboHotel\Catalogs\Catalog.cs" />
+    <Compile Include="HabboHotel\Catalogs\CatalogItem.cs" />
+    <Compile Include="HabboHotel\Catalogs\CatalogPage.cs" />
+    <Compile Include="HabboHotel\Catalogs\EcotronReward.cs" />
+    <Compile Include="HabboHotel\Catalogs\Marketplace.cs" />
+    <Compile Include="HabboHotel\Catalogs\VoucherHandler.cs" />
+    <Compile Include="HabboHotel\ChatMessageStorage\ChatMessage.cs" />
+    <Compile Include="HabboHotel\ChatMessageStorage\ChatMessageManager.cs" />
+    <Compile Include="HabboHotel\Events\EventManager.cs" />
+    <Compile Include="HabboHotel\Game.cs" />
+    <Compile Include="HabboHotel\GameClients\GameClient.cs" />
+    <Compile Include="HabboHotel\GameClients\GameClientManager.cs" />
+    <Compile Include="HabboHotel\Items\FurniInteractor.cs" />
+    <Compile Include="HabboHotel\Items\InteractionType.cs" />
+    <Compile Include="HabboHotel\Items\Item.cs" />
+    <Compile Include="HabboHotel\Items\ItemManager.cs" />
+    <Compile Include="HabboHotel\Items\MoodlightData.cs" />
+    <Compile Include="HabboHotel\Items\RoomItem.cs" />
+    <Compile Include="HabboHotel\Items\TeleHandler.cs" />
+    <Compile Include="HabboHotel\Items\UserItem.cs" />
+    <Compile Include="HabboHotel\Misc\ChatCommandHandler.cs" />
+    <Compile Include="HabboHotel\Misc\CrossdomainPolicy.cs" />
+    <Compile Include="HabboHotel\Navigators\FlatCat.cs" />
+    <Compile Include="HabboHotel\Navigators\Navigator.cs" />
+    <Compile Include="HabboHotel\Pathfinding\Coord.cs" />
+    <Compile Include="HabboHotel\Pathfinding\Rotation.cs" />
+    <Compile Include="HabboHotel\Pets\Pet.cs" />
+    <Compile Include="HabboHotel\Pets\PetLocale.cs" />
+    <Compile Include="HabboHotel\Quests\Quest.cs" />
+    <Compile Include="HabboHotel\Quests\QuestManager.cs" />
+    <Compile Include="HabboHotel\Quests\QuestType.cs" />
+    <Compile Include="HabboHotel\Quests\QuestTypeUtillity.cs" />
+    <Compile Include="HabboHotel\Roles\RoleManager.cs" />
+    <Compile Include="HabboHotel\RoomBots\BotAI.cs" />
+    <Compile Include="HabboHotel\RoomBots\GenericBot.cs" />
+    <Compile Include="HabboHotel\RoomBots\PetBot.cs" />
+    <Compile Include="HabboHotel\RoomBots\RandomSpeech.cs" />
+    <Compile Include="HabboHotel\RoomBots\RoomBot.cs" />
+    <Compile Include="HabboHotel\Rooms\Delegates.cs" />
+    <Compile Include="HabboHotel\Rooms\EventArgs.cs" />
+    <Compile Include="HabboHotel\Rooms\Games\GameItemHandler.cs" />
+    <Compile Include="HabboHotel\Rooms\ChatMessage.cs" />
+    <Compile Include="HabboHotel\Rooms\Gamemap.cs" />
+    <Compile Include="HabboHotel\Rooms\Games\Soccer.cs" />
+    <Compile Include="HabboHotel\Rooms\Games\Teams.cs" />
+    <Compile Include="HabboHotel\Rooms\Room.cs" />
+    <Compile Include="HabboHotel\Rooms\RoomRankConfig.cs" />
+    <Compile Include="HabboHotel\Rooms\RoomData.cs" />
+    <Compile Include="HabboHotel\Events\RoomEvent.cs" />
+    <Compile Include="HabboHotel\Rooms\RoomItemHandling.cs" />
+    <Compile Include="HabboHotel\Rooms\RoomIvokedItems\RoomKick.cs" />
+    <Compile Include="HabboHotel\Rooms\RoomManager.cs" />
+    <Compile Include="HabboHotel\Rooms\RoomUser.cs" />
+    <Compile Include="HabboHotel\Rooms\Trade.cs" />
+    <Compile Include="HabboHotel\Rooms\RoomUserManager.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\ConditionHandler.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\MovementState.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\RotationState.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\FurniHasUser.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\FurniStatePosMatch.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\LessThanTimer.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\MoreThanTimer.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\TriggerUserIsOnFurni.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\GiveReward.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\GiveScore.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\MovementManagement.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\MoveRotate.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\PositionReset.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\ShowMessage.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\TeleportToItem.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\TimerReset.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Effects\ToggleItemState.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Interfaces\IWiredCondition.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredLoader.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Interfaces\IWiredCycleable.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandler.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Interfaces\IWiredEffect.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Interfaces\IWiredTrigger.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\EntersRoom.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\GameEnds.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\GameStarts.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\ScoreAchieved.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\Timer.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\UserSays.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\Repeater.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\StateChanged.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\WalksOffFurni.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\WalksOnFurni.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredSaver.cs" />
+    <Compile Include="HabboHotel\Rooms\Wired\WiredUtillity.cs" />
+    <Compile Include="HabboHotel\SoundMachine\Composers\JukeboxDiscksComposer.cs" />
+    <Compile Include="HabboHotel\SoundMachine\RoomMusicController.cs" />
+    <Compile Include="HabboHotel\SoundMachine\SongData.cs" />
+    <Compile Include="HabboHotel\SoundMachine\SongInstance.cs" />
+    <Compile Include="HabboHotel\SoundMachine\SongItem.cs" />
+    <Compile Include="HabboHotel\SoundMachine\SongManager.cs" />
+    <Compile Include="HabboHotel\Support\ModerationBanManager.cs" />
+    <Compile Include="HabboHotel\Support\ModerationTool.cs" />
+    <Compile Include="HabboHotel\Support\SupportTicket.cs" />
+    <Compile Include="HabboHotel\Users\Authenticator\Authenticator.cs" />
+    <Compile Include="HabboHotel\Users\Badges\Badge.cs" />
+    <Compile Include="HabboHotel\Users\Badges\BadgeComponent.cs" />
+    <Compile Include="HabboHotel\Users\Habbo.cs" />
+    <Compile Include="HabboHotel\Users\HabboSmart.cs" />
+    <Compile Include="HabboHotel\Users\Inventory\AvatarEffect.cs" />
+    <Compile Include="HabboHotel\Users\Inventory\AvatarEffectsInventoryComponent.cs" />
+    <Compile Include="HabboHotel\Users\Inventory\InventoryComponent.cs" />
+    <Compile Include="HabboHotel\Users\Inventory\Wardrobe.cs" />
+    <Compile Include="HabboHotel\Users\Messenger\HabboMessenger.cs" />
+    <Compile Include="HabboHotel\Users\Messenger\MessengerBuddy.cs" />
+    <Compile Include="HabboHotel\Users\Messenger\MessengerRequest.cs" />
+    <Compile Include="HabboHotel\Users\Messenger\SearchResult.cs" />
+    <Compile Include="HabboHotel\Users\Messenger\SearchResultFactory.cs" />
+    <Compile Include="HabboHotel\Users\Relationships\Relationship.cs" />
+    <Compile Include="HabboHotel\Users\Relationships\RelationshipComposer.cs" />
+    <Compile Include="HabboHotel\Users\UserData\UserData.cs" />
+    <Compile Include="HabboHotel\Users\UserData\UserDataFactory.cs" />
+    <Compile Include="HabboHotel\Users\UserData\UserDataNotFoundException.cs" />
+    <Compile Include="Messages\ChatCommand.cs" />
+    <Compile Include="Messages\ChatCommandRegister.cs" />
+    <Compile Include="Messages\ClientMessages\ClientMessage.cs" />
+    <Compile Include="Messages\ClientMessages\ClientMessageFactory.cs" />
+    <Compile Include="Messages\GameClientMessageHander.cs" />
+    <Compile Include="Messages\PacketRank.cs" />
+    <Compile Include="Messages\PacketsCollapsed.cs" />
+    <Compile Include="Messages\QueuedServerMessage.cs" />
+    <Compile Include="Messages\Requests\Catalog.cs" />
+    <Compile Include="Messages\Requests\Groups.cs" />
+    <Compile Include="Messages\Requests\Handshake.cs" />
+    <Compile Include="Messages\Requests\Help.cs" />
+    <Compile Include="Messages\Requests\Messenger.cs" />
+    <Compile Include="Messages\Requests\Navigator.cs" />
+    <Compile Include="Messages\Requests\Premium.cs" />
+    <Compile Include="Messages\Requests\Quests.cs" />
+    <Compile Include="Messages\Requests\Rooms.cs" />
+    <Compile Include="Messages\Requests\SoundMachine.cs" />
+    <Compile Include="Messages\Requests\Users.cs" />
+    <Compile Include="Messages\ServerMessage.cs" />
+    <Compile Include="Messages\StaticMessageHandlers\SharedPacketLib.cs" />
+    <Compile Include="Messages\StaticMessageHandlers\StaticClientMessageHandler.cs" />
+    <Compile Include="Net\GamePacketParser.cs" />
+    <Compile Include="Net\InitialPacketParser.cs" />
+    <Compile Include="Net\MusSocket.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="HabboHotel\Pathfinding\CoordinationUtil.cs" />
+    <Compile Include="Scripts\AchConverter.cs" />
+    <Compile Include="Scripts\ChangeRoomState.cs" />
+    <Compile Include="Scripts\GiftFix.cs" />
+    <Compile Include="Scripts\WardrobeDuplicates.cs" />
+    <Compile Include="Util\HabboEncoding.cs" />
+    <Compile Include="Util\QueryChunk.cs" />
+    <Compile Include="Util\TextHandling.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Astar\AStar.csproj">
+      <Project>{F1AF3392-22D1-4B03-9C3B-C10DA9B1BCCD}</Project>
+      <Name>AStar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConsoleWriter\ConsoleWriter.csproj">
+      <Project>{9973c7ec-d3cf-4756-86d4-da44b71e3b57}</Project>
+      <Name>ConsoleWriter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Database Manager\Database Manager.csproj">
+      <Project>{bf1d4c61-c4da-454f-a96f-00567c29c27d}</Project>
+      <Name>Database Manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Encllosure algorithm\Enclosure.csproj">
+      <Project>{E2773602-B765-4CD7-BBD8-F66D57E0BA75}</Project>
+      <Name>Enclosure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HabboEvents\HabboEvents.csproj">
+      <Project>{84fd7c2c-4308-4759-868b-4f9ce47acfe9}</Project>
+      <Name>HabboEvents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServerSide\Connection Manager.csproj">
+      <Project>{10e23856-b6e8-43a7-b1ae-63a55ac3ec83}</Project>
+      <Name>Connection Manager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconeotanix.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

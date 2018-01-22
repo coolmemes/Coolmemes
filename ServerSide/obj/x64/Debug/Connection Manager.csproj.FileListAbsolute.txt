@@ -1,0 +1,136 @@
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\obj\x64\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\obj\x64\Debug\Connection Manager.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\bin\x64\Debug\Azure.Encryption.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\obj\x64\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ServerSide\obj\x64\Debug\Connection Manager.pdb
+C:\Users\evert\Downloads\b\emulador\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Users\evert\Downloads\b\emulador\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Users\evert\Downloads\b\emulador\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Users\evert\Downloads\b\emulador\ServerSide\bin\x64\Debug\Azure.Encryption.dll
+C:\Users\evert\Downloads\b\emulador\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Users\evert\Downloads\b\emulador\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Users\evert\Downloads\b\emulador\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Users\evert\Downloads\b\emulador\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Users\evert\Downloads\b\emulador\ServerSide\obj\x64\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Users\evert\Downloads\b\emulador\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\evert\Downloads\b\emulador\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Users\evert\Downloads\b\emulador\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Users\evert\Downloads\b\emulador\ServerSide\obj\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\bin\x64\Debug\Azure.Encryption.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\obj\x64\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\obj\x64\Debug\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ServerSide\obj\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\bin\x64\Debug\Azure.Encryption.dll
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\obj\x64\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\obj\x64\Debug\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\ServerSide\obj\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Azure.Encryption.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Azure.Encryption.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Azure.Encryption.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Azure.Encryption.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\ServerSide\obj\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\bin\x64\Debug\Azure.Encryption.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\obj\x64\Debug\Connection Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\obj\x64\Debug\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\ServerSide\obj\x64\Debug\Connection Manager.pdb

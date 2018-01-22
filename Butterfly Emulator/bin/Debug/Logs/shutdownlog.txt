@@ -1,0 +1,847 @@
+
+<12/12/2017 16:04:32> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 0 ms]
+Furni pre-save and connection close => [0 s, 702 ms]
+Room destructor => [0 s, 31 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 15 ms]
+Database shutdown => [0 s, 15 ms]
+Tempo total do processo de fechamento: 0 s, 780 ms
+
+
+<12/12/2017 16:28:45> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 0 ms]
+Furni pre-save and connection close => [0 s, 0 ms]
+Room destructor => [0 s, 0 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [1 s, 419 ms]
+Database shutdown => [0 s, 967 ms]
+Tempo total do processo de fechamento: 2 s, 386 ms
+
+
+<12/12/2017 18:03:39> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 0 ms]
+Furni pre-save and connection close => [0 s, 0 ms]
+Room destructor => [0 s, 0 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 296 ms]
+Database shutdown => [0 s, 202 ms]
+Tempo total do processo de fechamento: 0 s, 514 ms
+
+
+<12/12/2017 18:34:46> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 0 ms]
+Furni pre-save and connection close => [1 s, 669 ms]
+Room destructor => [0 s, 31 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 31 ms]
+Database shutdown => [0 s, 15 ms]
+Tempo total do processo de fechamento: 1 s, 747 ms
+
+
+<14/12/2017 23:23:52> Hotel pre-warning => [0 s, 1 ms]
+Socket close => [0 s, 2 ms]
+Furni pre-save and connection close => [0 s, 341 ms]
+Room destructor => [0 s, 48 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 101 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+Tempo total do processo de fechamento: 0 s, 497 ms
+
+
+<15/12/2017 10:49:03> Hotel pre-warning => [0 s, 1 ms]
+Socket close => [0 s, 2 ms]
+Furni pre-save and connection close => [0 s, 185 ms]
+Room destructor => [0 s, 50 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 35 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 14 ms]
+Tempo total do processo de fechamento: 0 s, 290 ms
+
+
+<15/12/2017 11:12:29> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 0 ms]
+Furni pre-save and connection close => [0 s, 180 ms]
+Room destructor => [0 s, 20 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 192 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 20 ms]
+Tempo total do processo de fechamento: 0 s, 412 ms
+
+
+<15/12/2017 11:24:00> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 0 ms]
+Furni pre-save and connection close => [0 s, 314 ms]
+Room destructor => [0 s, 0 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 20 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 0 ms]
+Tempo total do processo de fechamento: 0 s, 334 ms
+
+
+<15/12/2017 11:31:58> Hotel pre-warning => [0 s, 1 ms]
+Socket close => [0 s, 2 ms]
+Furni pre-save and connection close => [0 s, 5 ms]
+Room destructor => [0 s, 11 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 53 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 4 ms]
+Tempo total do processo de fechamento: 0 s, 77 ms
+
+
+<15/12/2017 11:43:21> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 0 ms]
+Furni pre-save and connection close => [0 s, 0 ms]
+Room destructor => [0 s, 10 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 23 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 3 ms]
+Tempo total do processo de fechamento: 0 s, 36 ms
+
+
+<15/12/2017 11:50:01> Hotel pre-warning => [0 s, 1 ms]
+Socket close => [0 s, 2 ms]
+Furni pre-save and connection close => [0 s, 168 ms]
+Room destructor => [0 s, 4 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 15 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+Tempo total do processo de fechamento: 0 s, 194 ms
+
+
+<15/12/2017 12:12:18> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 2 ms]
+Furni pre-save and connection close => [0 s, 328 ms]
+Room destructor => [0 s, 51 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 24 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 2 ms]
+Tempo total do processo de fechamento: 0 s, 408 ms
+
+
+<15/12/2017 12:51:09> Hotel pre-warning => [0 s, 1 ms]
+Socket close => [0 s, 0 ms]
+Furni pre-save and connection close => [0 s, 480 ms]
+Room destructor => [0 s, 6 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 54 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+Tempo total do processo de fechamento: 0 s, 544 ms
+
+
+<15/12/2017 13:02:20> Hotel pre-warning => [0 s, 1 ms]
+Socket close => [0 s, 2 ms]
+Furni pre-save and connection close => [0 s, 383 ms]
+Room destructor => [0 s, 7 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 41 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 5 ms]
+Tempo total do processo de fechamento: 0 s, 441 ms
+
+
+<15/12/2017 13:41:59> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 1 ms]
+Furni pre-save and connection close => [0 s, 237 ms]
+Room destructor => [0 s, 22 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 39 ms]
+Game destroy => [0 s, 2 ms]
+Database shutdown => [0 s, 5 ms]
+Tempo total do processo de fechamento: 0 s, 306 ms
+
+
+<15/12/2017 14:03:02> Hotel pre-warning => [0 s, 1 ms]
+Socket close => [0 s, 2 ms]
+Furni pre-save and connection close => [1 s, 676 ms]
+Room destructor => [1 s, 44 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 45 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 2 ms]
+Tempo total do processo de fechamento: 2 s, 797 ms
+
+
+<15/12/2017 21:22:30> Hotel pre-warning => [0 s, 1 ms]
+Socket close => [0 s, 65 ms]
+Furni pre-save and connection close => [6 s, 208 ms]
+Room destructor => [0 s, 948 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 593 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [1 s, 81 ms]
+Tempo total do processo de fechamento: 8 s, 919 ms
+
+
+<15/12/2017 23:14:56> Hotel pre-warning => [0 s, 39 ms]
+Socket close => [0 s, 124 ms]
+Furni pre-save and connection close => [0 s, 249 ms]
+Room destructor => [0 s, 3 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 835 ms]
+Game destroy => [0 s, 2 ms]
+Database shutdown => [1 s, 575 ms]
+Tempo total do processo de fechamento: 2 s, 837 ms
+
+
+<16/12/2017 12:19:21> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 10 ms]
+Furni pre-save and connection close => [4 s, 176 ms]
+Room destructor => [0 s, 567 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 97 ms]
+Game destroy => [0 s, 238 ms]
+Database shutdown => [0 s, 36 ms]
+Tempo total do processo de fechamento: 5 s, 124 ms
+
+
+<16/12/2017 13:31:14> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 19 ms]
+Furni pre-save and connection close => [0 s, 835 ms]
+Room destructor => [0 s, 353 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 149 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 1 ms]
+Tempo total do processo de fechamento: 1 s, 359 ms
+
+
+<16/12/2017 15:52:25> Hotel pre-warning => [0 s, 0 ms]
+Socket close => [0 s, 50 ms]
+Furni pre-save and connection close => [1 s, 171 ms]
+Room destructor => [0 s, 874 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 193 ms]
+Game destroy => [0 s, 3 ms]
+Database shutdown => [0 s, 185 ms]
+Tempo total do processo de fechamento: 2 s, 490 ms
+
+
+<16/12/2017 16:32:20> Hotel pre-warning => [0 s, 1 ms]
+Socket close => [0 s, 20 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 2 ms]
+Room destructor => [0 s, 7 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 43 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 3 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 77 ms
+
+
+<16/12/2017 16:37:30> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 2 ms]
+Room destructor => [0 s, 2 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 13 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 21 ms
+
+
+<16/12/2017 16:46:12> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 5 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 11 ms]
+Room destructor => [0 s, 4 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 18 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 3 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 44 ms
+
+
+<16/12/2017 17:14:41> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 977 ms]
+Room destructor => [0 s, 966 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 39 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 1 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 1 s, 988 ms
+
+
+<16/12/2017 18:55:35> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 676 ms]
+Room destructor => [0 s, 756 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 51 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 1 s, 488 ms
+
+
+<17/12/2017 10:00:29> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 3 ms]
+Room destructor => [0 s, 3 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 14 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 26 ms
+
+
+<19/12/2017 11:06:38> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 126 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [6 s, 905 ms]
+Room destructor => [3 s, 66 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 191 ms]
+Game destroy => [0 s, 2 ms]
+Database shutdown => [0 s, 7 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 10 s, 298 ms
+
+
+<19/12/2017 12:00:00> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 603 ms]
+Room destructor => [0 s, 3 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 15 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 628 ms
+
+
+<19/12/2017 12:07:40> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 448 ms]
+Room destructor => [0 s, 57 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 12 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 522 ms
+
+
+<19/12/2017 12:09:18> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 427 ms]
+Room destructor => [0 s, 25 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 37 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 495 ms
+
+
+<19/12/2017 12:10:35> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 136 ms]
+Room destructor => [0 s, 12 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 17 ms]
+Game destroy => [0 s, 4 ms]
+Database shutdown => [0 s, 7 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 178 ms
+
+
+<20/12/2017 14:29:07> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 0 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [1 s, 654 ms]
+Room destructor => [1 s, 276 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 171 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 3 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 3 s, 105 ms
+
+
+<20/12/2017 15:16:22> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 0 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [1 s, 654 ms]
+Room destructor => [0 s, 207 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 45 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 3 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 1 s, 910 ms
+
+
+<20/12/2017 15:56:57> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 10 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 192 ms]
+Room destructor => [0 s, 720 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 8 ms]
+Game destroy => [0 s, 2 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 934 ms
+
+
+<20/12/2017 16:16:23> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [1 s, 243 ms]
+Room destructor => [0 s, 117 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 48 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 1 s, 413 ms
+
+
+<20/12/2017 16:55:55> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 970 ms]
+Room destructor => [0 s, 20 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 20 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 3 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 1 s, 15 ms
+
+
+<20/12/2017 17:19:07> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 189 ms]
+Room destructor => [0 s, 21 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 34 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 3 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 253 ms
+
+
+<20/12/2017 17:26:29> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 3 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 282 ms]
+Room destructor => [0 s, 65 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 6 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 361 ms
+
+
+<20/12/2017 17:29:56> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 135 ms]
+Room destructor => [0 s, 44 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 14 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 199 ms
+
+
+<20/12/2017 17:41:11> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 174 ms]
+Room destructor => [0 s, 3 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 6 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 188 ms
+
+
+<20/12/2017 17:49:31> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 783 ms]
+Room destructor => [0 s, 503 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 14 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 4 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 1 s, 310 ms
+
+
+<20/12/2017 18:06:17> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [1 s, 322 ms]
+Room destructor => [0 s, 580 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 131 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 2 s, 47 ms
+
+
+<20/12/2017 18:27:04> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [4 s, 419 ms]
+Room destructor => [0 s, 801 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 220 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 5 s, 444 ms
+
+
+<20/12/2017 18:31:18> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 20 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 0 ms]
+Room destructor => [0 s, 10 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 0 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 30 ms
+
+
+<20/12/2017 18:36:29> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 103 ms]
+Room destructor => [0 s, 2 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 54 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 164 ms
+
+
+<21/12/2017 00:15:50> Hotel pre-warning => [0 s, 9 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 137 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 501 ms]
+Room destructor => [0 s, 181 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 28 ms]
+Game destroy => [0 s, 133 ms]
+Database shutdown => [0 s, 508 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 1 s, 521 ms
+
+
+<21/12/2017 10:43:52> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 20 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [1 s, 925 ms]
+Room destructor => [1 s, 208 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 40 ms]
+Game destroy => [0 s, 236 ms]
+Database shutdown => [0 s, 0 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 3 s, 430 ms
+
+
+<21/12/2017 10:45:31> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 6 ms]
+Room destructor => [0 s, 10 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 187 ms]
+Database shutdown => [0 s, 7 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 213 ms
+
+
+<21/12/2017 11:34:20> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 6 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [1 s, 282 ms]
+Room destructor => [0 s, 584 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 230 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 2 s, 106 ms
+
+
+<21/12/2017 13:55:02> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 54 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 143 ms]
+Room destructor => [0 s, 23 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 33 ms]
+Database shutdown => [0 s, 418 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 678 ms
+
+
+<21/12/2017 13:56:14> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 0 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 2 ms]
+Room destructor => [0 s, 5 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 111 ms]
+Database shutdown => [0 s, 7 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 126 ms
+
+
+<22/12/2017 10:29:30> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 14 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [1 s, 301 ms]
+Room destructor => [2 s, 567 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 21 ms]
+Game destroy => [0 s, 322 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 4 s, 228 ms
+
+
+<22/12/2017 11:34:58> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 71 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 358 ms]
+Room destructor => [5 s, 642 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 44 ms]
+Game destroy => [0 s, 68 ms]
+Database shutdown => [0 s, 219 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 6 s, 405 ms
+
+
+<22/12/2017 11:39:58> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 149 ms]
+Room destructor => [0 s, 43 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 67 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 264 ms
+
+
+<22/12/2017 12:14:18> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 0 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 141 ms]
+Room destructor => [0 s, 97 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 38 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 278 ms
+
+
+<22/12/2017 12:16:28> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 142 ms]
+Room destructor => [0 s, 8 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 94 ms]
+Database shutdown => [0 s, 3 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 250 ms
+
+
+<22/12/2017 12:22:45> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 477 ms]
+Room destructor => [0 s, 9 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 218 ms]
+Database shutdown => [0 s, 4 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 711 ms
+
+
+<24/12/2017 14:25:14> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 375 ms]
+Room destructor => [0 s, 11 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 126 ms]
+Game destroy => [0 s, 3 ms]
+Database shutdown => [0 s, 4 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 521 ms
+
+
+<24/12/2017 14:36:56> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [1 s, 773 ms]
+Room destructor => [0 s, 29 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 47 ms]
+Game destroy => [0 s, 9 ms]
+Database shutdown => [0 s, 35 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 1 s, 895 ms
+
+
+<24/12/2017 15:25:30> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 363 ms]
+Room destructor => [0 s, 10 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 54 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 434 ms
+
+
+<24/12/2017 16:10:48> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 377 ms]
+Room destructor => [0 s, 311 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 136 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 830 ms
+
+
+<24/12/2017 18:28:53> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 274 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [19 s, 652 ms]
+Room destructor => [2 s, 105 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 433 ms]
+Game destroy => [0 s, 65 ms]
+Database shutdown => [3 s, 297 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 25 s, 828 ms
+
+
+<27/12/2017 16:59:08> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 454 ms]
+Room destructor => [0 s, 4 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 23 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 4 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 488 ms
+
+
+<27/12/2017 18:14:01> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 3 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 59 ms]
+Room destructor => [0 s, 9 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 0 ms]
+Game destroy => [0 s, 64 ms]
+Database shutdown => [0 s, 4 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 141 ms
+
+
+<27/12/2017 18:18:12> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 112 ms]
+Room destructor => [0 s, 14 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 26 ms]
+Game destroy => [0 s, 0 ms]
+Database shutdown => [0 s, 5 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 159 ms
+
+
+<27/12/2017 18:31:19> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 85 ms]
+Room destructor => [0 s, 13 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 10 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 3 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 113 ms
+
+
+<27/12/2017 18:39:57> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 91 ms]
+Room destructor => [0 s, 4 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 12 ms]
+Game destroy => [0 s, 5 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 117 ms
+
+
+<27/12/2017 18:43:48> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 0 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 72 ms]
+Room destructor => [0 s, 7 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 7 ms]
+Game destroy => [0 s, 1 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 90 ms
+
+
+<28/12/2017 15:44:09> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 264 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [1 s, 373 ms]
+Room destructor => [3 s, 815 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 201 ms]
+Game destroy => [0 s, 376 ms]
+Database shutdown => [0 s, 421 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 6 s, 452 ms
+
+
+<29/12/2017 12:52:54> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 677 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [4 s, 196 ms]
+Room destructor => [0 s, 877 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 181 ms]
+Game destroy => [0 s, 893 ms]
+Database shutdown => [5 s, 238 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 12 s, 100 ms
+
+
+<29/12/2017 15:08:37> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [1 s, 192 ms]
+Room destructor => [1 s, 475 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 325 ms]
+Game destroy => [0 s, 3 ms]
+Database shutdown => [0 s, 6 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 3 s, 4 ms
+
+
+<01/01/2018 14:38:54> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 33 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 2 ms]
+Room destructor => [0 s, 0 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 15 ms]
+Game destroy => [0 s, 53 ms]
+Database shutdown => [0 s, 2 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 105 ms
+
+
+<01/01/2018 15:23:21> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 77 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 266 ms]
+Room destructor => [0 s, 6 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 349 ms]
+Game destroy => [0 s, 207 ms]
+Database shutdown => [0 s, 7 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 913 ms
+
+
+<07/01/2018 20:37:36> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 12 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [3 s, 22 ms]
+Room destructor => [1 s, 645 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 30 ms]
+Game destroy => [0 s, 205 ms]
+Database shutdown => [0 s, 3 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 4 s, 919 ms
+
+
+<07/01/2018 21:18:47> Hotel pre-warning => [0 s, 1 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 2 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [4 s, 368 ms]
+Room destructor => [0 s, 194 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 124 ms]
+Game destroy => [0 s, 2 ms]
+Database shutdown => [0 s, 7 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 4 s, 699 ms
+
+
+<08/01/2018 21:28:37> Hotel pre-warning => [0 s, 0 ms]
+[Otanix] @ Alerta: Socket fechado => [0 s, 1 ms]
+[Otanix] @ Alerta: Furni pre-save and connection close => [0 s, 283 ms]
+Room destructor => [0 s, 19 ms]
+Database pre-save => [0 s, 0 ms]
+Connection shutdown => [0 s, 107 ms]
+Game destroy => [0 s, 3 ms]
+Database shutdown => [0 s, 7 ms]
+[Otanix] @ Alerta: Tempo total do processo de fechamento: 0 s, 420 ms
+

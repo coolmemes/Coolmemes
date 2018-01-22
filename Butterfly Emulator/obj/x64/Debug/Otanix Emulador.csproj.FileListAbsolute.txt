@@ -1,0 +1,144 @@
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\obj\x64\Debug\Otanix.pdb

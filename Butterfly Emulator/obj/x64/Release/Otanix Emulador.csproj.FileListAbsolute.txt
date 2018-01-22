@@ -1,0 +1,60 @@
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\obj\x64\Release\Otanix Emulator.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\MySql.Data.dll
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\Otanix.exe
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\Otanix.pdb
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\AStar.dll
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\Connection Manager.dll
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\ConsoleWriter.dll
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\Database Manager.dll
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\enclosuretest.dll
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\HabboEvents.dll
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\WiredSolver.dll
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\AStar.pdb
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\Database Manager.pdb
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\enclosuretest.pdb
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\Connection Manager.pdb
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\WiredSolver.pdb
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\bin\x64\Release\HabboEvents.pdb
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\obj\x64\Release\Otanix.exe
+C:\Users\Jairo\Desktop\Servidor\Butterfly Emulator\obj\x64\Release\Otanix.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\obj\x64\Release\Otanix.exe
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\obj\x64\Release\Otanix Emulator.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\MySql.Data.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\Otanix.exe
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\Otanix.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\AStar.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\Connection Manager.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\ConsoleWriter.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\Database Manager.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\enclosuretest.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\HabboEvents.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\WiredSolver.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\AStar.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\Database Manager.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\enclosuretest.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\Connection Manager.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\WiredSolver.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\bin\x64\Release\HabboEvents.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Butterfly Emulator\obj\x64\Release\Otanix.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\obj\x64\Release\Otanix.exe
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\obj\x64\Release\Otanix.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\MySql.Data.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\Otanix.exe
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\Otanix.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\AStar.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\Connection Manager.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\ConsoleWriter.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\Database Manager.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\enclosuretest.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\HabboEvents.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\WiredSolver.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\AStar.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\Database Manager.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\enclosuretest.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\Connection Manager.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\WiredSolver.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\bin\x64\Release\HabboEvents.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Butterfly Emulator\obj\x64\Release\Otanix Emulator.csprojResolveAssemblyReference.cache

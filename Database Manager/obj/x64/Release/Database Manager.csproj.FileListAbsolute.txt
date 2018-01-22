@@ -1,0 +1,24 @@
+C:\Users\Jairo\Desktop\Servidor\Database Manager\bin\x64\Release\MySql.Data.dll
+C:\Users\Jairo\Desktop\Servidor\Database Manager\bin\x64\Release\Database Manager.dll
+C:\Users\Jairo\Desktop\Servidor\Database Manager\bin\x64\Release\Database Manager.pdb
+C:\Users\Jairo\Desktop\Servidor\Database Manager\bin\x64\Release\ConsoleWriter.dll
+C:\Users\Jairo\Desktop\Servidor\Database Manager\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\Jairo\Desktop\Servidor\Database Manager\obj\x64\Release\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\Database Manager\obj\x64\Release\Database Manager.dll
+C:\Users\Jairo\Desktop\Servidor\Database Manager\obj\x64\Release\Database Manager.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Database Manager\bin\x64\Release\MySql.Data.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Database Manager\bin\x64\Release\Database Manager.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Database Manager\bin\x64\Release\Database Manager.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Database Manager\bin\x64\Release\ConsoleWriter.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Database Manager\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Database Manager\obj\x64\Release\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Database Manager\obj\x64\Release\Database Manager.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\Database Manager\obj\x64\Release\Database Manager.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Database Manager\bin\x64\Release\MySql.Data.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Database Manager\bin\x64\Release\Database Manager.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Database Manager\bin\x64\Release\Database Manager.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Database Manager\bin\x64\Release\ConsoleWriter.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Database Manager\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Database Manager\obj\x64\Release\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Database Manager\obj\x64\Release\Database Manager.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\Database Manager\obj\x64\Release\Database Manager.pdb

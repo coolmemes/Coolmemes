@@ -1,0 +1,33 @@
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\HabboEvents\bin\x64\Debug\HabboEvents.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\HabboEvents\bin\x64\Debug\HabboEvents.pdb
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\HabboEvents\obj\x64\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\HabboEvents\obj\x64\Debug\HabboEvents.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\HabboEvents\obj\x64\Debug\HabboEvents.pdb
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\HabboEvents\bin\x64\Debug\HabboEvents.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\HabboEvents\bin\x64\Debug\HabboEvents.pdb
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\HabboEvents\obj\x64\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\HabboEvents\obj\x64\Debug\HabboEvents.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\HabboEvents\obj\x64\Debug\HabboEvents.pdb
+C:\Users\evert\Downloads\b\emulador\HabboEvents\bin\x64\Debug\HabboEvents.dll
+C:\Users\evert\Downloads\b\emulador\HabboEvents\bin\x64\Debug\HabboEvents.pdb
+C:\Users\evert\Downloads\b\emulador\HabboEvents\obj\x64\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\evert\Downloads\b\emulador\HabboEvents\obj\x64\Debug\HabboEvents.dll
+C:\Users\evert\Downloads\b\emulador\HabboEvents\obj\x64\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\HabboEvents\bin\x64\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\HabboEvents\bin\x64\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\HabboEvents\obj\x64\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\HabboEvents\obj\x64\Debug\HabboEvents.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\HabboEvents\obj\x64\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\HabboEvents\obj\x64\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\HabboEvents\bin\x64\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\HabboEvents\bin\x64\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\HabboEvents\obj\x64\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\HabboEvents\obj\x64\Debug\HabboEvents.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\HabboEvents\obj\x64\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\HabboEvents\obj\x64\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\HabboEvents\bin\x64\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\HabboEvents\bin\x64\Debug\HabboEvents.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\HabboEvents\obj\x64\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\HabboEvents\obj\x64\Debug\HabboEvents.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\HabboEvents\obj\x64\Debug\HabboEvents.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\HabboEvents\obj\x64\Debug\HabboEvents.pdb

@@ -1,0 +1,105 @@
+C:\Users\root\Desktop\Servidor\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\root\Desktop\Servidor\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\root\Desktop\Servidor\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\root\Desktop\Servidor\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\root\Desktop\Servidor\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\root\Desktop\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\root\Desktop\Servidor\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\root\Desktop\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\root\Desktop\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\evert\Desktop\iboom\emulador\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\evert\Desktop\iboom\emulador\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\evert\Desktop\iboom\emulador\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\evert\Desktop\iboom\emulador\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\evert\Desktop\iboom\emulador\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\evert\Desktop\iboom\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\evert\Desktop\iboom\emulador\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\evert\Desktop\iboom\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\evert\Desktop\iboom\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\bin\Debug\enclosuretest.dll.CodeAnalysisLog.xml
+C:\Users\evert\Desktop\kash network\emulador\Encllosure algorithm\bin\Debug\enclosuretest.dll.lastcodeanalysissucceeded
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\evert\Downloads\b\emulador\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\evert\Downloads\b\emulador\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\evert\Downloads\b\emulador\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\evert\Downloads\b\emulador\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\evert\Downloads\b\emulador\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\evert\Downloads\b\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\evert\Downloads\b\emulador\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\evert\Downloads\b\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\evert\Downloads\b\emulador\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\bin\Debug\AStar.dll.config
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\bin\Debug\AStar.dll.config
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb

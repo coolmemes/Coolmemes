@@ -1,0 +1,8 @@
+C:\Users\Jairo\Desktop\Servidor\Astar\bin\x64\Release\AStar.dll.config
+C:\Users\Jairo\Desktop\Servidor\Astar\bin\x64\Release\AStar.dll
+C:\Users\Jairo\Desktop\Servidor\Astar\bin\x64\Release\AStar.pdb
+C:\Users\Jairo\Desktop\Servidor\Astar\obj\x64\Release\AStar.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\Astar\obj\x64\Release\AStar.Properties.Resources.resources
+C:\Users\Jairo\Desktop\Servidor\Astar\obj\x64\Release\AStar.csproj.GenerateResource.Cache
+C:\Users\Jairo\Desktop\Servidor\Astar\obj\x64\Release\AStar.dll
+C:\Users\Jairo\Desktop\Servidor\Astar\obj\x64\Release\AStar.pdb

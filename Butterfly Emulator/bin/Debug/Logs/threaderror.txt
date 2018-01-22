@@ -1,0 +1,10 @@
+
+<12/12/2017 20:00:57> Error in thread Room cycle task for room 6: 
+System.NullReferenceException: Refer?ncia de objeto n?o definida para uma inst?ncia de um objeto.
+   em Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Rooms\Gamemap.cs:linha 720
+   em Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Pathfinding\PathFinder.cs:linha 72
+   em Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Pathfinding\PathFinder.cs:linha 18
+   em Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:linha 1592
+   em Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:linha 1339
+   em Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Rooms\Room.cs:linha 689
+

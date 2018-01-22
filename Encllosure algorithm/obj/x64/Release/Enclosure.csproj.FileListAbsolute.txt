@@ -1,0 +1,9 @@
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\bin\x64\Release\enclosuretest.dll
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\bin\x64\Release\enclosuretest.pdb
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\bin\x64\Release\AStar.dll
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\bin\x64\Release\AStar.pdb
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\obj\x64\Release\Enclosure.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\obj\x64\Release\enclosuretest.Properties.Resources.resources
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\obj\x64\Release\Enclosure.csproj.GenerateResource.Cache
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\obj\x64\Release\enclosuretest.dll
+C:\Users\Jairo\Desktop\Servidor\Encllosure algorithm\obj\x64\Release\enclosuretest.pdb

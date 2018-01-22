@@ -1,0 +1,62 @@
+C:\Users\root\Desktop\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\root\Desktop\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\root\Desktop\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\root\Desktop\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\root\Desktop\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\Jairo\Desktop\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\Jairo\Desktop\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\Jairo\Desktop\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\Jairo\Desktop\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\evert\Desktop\iboom\emulador\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\evert\Desktop\iboom\emulador\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\evert\Desktop\iboom\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\evert\Desktop\iboom\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\evert\Desktop\iboom\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\evert\Desktop\kash network\emulador\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\evert\Desktop\kash network\emulador\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\evert\Desktop\kash network\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\evert\Desktop\kash network\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\evert\Desktop\kash network\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\evert\Downloads\b\emulador\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\evert\Downloads\b\emulador\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\evert\Downloads\b\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\evert\Downloads\b\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\evert\Downloads\b\emulador\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb

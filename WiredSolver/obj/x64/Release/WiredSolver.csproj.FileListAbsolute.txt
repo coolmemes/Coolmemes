@@ -1,0 +1,5 @@
+C:\Users\Jairo\Desktop\Servidor\WiredSolver\bin\x64\Release\WiredSolver.dll
+C:\Users\Jairo\Desktop\Servidor\WiredSolver\bin\x64\Release\WiredSolver.pdb
+C:\Users\Jairo\Desktop\Servidor\WiredSolver\obj\x64\Release\WiredSolver.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\WiredSolver\obj\x64\Release\WiredSolver.dll
+C:\Users\Jairo\Desktop\Servidor\WiredSolver\obj\x64\Release\WiredSolver.pdb

@@ -1,0 +1,45 @@
+C:\Users\root\Desktop\Servidor\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Users\root\Desktop\Servidor\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Users\root\Desktop\Servidor\HabboEvents\obj\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\root\Desktop\Servidor\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Users\root\Desktop\Servidor\HabboEvents\obj\Debug\HabboEvents.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\HabboEvents\obj\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\HabboEvents\obj\Debug\HabboEvents.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\HabboEvents\obj\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\HabboEvents\obj\Debug\HabboEvents.pdb
+C:\Users\Jairo\Desktop\Servidor\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Users\Jairo\Desktop\Servidor\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Users\Jairo\Desktop\Servidor\HabboEvents\obj\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Users\Jairo\Desktop\Servidor\HabboEvents\obj\Debug\HabboEvents.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\HabboEvents\obj\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Users\carlos\Desktop\s_e_r_v_e_r\Servidor\HabboEvents\obj\Debug\HabboEvents.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\HabboEvents\obj\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\HabboEvents\obj\Debug\HabboEvents.pdb
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\HabboEvents\obj\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\HabboEvents\obj\Debug\HabboEvents.pdb
+C:\Users\carlo\OneDrive\Documentos\GitHub\Habbo\Emulador\Otanix\Servidor\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\Habbo\Emulador\Otanix\Servidor\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Users\carlo\OneDrive\Documentos\GitHub\Habbo\Emulador\Otanix\Servidor\HabboEvents\obj\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Users\carlo\OneDrive\Documentos\GitHub\Habbo\Emulador\Otanix\Servidor\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\Habbo\Emulador\Otanix\Servidor\HabboEvents\obj\Debug\HabboEvents.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\HabboEvents\obj\Debug\HabboEvents.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\HabboEvents\obj\Debug\HabboEvents.pdb

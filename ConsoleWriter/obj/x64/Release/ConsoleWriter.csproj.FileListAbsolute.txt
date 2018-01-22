@@ -1,0 +1,10 @@
+C:\Users\Jairo\Desktop\Servidor\ConsoleWriter\bin\x64\Release\ConsoleWriter.dll
+C:\Users\Jairo\Desktop\Servidor\ConsoleWriter\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\Jairo\Desktop\Servidor\ConsoleWriter\obj\x64\Release\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\ConsoleWriter\obj\x64\Release\ConsoleWriter.dll
+C:\Users\Jairo\Desktop\Servidor\ConsoleWriter\obj\x64\Release\ConsoleWriter.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ConsoleWriter\bin\x64\Release\ConsoleWriter.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ConsoleWriter\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ConsoleWriter\obj\x64\Release\ConsoleWriter.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ConsoleWriter\obj\x64\Release\ConsoleWriter.dll
+C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ConsoleWriter\obj\x64\Release\ConsoleWriter.pdb

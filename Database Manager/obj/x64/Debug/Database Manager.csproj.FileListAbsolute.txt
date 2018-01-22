@@ -1,0 +1,167 @@
+C:\Users\root\Desktop\Servidor\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\root\Desktop\Servidor\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\root\Desktop\Servidor\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\root\Desktop\Servidor\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\root\Desktop\Servidor\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\root\Desktop\Servidor\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\root\Desktop\Servidor\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\root\Desktop\Servidor\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\Jairo\Desktop\Servidor\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\Jairo\Desktop\Servidor\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\Jairo\Desktop\Servidor\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\Jairo\Desktop\Servidor\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\Jairo\Desktop\Servidor\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\Jairo\Desktop\Servidor\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\Jairo\Desktop\Servidor\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor2\Servidor\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor2\Servidor\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor2\Servidor\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor2\Servidor\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor2\Servidor\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor2\Servidor\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor2\Servidor\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor2\Servidor\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\Carlos\Documents\GitHub\Otanix\Servidor\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\evert\Desktop\iboom\emulador\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\evert\Desktop\iboom\emulador\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\evert\Desktop\iboom\emulador\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\evert\Desktop\iboom\emulador\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\evert\Desktop\iboom\emulador\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\evert\Desktop\iboom\emulador\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\evert\Desktop\iboom\emulador\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\evert\Desktop\iboom\emulador\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\evert\Desktop\kash network\emulador\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\evert\Desktop\kash network\emulador\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\evert\Desktop\kash network\emulador\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\evert\Desktop\kash network\emulador\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\evert\Desktop\kash network\emulador\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\evert\Desktop\kash network\emulador\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\evert\Desktop\kash network\emulador\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\evert\Desktop\kash network\emulador\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Database Manager\bin\Debug\MySql.Data.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Database Manager\bin\Debug\Database Manager.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Database Manager\bin\Debug\Database Manager.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\Database Manager\bin\Debug\MySql.Data.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\Database Manager\bin\Debug\Database Manager.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\Database Manager\bin\Debug\Database Manager.pdb
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\Database Manager\bin\Debug\MySql.Data.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\Database Manager\bin\Debug\Database Manager.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\Database Manager\bin\Debug\Database Manager.pdb
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Tudo\kash network\1 EMULADOR OFICIAL ATUALIZADO 21-04\emulador oficial 10-07\emulador\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\evert\Downloads\b\emulador\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\evert\Downloads\b\emulador\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\evert\Downloads\b\emulador\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\evert\Downloads\b\emulador\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\evert\Downloads\b\emulador\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\evert\Downloads\b\emulador\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\evert\Downloads\b\emulador\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\evert\Downloads\b\emulador\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Database Manager\obj\x64\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Database Manager\obj\x64\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[Habbnix] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix[HP] Emulador By Thiago Araujo\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Database Manager\obj\x64\Debug\Database Manager.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Database Manager\obj\x64\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Database Manager\obj\x64\Debug\Database Manager.pdb

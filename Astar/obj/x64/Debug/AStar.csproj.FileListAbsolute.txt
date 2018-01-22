@@ -1,0 +1,92 @@
+C:\Users\root\Desktop\Servidor\Astar\bin\Debug\AStar.dll.config
+C:\Users\root\Desktop\Servidor\Astar\bin\Debug\AStar.dll
+C:\Users\root\Desktop\Servidor\Astar\bin\Debug\AStar.pdb
+C:\Users\root\Desktop\Servidor\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Users\root\Desktop\Servidor\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Users\root\Desktop\Servidor\Astar\obj\x64\Debug\AStar.dll
+C:\Users\root\Desktop\Servidor\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\root\Desktop\Servidor\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Astar\bin\Debug\AStar.dll.config
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Astar\bin\Debug\AStar.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Astar\bin\Debug\AStar.pdb
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Astar\obj\x64\Debug\AStar.dll
+C:\Users\Carlos\Documents\GitHub\Emulator\Servidor\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Astar\bin\Debug\AStar.dll.config
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Astar\bin\Debug\AStar.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Astar\bin\Debug\AStar.pdb
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Astar\obj\x64\Debug\AStar.dll
+C:\Users\carlos\Desktop\carlos\Servidor\Servidor\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\Jairo\Desktop\Servidor\Astar\bin\Debug\AStar.dll.config
+C:\Users\Jairo\Desktop\Servidor\Astar\bin\Debug\AStar.dll
+C:\Users\Jairo\Desktop\Servidor\Astar\bin\Debug\AStar.pdb
+C:\Users\Jairo\Desktop\Servidor\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Users\Jairo\Desktop\Servidor\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Users\Jairo\Desktop\Servidor\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Users\Jairo\Desktop\Servidor\Astar\obj\x64\Debug\AStar.dll
+C:\Users\Jairo\Desktop\Servidor\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Astar\bin\Debug\AStar.dll.config
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Astar\bin\Debug\AStar.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Astar\bin\Debug\AStar.pdb
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Astar\obj\x64\Debug\AStar.dll
+C:\Users\Carlos D\Documents\GitHub\Emulator\Servidor\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\evert\Desktop\iboom\emulador\Astar\bin\Debug\AStar.dll.config
+C:\Users\evert\Desktop\iboom\emulador\Astar\bin\Debug\AStar.dll
+C:\Users\evert\Desktop\iboom\emulador\Astar\bin\Debug\AStar.pdb
+C:\Users\evert\Desktop\iboom\emulador\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Users\evert\Desktop\iboom\emulador\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Users\evert\Desktop\iboom\emulador\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Users\evert\Desktop\iboom\emulador\Astar\obj\x64\Debug\AStar.dll
+C:\Users\evert\Desktop\iboom\emulador\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\evert\Desktop\kash network\emulador\Astar\bin\Debug\AStar.dll.config
+C:\Users\evert\Desktop\kash network\emulador\Astar\bin\Debug\AStar.dll
+C:\Users\evert\Desktop\kash network\emulador\Astar\bin\Debug\AStar.pdb
+C:\Users\evert\Desktop\kash network\emulador\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Users\evert\Desktop\kash network\emulador\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Users\evert\Desktop\kash network\emulador\Astar\obj\x64\Debug\AStar.dll
+C:\Users\evert\Desktop\kash network\emulador\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\evert\Desktop\kash network\emulador\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Users\evert\Desktop\kash network\emulador\Astar\bin\Debug\AStar.dll.CodeAnalysisLog.xml
+C:\Users\evert\Desktop\kash network\emulador\Astar\bin\Debug\AStar.dll.lastcodeanalysissucceeded
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Astar\bin\Debug\AStar.dll.config
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Astar\bin\Debug\AStar.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Astar\bin\Debug\AStar.pdb
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Astar\obj\x64\Debug\AStar.dll
+C:\Tudo\kash network\emulador 28-01 - Copia\emulador\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\evert\Downloads\b\emulador\Astar\bin\Debug\AStar.dll.config
+C:\Users\evert\Downloads\b\emulador\Astar\bin\Debug\AStar.dll
+C:\Users\evert\Downloads\b\emulador\Astar\bin\Debug\AStar.pdb
+C:\Users\evert\Downloads\b\emulador\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Users\evert\Downloads\b\emulador\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Users\evert\Downloads\b\emulador\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Users\evert\Downloads\b\emulador\Astar\obj\x64\Debug\AStar.dll
+C:\Users\evert\Downloads\b\emulador\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Astar\bin\Debug\AStar.dll.config
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Astar\bin\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Astar\bin\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Astar\obj\x64\Debug\AStar.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Astar\obj\x64\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Kash Emulator\Kash Emulator\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Astar\bin\Debug\AStar.dll.config
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Astar\bin\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Astar\bin\Debug\AStar.pdb
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Astar\obj\x64\Debug\AStar.csprojResolveAssemblyReference.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Astar\obj\x64\Debug\AStar.Properties.Resources.resources
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.Cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Astar\obj\x64\Debug\AStar.csproj.CoreCompileInputs.cache
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Astar\obj\x64\Debug\AStar.dll
+C:\Users\DIEL\Desktop\Otanix[Habbleft] Emulador By Thiago Araujo\Astar\obj\x64\Debug\AStar.pdb
