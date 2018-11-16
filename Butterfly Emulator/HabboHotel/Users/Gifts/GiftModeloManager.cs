@@ -48,7 +48,7 @@ namespace Butterfly.HabboHotel.Users.Gifts
         {
             if (!existeItem(idSelecionado))
             {
-                user.SendNotif("Não foi possível escolher este item, tente novamente.");
+                //user.SendNotif("Não foi possível escolher este item, tente novamente.");
                 return;
             }
 
@@ -65,7 +65,7 @@ namespace Butterfly.HabboHotel.Users.Gifts
 
                         user.GetHabbo().GetBadgeComponent().GiveBadge("BR075");
 
-                        user.SendNotif("Parabens, escolha feita com sucesso!");
+                        //user.SendNotif("Parabens, escolha feita com sucesso!");
                         if (user.GetHabbo().Rank >= 0)
                         {
                             using (IQueryAdapter dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
@@ -83,7 +83,7 @@ namespace Butterfly.HabboHotel.Users.Gifts
                 case 1:
                     {
                         user.GetHabbo().GetBadgeComponent().GiveBadge("BR074");
-                        user.SendNotif("Parabens, escolha feita com sucesso!");
+                        //user.SendNotif("Parabens, escolha feita com sucesso!");
                         if (user.GetHabbo().Rank >= 0)
                         {
                             using (IQueryAdapter dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
@@ -100,7 +100,7 @@ namespace Butterfly.HabboHotel.Users.Gifts
                 default:
                     {
                         user.GetHabbo().GetBadgeComponent().GiveBadge("BR073");
-                        user.SendNotif("Parabens, escolha feita com sucesso!");
+                        //user.SendNotif("Parabens, escolha feita com sucesso!");
                         if (user.GetHabbo().Rank >= 0)
                         {
                             using (IQueryAdapter dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())

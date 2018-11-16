@@ -15,8 +15,9 @@ namespace Butterfly.HabboHotel.Users.Clothing
         public int Club;
         public bool Colorable;
         public bool Sellable;
+        public bool PreSelectable;
 
-        public Clothes(string Type, int PaletteId, int Id, string Gender, int Club, bool Colorable, bool Sellable)
+        public Clothes(string Type, int PaletteId, int Id, string Gender, int Club, bool Colorable, bool Sellable, bool PreSelectable)
         {
             this.Type = Type;
             this.PaletteId = PaletteId;
@@ -25,6 +26,7 @@ namespace Butterfly.HabboHotel.Users.Clothing
             this.Club = Club;
             this.Colorable = Colorable;
             this.Sellable = Sellable;
+            this.PreSelectable = PreSelectable;
         }
     }
 }

@@ -41,7 +41,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Triggers
 
             if ((!user.IsBot && isOneUser && !string.IsNullOrEmpty(userName) && user.GetUsername() == userName) || !isOneUser)
             {
-                //InteractorGenericSwitch.DoAnimation(item);
+                InteractorGenericSwitch.DoAnimation(item);
                 handler.RequestStackHandle(item, null, user, user.team);
             }
         }

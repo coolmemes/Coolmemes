@@ -51,6 +51,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Triggers
 
         private void roomUserManager_OnBotTakeItem(object sender, EventArgs e)
         {
+            
             var user = (RoomUser)sender;
             if (user != null && user.GetUsername().ToLower() == botname.ToLower())
                 handler.RequestStackHandle(item, null, null, Team.none);

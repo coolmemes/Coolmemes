@@ -14,11 +14,12 @@ namespace Butterfly.Messages
 
         public static void Initialize()
         {
-            PacketsList = new Dictionary<int, double>();
-
-            PacketsList.Add(Incoming.LoadFirstRoomData, 1);
-            PacketsList.Add(Incoming.LoadHeightMap, 1);
-            PacketsList.Add(Incoming.AddUserToRoom, 1);
+            PacketsList = new Dictionary<int, double>
+            {
+                { Incoming.LoadFirstRoomData, 1 },
+                { Incoming.LoadHeightMap, 1 },
+                { Incoming.AddUserToRoom, 1 }
+            };
         }
     }
 

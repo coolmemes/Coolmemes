@@ -47,14 +47,15 @@ namespace Butterfly.HabboHotel.Rooms.Games
                     if (ball.GetBaseItem().Name == "futebol_rebug")
                     {
                         rebugMove.MoveBallProcess(ball);
-                    }else if(ball.GetBaseItem().Name == "futebol_push")
+                    }
+                    else if (ball.GetBaseItem().Name == "futebol_push")
                     {
                         pushMove.MoveBallProcess(ball);
-                    }else if (ball.GetBaseItem().Name == "futebol_cloud")
+                    }
+                    else if (ball.GetBaseItem().Name == "futebol_cloud")
                     {
                         cloudMove.MoveBallProcess(ball);
                     }
-
                 }
             }
         }
@@ -66,7 +67,7 @@ namespace Butterfly.HabboHotel.Rooms.Games
                 ball = item;
                 OtanixEnvironment.GetGame().GetRoomManager().QueueBallAdd(room);
 
-                if(ball.GetBaseItem().Name == "futebol_rebug")
+                if (ball.GetBaseItem().Name == "futebol_rebug")
                 {
                     rebugMove = new Rebug(room, this);
                 }
@@ -160,7 +161,7 @@ namespace Butterfly.HabboHotel.Rooms.Games
             if (ball == null)
                 return;
 
-            if(ball.GetBaseItem().Name == "futebol_rebug")
+            if (ball.GetBaseItem().Name == "futebol_rebug")
             {
                 rebugMove.onUserwalk(User, ball);
             }

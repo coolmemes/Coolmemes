@@ -113,7 +113,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
 
         private bool HandleItems()
         {
-            //InteractorGenericSwitch.DoAnimation(item);
+            InteractorGenericSwitch.DoAnimation(item);
             var itemHandled = false;
             Queue<RoomItem> toRemove = new Queue<RoomItem>();
             foreach (var _item in items)

@@ -68,7 +68,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
         {
             if (team == staticTeam && maxCountPerGame > currentGameCount)
             {
-                //InteractorGenericSwitch.DoAnimation(itemID);
+                InteractorGenericSwitch.DoAnimation(itemID);
                 currentGameCount++;
                 gameManager.AddPointsToTeam(team, scoreToGive, user);
             }

@@ -13,7 +13,7 @@ namespace Butterfly.HabboHotel.Rooms.Games
     class GameManager
     {
         private Room Room;
-        private int[] teamPoints;
+        public int[] teamPoints;
         private List<RoomItem>[] teamItems;
         private RoomItem Chronometer;
 
@@ -213,8 +213,7 @@ namespace Butterfly.HabboHotel.Rooms.Games
                 }
             }
 
-            if (OnScoreChanged != null)
-                OnScoreChanged(null, new TeamScoreChangedArgs(teamPoints[TeamId], Team, User));
+            OnScoreChanged?.Invoke(null, new TeamScoreChangedArgs(teamPoints[TeamId], Team, User));
         }
 
         /// <summary>
@@ -234,6 +233,40 @@ namespace Butterfly.HabboHotel.Rooms.Games
 
                         teamPoints[i] = 0;
                     }
+                }
+            }
+        }
+
+        public void ResetTeamScore(RoomItem Item)
+        {
+            {
+                if (IsScoreboard(Item.GetBaseItem().InteractionType))
+                {
+                    Item.ExtraData = "0";
+                    Item.UpdateState();
+
+                    int Team = 0;
+
+                    switch (Item.GetBaseItem().InteractionType)
+                    {
+                        case InteractionType.footballcounterred:
+                            Team = 1;
+                            break;
+
+                        case InteractionType.footballcountergreen:
+                            Team = 2;
+                            break;
+
+                        case InteractionType.footballcounterblue:
+                            Team = 3;
+                            break;
+
+                        case InteractionType.footballcounteryellow:
+                            Team = 4;
+                            break;
+                    }
+
+                    teamPoints[Team] = 0;
                 }
             }
         }

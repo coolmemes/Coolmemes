@@ -150,7 +150,6 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                         break;
                     }
             }
-
             mainItem.GetRoom().GetRoomItemHandler().SetFloorItem(null, mainItem, nPoint.X, nPoint.Y, mainItem.Rot, false, false, true, true);
         }
 

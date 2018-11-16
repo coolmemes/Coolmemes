@@ -17,8 +17,8 @@ namespace Butterfly.Messages
         internal GameClientMessageHandler(GameClient Session)
         {
             this.Session = Session;
-            this.packetsuserlogs = new PacketsUserLogs();
-            this.Response = new ServerMessage();
+            packetsuserlogs = new PacketsUserLogs();
+            Response = new ServerMessage();
         }
 
         internal ServerMessage GetResponse()

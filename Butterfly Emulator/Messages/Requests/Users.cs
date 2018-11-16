@@ -8,7 +8,6 @@ using HabboEvents;
 using Butterfly.Core;
 using Butterfly.HabboHotel.Users.Relationships;
 using ButterStorm.HabboHotel.Users.Inventory;
-using Butterfly.HabboHotel.Achievements.Composer;
 using Butterfly.HabboHotel.Users;
 using System.Collections.Generic;
 using Butterfly.HabboHotel.Users.HabboQuiz;
@@ -20,6 +19,7 @@ using Butterfly.HabboHotel.Filter;
 using Butterfly.HabboHotel.Rooms;
 using Butterfly.HabboHotel.Users.Nux;
 using Butterfly.HabboHotel.Navigators.Bonus;
+using Butterfly.HabboHotel.Catalogs;
 
 namespace Butterfly.Messages
 {
@@ -134,8 +134,8 @@ namespace Butterfly.Messages
             var secretValue = "";
             if (logText == OtanixEnvironment.GetGame().GetLandingTopUsersManager().EventMessage) // landing.view.dynamic.slot.6.conf
             {
-                Session.SendMessage(OtanixEnvironment.GetGame().GetLandingTopUsersManager().GetMessage);
                 Session.SendMessage(BonusManager.GenerateMessage(Session));
+                //Session.SendMessage(HabboEnvironment.GetGame().GetLandingTopUsersManager().GetMessage);
                 return;
             }
 
@@ -184,6 +184,21 @@ namespace Butterfly.Messages
                     }
                 }
             }
+            Response.Init(Outgoing.UpdateBadges);
+            Response.AppendUInt(Data.Id);
+            Response.AppendInt32(Data.GetBadgeComponent().EquippedCount);
+
+            foreach (Badge Badge in Data.GetBadgeComponent().BadgeList.Values)
+            {
+                if (Badge.Slot <= 0)
+                {
+                    continue;
+                }
+
+                Response.AppendInt32(Badge.Slot);
+                Response.AppendString(Badge.Code + Badge.Level);
+            }
+            SendResponse();
 
             Response.Init(Outgoing.ProfileInformation);
             Response.AppendUInt(Data.Id);
@@ -195,14 +210,19 @@ namespace Butterfly.Messages
             Response.AppendInt32(friendCount); // friends
             Response.AppendBoolean(MyFriend);
             Response.AppendBoolean(FriendPetition);
-            Response.AppendBoolean((OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(Data.Id) != null));
+            Response.AppendBoolean(OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(Data.Id) != null && !Data.HiddenOnline ? true : false); // online?
             Response.AppendInt32(Data.MyGroups.Count); // group count
 
             foreach (uint groupId in Data.MyGroups)
             {
                 GroupItem group = OtanixEnvironment.GetGame().GetGroup().LoadGroup(groupId);
                 if (group == null)
-                    return;
+                {
+                    Data.MyGroups.Remove(groupId);
+
+                    if (Data.FavoriteGroup == groupId)
+                        Data.FavoriteGroup = 0;
+                }
 
                 Response.AppendUInt(group.Id);
                 Response.AppendString(group.Name);
@@ -213,7 +233,7 @@ namespace Butterfly.Messages
                 Response.AppendUInt(group.OwnerId);
                 Response.AppendBoolean(false); // ??
             }
-            Response.AppendInt32((Int32)(OtanixEnvironment.GetUnixTimestamp() - Data.LastOnline));
+            Response.AppendInt32(Data.HiddenOnline ? -1 : (Int32)(OtanixEnvironment.GetUnixTimestamp() - Data.LastOnline));
             Response.AppendBoolean(true); // show it
             SendResponse();
         }
@@ -223,7 +243,7 @@ namespace Butterfly.Messages
             if (Session == null || Session.GetHabbo() == null)
                 return;
 
-            if(OtanixEnvironment.GetGame().GetPrisaoManager().estaPreso(Session.GetHabbo().Id))
+            if (OtanixEnvironment.GetGame().GetPrisaoManager().estaPreso(Session.GetHabbo().Id))
             {
                 Session.SendNotif(LanguageLocale.GetValue("prisao.roupa"));
                 return;
@@ -231,75 +251,77 @@ namespace Butterfly.Messages
 
             if (!Session.GetHabbo().passouPin)
             {
-                Session.SendNotif("Você precisa digitar o pin staff");
+                Session.SendWindowManagerAlert("Devi inserire il codice di sicurezza per cambiare look.");
                 return;
             }
 
-            if ((OtanixEnvironment.GetUnixTimestamp() - Session.GetHabbo().LastChangeLookTime) < 5)
+            //if ((HabboEnvironment.GetUnixTimestamp() - Session.GetHabbo().LastChangeLookTime) < 5)
+            //{
+            //    Session.SendNotif(LanguageLocale.GetValue("change.look.alert.time"));
+            //    return;
+            //}
+            else
             {
-                Session.SendNotif(LanguageLocale.GetValue("change.look.alert.time"));
-                return;
-            }
+                var Gender = Request.PopFixedString().ToUpper();
+                var Look = OtanixEnvironment.FilterInjectionChars(Request.PopFixedString());
 
-            var Gender = Request.PopFixedString().ToUpper();
-            var Look = OtanixEnvironment.FilterInjectionChars(Request.PopFixedString());
-
-            if (!AntiMutant.ValidateLook(Look, Gender, Session.GetHabbo()))
-            {
-                return;
-            }
-
-            Session.GetHabbo().Look = OtanixEnvironment.FilterFigure(Look);
-            Session.GetHabbo().Gender = Gender.ToLower();
-            Session.GetHabbo().LastChangeLookTime = OtanixEnvironment.GetUnixTimestamp();
-
-            if (Session.GetHabbo().GetMessenger() != null)
-            {
-                OtanixEnvironment.GetGame().GetClientManager().QueueConsoleUpdate(Session);
-            }
-
-            OtanixEnvironment.GetGame().GetQuestManager().ProgressUserQuest(Session, QuestType.PROFILE_CHANGE_LOOK);
-            OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_AvatarLooks", 1);
-
-            if (Session.GetHabbo().CitizenshipLevel == 1)
-                OtanixEnvironment.GetGame().GetTalentManager().UpdateTalentTravel(Session, "citizenship");
-
-            Session.GetMessageHandler().GetResponse().Init(Outgoing.ChangeMiniLook);
-            Session.GetMessageHandler().GetResponse().AppendString(Session.GetHabbo().Look);
-            Session.GetMessageHandler().GetResponse().AppendString(Session.GetHabbo().Gender.ToUpper());
-            Session.GetMessageHandler().SendResponse();
-
-            Session.GetMessageHandler().GetResponse().Init(Outgoing.UpdateUserInformation);
-            Session.GetMessageHandler().GetResponse().AppendInt32(-1);
-            Session.GetMessageHandler().GetResponse().AppendString(Session.GetHabbo().Look);
-            Session.GetMessageHandler().GetResponse().AppendString(Session.GetHabbo().Gender.ToLower());
-            Session.GetMessageHandler().GetResponse().AppendString(Session.GetHabbo().Motto);
-            Session.GetMessageHandler().GetResponse().AppendUInt(Session.GetHabbo().AchievementPoints);
-            Session.GetMessageHandler().SendResponse();
-
-            if (Session.GetHabbo().InRoom)
-            {
-                var Room = Session.GetHabbo().CurrentRoom;
-
-                if (Room == null)
+                if (!AntiMutant.ValidateLook(Look, Gender, Session.GetHabbo()))
                 {
                     return;
                 }
 
-                var User = Room.GetRoomUserManager().GetRoomUserByHabbo(Session.GetHabbo().Id);
+                Session.GetHabbo().Look = OtanixEnvironment.FilterFigure(Look);
+                Session.GetHabbo().Gender = Gender.ToLower();
+                Session.GetHabbo().LastChangeLookTime = OtanixEnvironment.GetUnixTimestamp();
 
-                if (User == null)
+                if (Session.GetHabbo().GetMessenger() != null)
                 {
-                    return;
+                    OtanixEnvironment.GetGame().GetClientManager().QueueConsoleUpdate(Session);
                 }
 
-                var RoomUpdate = new ServerMessage(Outgoing.UpdateUserInformation);
-                RoomUpdate.AppendInt32(User.VirtualId);
-                RoomUpdate.AppendString(Session.GetHabbo().Look);
-                RoomUpdate.AppendString(Session.GetHabbo().Gender.ToLower());
-                RoomUpdate.AppendString(Session.GetHabbo().Motto);
-                RoomUpdate.AppendUInt(Session.GetHabbo().AchievementPoints);
-                Room.SendMessage(RoomUpdate);
+                OtanixEnvironment.GetGame().GetQuestManager().ProgressUserQuest(Session, QuestType.PROFILE_CHANGE_LOOK);
+                OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_AvatarLooks", 1);
+
+                if (Session.GetHabbo().CitizenshipLevel == 1)
+                    OtanixEnvironment.GetGame().GetTalentManager().UpdateTalentTravel(Session, "citizenship");
+
+                Session.GetMessageHandler().GetResponse().Init(Outgoing.ChangeMiniLook);
+                Session.GetMessageHandler().GetResponse().AppendString(Session.GetHabbo().Look);
+                Session.GetMessageHandler().GetResponse().AppendString(Session.GetHabbo().Gender.ToUpper());
+                Session.GetMessageHandler().SendResponse();
+
+                Session.GetMessageHandler().GetResponse().Init(Outgoing.UpdateUserInformation);
+                Session.GetMessageHandler().GetResponse().AppendInt32(-1);
+                Session.GetMessageHandler().GetResponse().AppendString(Session.GetHabbo().Look);
+                Session.GetMessageHandler().GetResponse().AppendString(Session.GetHabbo().Gender.ToLower());
+                Session.GetMessageHandler().GetResponse().AppendString(Session.GetHabbo().Motto);
+                Session.GetMessageHandler().GetResponse().AppendUInt(Session.GetHabbo().AchievementPoints);
+                Session.GetMessageHandler().SendResponse();
+
+                if (Session.GetHabbo().InRoom)
+                {
+                    var Room = Session.GetHabbo().CurrentRoom;
+
+                    if (Room == null)
+                    {
+                        return;
+                    }
+
+                    var User = Room.GetRoomUserManager().GetRoomUserByHabbo(Session.GetHabbo().Id);
+
+                    if (User == null)
+                    {
+                        return;
+                    }
+
+                    var RoomUpdate = new ServerMessage(Outgoing.UpdateUserInformation);
+                    RoomUpdate.AppendInt32(User.VirtualId);
+                    RoomUpdate.AppendString(Session.GetHabbo().Look);
+                    RoomUpdate.AppendString(Session.GetHabbo().Gender.ToLower());
+                    RoomUpdate.AppendString(Session.GetHabbo().Motto);
+                    RoomUpdate.AppendUInt(Session.GetHabbo().AchievementPoints);
+                    Room.SendMessage(RoomUpdate);
+                }
             }
         }
 
@@ -403,7 +425,7 @@ namespace Butterfly.Messages
             }
             else
             {
-                var wardrobe = new Wardrobe(SlotId, Look, Gender) {needInsert = true};
+                var wardrobe = new Wardrobe(SlotId, Look, Gender) { needInsert = true };
 
                 Session.GetHabbo().wardrobes.Add(SlotId, wardrobe);
             }
@@ -490,7 +512,7 @@ namespace Butterfly.Messages
             if (HabboName == Session.GetHabbo().Username)
             {
                 Session.GetHabbo().NameChanges += 1;
-                //using (IQueryAdapter dbClient = ButterflyEnvironment.GetDatabaseManager().getQueryreactor())
+                //using (IQueryAdapter dbClient = HabboEnvironment.GetDatabaseManager().getQueryreactor())
                 //{
                 //    dbClient.runFastQuery("UPDATE users SET namechanges = " + Session.GetHabbo().NameChanges + " WHERE id = " + Session.GetHabbo().Id);
                 //}
@@ -509,7 +531,7 @@ namespace Butterfly.Messages
             }
 
             Session.GetHabbo().NameChanges += 1;
-            //using (IQueryAdapter dbClient = ButterflyEnvironment.GetDatabaseManager().getQueryreactor())
+            //using (IQueryAdapter dbClient = HabboEnvironment.GetDatabaseManager().getQueryreactor())
             //{
             //    dbClient.runFastQuery("UPDATE users SET namechanges = " + Session.GetHabbo().NameChanges + " WHERE id = " + Session.GetHabbo().Id);
             //}
@@ -1184,7 +1206,7 @@ namespace Butterfly.Messages
             if (User.GetHabbo().Rank >= Session.GetHabbo().Rank)
                 return;
 
-            /*if((OtanixEnvironment.GetUnixTimestamp() - User.GetHabbo().LastAmbassadorNotif) < 60)
+            /*if((HabboEnvironment.GetUnixTimestamp() - User.GetHabbo().LastAmbassadorNotif) < 60)
             {
                 Session.SendNotif("Este usuario ya ha sido avisado por un embajador en el último minuto.");
                 return;
@@ -1205,6 +1227,7 @@ namespace Butterfly.Messages
             serverAlert.AppendString("event:");
             User.SendMessage(serverAlert);
         }
+
  
         internal void ShowNewUserInformation()
         {
@@ -1242,14 +1265,13 @@ namespace Butterfly.Messages
 
             if (Session.GetHabbo().tentativasLogin++ > 3)
             {
-                Session.SendNotif("Você errou a senha muitas vezes");
                 Session.Disconnect();
             }           
 
             if (senhaDigitada.ToLower() != EmuSettings.PIN_CLIENTE.ToLower())
             {
 
-                Session.SendWindowManagerAlert("Você digitou a senha incorretamente.");
+                Session.SendWindowManagerAlert("Codice di sicurezza errato.");
 
                 ServerMessage passouSucesso = new ServerMessage(Outgoing.MobilePhoneNumero);
                 passouSucesso.AppendInt32(1);
@@ -1274,11 +1296,73 @@ namespace Butterfly.Messages
                     Session.SendMessage(OtanixEnvironment.GetGame().GetModerationTool().SerializeTool(Session.GetHabbo()));
                 }
 
-                Session.SendWindowManagerAlert("Digitou a senha corretamente!");
+                //Session.SendWindowManagerAlert("Codice di sicurezza digitato correttamente.");
                 Session.GetHabbo().passouPin = true;
              }
+        }
 
-            return;
+        internal void SMSVerificar2()
+        {
+            Session.SendWindowManagerAlert("Se hai cliccato qui significa che sei stato avvertito. Il tuo IP è stato registrato ed insieme tutte le tue credenziali. Se non vorrai subire delle conseguenze abbandona questa pagina immediatamente.");
+        }
+
+        internal void RequestCameraConfiguration()
+        {
+            ServerMessage Message = new ServerMessage(Outgoing.CameraPrice);
+            Message.AppendInt32(2);
+            Message.AppendInt32(0);
+            Message.AppendInt32(10);
+            Session.SendMessage(Message);
+        }
+
+        internal void ClubCenterData()
+        {
+            ServerMessage Message = new ServerMessage(Outgoing.ClubCenterData);
+
+            if (Session.GetHabbo().GetClubManager().HasSubscription("club_habbo"))
+            {
+                DateTime joinDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TimestampActivated);
+                Message.AppendInt32(Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").StreakDurationInDays);
+                
+                Message.AppendString(joinDate.ToString("dd-MM-yyyy"));
+
+                Message.AppendInt32(1069128089);
+                Message.AppendInt32(-1717986918);
+
+                Message.AppendInt32(0);
+                Message.AppendInt32(0);
+
+                Message.AppendInt32((int)Session.GetHabbo().SpentCredits);
+                Message.AppendInt32(Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").HabboClubBonusStreak);
+                Message.AppendInt32(Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TotalSpent(Session.GetHabbo().SpentCredits));
+                Message.AppendInt32(Session.GetHabbo().HCPayday);
+            }
+
+            else
+            {
+                Message.AppendInt32(0);
+
+                if (Session.GetHabbo().GetClubManager().GetSubscription("club_habbo") != null)
+                {
+                    DateTime joinDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TimestampActivated);
+                    Message.AppendString(joinDate.ToString("dd-MM-yyyy"));
+                }
+
+                else
+                    Message.AppendString("");
+
+                Message.AppendInt32(1069128089);
+                Message.AppendInt32(-1717986918);
+
+                Message.AppendInt32(0);
+                Message.AppendInt32(0);
+
+                Message.AppendInt32(0);
+                Message.AppendInt32(0);
+                Message.AppendInt32(0);
+                Message.AppendInt32(Session.GetHabbo().HCPayday);
+            }
+            Session.SendMessage(Message);
         }
     }
 }

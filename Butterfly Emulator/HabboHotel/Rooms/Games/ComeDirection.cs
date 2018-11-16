@@ -209,5 +209,10 @@ namespace ButterStorm.HabboHotel.Rooms
             else
                 return ComeDirection.NULL;
         }
+
+        internal static ComeDirection GetUserComeDirectionForHanditem(RoomUser User, int SetX, int SetY)
+        {
+            return ComeDirection.NULL;
+        }
     }
 }

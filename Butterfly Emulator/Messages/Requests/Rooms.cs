@@ -36,6 +36,9 @@ using Butterfly.HabboHotel.Items.Craftable;
 using Butterfly.HabboHotel.Premiums;
 using Butterfly.HabboHotel.Users.Nux;
 using Butterfly.HabboHotel.Support;
+using System.Threading;
+using ButterStorm.HabboHotel.Rooms;
+using Butterfly.Util;
 
 namespace Butterfly.Messages
 {
@@ -59,9 +62,9 @@ namespace Butterfly.Messages
                     return;
                 }
 
-                message.appendResponse(CurrentLoadingRoom.GetGameMap().Model.SerializeHeightmap(CurrentLoadingRoom.GetGameMap()));
-                message.appendResponse(CurrentLoadingRoom.GetGameMap().GetStaticHeightmap());
-                message.sendResponse();
+                message.AppendResponse(CurrentLoadingRoom.GetGameMap().Model.SerializeHeightmap(CurrentLoadingRoom.GetGameMap()));
+                message.AppendResponse(CurrentLoadingRoom.GetGameMap().GetStaticHeightmap());
+                message.SendResponse();
 
                 CurrentLoadingRoom.HeightMapLoaded = true;
             }
@@ -106,7 +109,7 @@ namespace Butterfly.Messages
                     Response.AppendInt32(floorItems.Length);
                     foreach (var Item in floorItems)
                         Item.Serialize(Response);
-                    response.appendResponse(GetResponse());
+                    response.AppendResponse(GetResponse());
 
                     Response.Init(Outgoing.ItemsMessageParser);
                     Response.AppendInt32(CurrentLoadingRoom.roomUserWallItems.Count); // count of owners
@@ -119,14 +122,14 @@ namespace Butterfly.Messages
                     foreach (var Item in wallItems)
                         Item.Serialize(Response);
 
-                    response.appendResponse(GetResponse());
+                    response.AppendResponse(GetResponse());
 
                     Array.Clear(floorItems, 0, floorItems.Length);
                     Array.Clear(wallItems, 0, wallItems.Length);
                     floorItems = null;
                     wallItems = null;
                     CurrentLoadingRoom.GetRoomUserManager().AddUserToRoom(Session, Session.GetHabbo().SpectatorMode);
-                    response.sendResponse();
+                    response.SendResponse();
                 }
             }
             catch (Exception e)
@@ -177,19 +180,19 @@ namespace Butterfly.Messages
             {
                 User.Serialize(Response);
             }
-            response.appendResponse(GetResponse());
+            response.AppendResponse(GetResponse());
 
             Response.Init(Outgoing.ConfigureWallandFloor);
             GetResponse().AppendBoolean(CurrentLoadingRoom.RoomData.Hidewall);
             GetResponse().AppendInt32(CurrentLoadingRoom.RoomData.WallThickness);
             GetResponse().AppendInt32(CurrentLoadingRoom.RoomData.FloorThickness);
-            response.appendResponse(GetResponse());
+            response.AppendResponse(GetResponse());
 
             // Enable inventory too:
             Response.Init(Outgoing.ValidRoom);
             Response.AppendUInt(CurrentLoadingRoom.RoomId);
             Response.AppendBoolean(CurrentLoadingRoom.CheckRights(Session, true));
-            response.appendResponse(GetResponse());
+            response.AppendResponse(GetResponse());
 
             if (CurrentLoadingRoom.groupsOnRoom != null && CurrentLoadingRoom.groupsOnRoom.Count > 0)
             {
@@ -204,7 +207,7 @@ namespace Butterfly.Messages
                     Response.AppendUInt(Guild);
                     Response.AppendString(group == null ? "" : group.GroupImage);
                 }
-                response.appendResponse(GetResponse());
+                response.AppendResponse(GetResponse());
             }
  
             Response.Init(Outgoing.RoomData);
@@ -223,17 +226,17 @@ namespace Butterfly.Messages
             Response.AppendInt32(CurrentLoadingRoom.RoomData.BubbleScroll); // 0 = Fast scrolling up / 1 = Normal scrolling up / 2 = Slow scrolling up
             Response.AppendInt32(CurrentLoadingRoom.RoomData.ChatDistance); // Distancia chat
             Response.AppendInt32(CurrentLoadingRoom.RoomData.AntiFloodSettings);
-            response.appendResponse(GetResponse());
+            response.AppendResponse(GetResponse());
 
             var Updates = CurrentLoadingRoom.GetRoomUserManager().SerializeStatusUpdates(true);
 
             if (Updates != null)
-                response.appendResponse(Updates);
+                response.AppendResponse(Updates);
 
             if (Session.GetHabbo().CurrentQuestId > 0)
             {
                 var Quest = OtanixEnvironment.GetGame().GetQuestManager().GetQuest(Session.GetHabbo().CurrentQuestId);
-                response.appendResponse(QuestStartedComposer.Compose(Session, Quest));
+                response.AppendResponse(QuestStartedComposer.Compose(Session, Quest));
             }
 
             if (!Session.GetHabbo().HasFuse("fuse_hide_staff"))
@@ -262,7 +265,7 @@ namespace Butterfly.Messages
                     Response.Init(Outgoing.Dance);
                     Response.AppendInt32(User.VirtualId);
                     Response.AppendInt32(User.DanceId);
-                    response.appendResponse(GetResponse());
+                    response.AppendResponse(GetResponse());
                 }
 
                 if (User.IsAsleep)
@@ -270,7 +273,7 @@ namespace Butterfly.Messages
                     Response.Init(Outgoing.IdleStatus);
                     Response.AppendInt32(User.VirtualId);
                     Response.AppendBoolean(true);
-                    response.appendResponse(GetResponse());
+                    response.AppendResponse(GetResponse());
                 }
 
                 if (User.CarryItemID > 0 && User.CarryTimer > 0)
@@ -278,7 +281,7 @@ namespace Butterfly.Messages
                     Response.Init(Outgoing.ApplyCarryItem);
                     Response.AppendInt32(User.VirtualId);
                     Response.AppendInt32(User.CarryTimer);
-                    response.appendResponse(GetResponse());
+                    response.AppendResponse(GetResponse());
                 }
 
                 if (!User.IsBot)
@@ -291,7 +294,7 @@ namespace Butterfly.Messages
                             Response.AppendInt32(User.VirtualId);
                             Response.AppendInt32(User.CurrentEffect);
                             Response.AppendInt32(0);
-                            response.appendResponse(GetResponse());
+                            response.AppendResponse(GetResponse());
                         }
                     }
                     catch (Exception e) { Logging.HandleException(e, "Rooms.SendRoomData3"); }
@@ -301,14 +304,14 @@ namespace Butterfly.Messages
             if (OtanixEnvironment.GetGame().GetRoomManager().GetEventManager().ContainsEventRoomId(CurrentLoadingRoom.RoomData))
             {
                 if(CurrentLoadingRoom.RoomData.Event != null)
-                    response.appendResponse(CurrentLoadingRoom.RoomData.Event.Serialize());
+                    response.AppendResponse(CurrentLoadingRoom.RoomData.Event.Serialize());
             }
 
             TargetedOffer to = OtanixEnvironment.GetGame().GetTargetedOfferManager().GetRoomIdTargetedOffer(CurrentLoadingRoom.Id);
             if (to != null)
             {
                 if (!Session.GetHabbo().TargetedOffers.ContainsKey(to.Id) || Session.GetHabbo().TargetedOffers[to.Id] < to.PurchaseLimit)
-                    response.appendResponse(OtanixEnvironment.GetGame().GetTargetedOfferManager().SerializeTargetedOffer(to));
+                    response.AppendResponse(OtanixEnvironment.GetGame().GetTargetedOfferManager().SerializeTargetedOffer(to));
             }
 
             if (CurrentLoadingRoom.GotRoomPoll())
@@ -324,12 +327,12 @@ namespace Butterfly.Messages
                         Response.AppendString("CLIENT_NPS");
                         Response.AppendString("Customer Satisfaction Poll");
                         Response.AppendString(handler.GetDescription());
-                        response.appendResponse(GetResponse());
+                        response.AppendResponse(GetResponse());
                     }
                 }
             }
 
-            response.sendResponse();
+            response.SendResponse();
             Session.GetHabbo().SpectatorMode = false;
             Session.GetHabbo().LastMovFGate = false;
 
@@ -357,7 +360,7 @@ namespace Butterfly.Messages
 
             if (Session != null && Session.GetHabbo() != null && Session.GetHabbo().Rank > 5 && !Session.GetHabbo()._passouPin)
             {
-                Session.SendNotif("Você precisa estar logado");
+                Session.SendWindowManagerAlert("Devi inserire il codice di sicurezza per entrare in una stanza.");
                 return;
             }
 
@@ -378,7 +381,7 @@ namespace Butterfly.Messages
 
             if (Session != null && Session.GetHabbo() != null && Session.GetHabbo().Rank > 5 && !Session.GetHabbo()._passouPin)
             {
-                Session.SendNotif("Você precisa estar logado");
+                Session.SendWindowManagerAlert("Devi inserire il codice di sicurezza per entrare in una stanza.");
                 return;
             }
 
@@ -423,7 +426,7 @@ namespace Butterfly.Messages
 
             if (Session != null && Session.GetHabbo() != null && Session.GetHabbo().Rank > 5 && !Session.GetHabbo()._passouPin)
             {
-                Session.SendNotif("Você precisa estar logado");
+                Session.SendWindowManagerAlert("Devi inserire il codice di sicurezza per entrare in una stanza.");
                 return;
             }
 
@@ -538,12 +541,12 @@ namespace Butterfly.Messages
 
                     Response.Init(Outgoing.RoomErrorToEnter);
                     Response.AppendInt32(4);
-                    response.appendResponse(GetResponse());
+                    response.AppendResponse(GetResponse());
 
                     Response.Init(Outgoing.OutOfRoom);
-                    response.appendResponse(GetResponse());
+                    response.AppendResponse(GetResponse());
 
-                    response.sendResponse();
+                    response.SendResponse();
                     return;
                 }
             }
@@ -579,12 +582,12 @@ namespace Butterfly.Messages
                         // This room is full!!!!
                         Response.Init(Outgoing.RoomErrorToEnter);
                         Response.AppendInt32(1);
-                        response.appendResponse(GetResponse());
+                        response.AppendResponse(GetResponse());
 
                         Response.Init(Outgoing.OutOfRoom);
-                        response.appendResponse(GetResponse());
+                        response.AppendResponse(GetResponse());
 
-                        response.sendResponse();
+                        response.SendResponse();
                     }
 
                     return;
@@ -600,7 +603,7 @@ namespace Butterfly.Messages
                         // Aww nobody in da room!
 
                         Response.Init(Outgoing.DoorBellNoPerson);
-                        response.appendResponse(GetResponse());
+                        response.AppendResponse(GetResponse());
                     }
                     else
                     {
@@ -609,14 +612,14 @@ namespace Butterfly.Messages
 
                         Response.Init(Outgoing.Doorbell);
                         Response.AppendString("");
-                        response.appendResponse(GetResponse());
+                        response.AppendResponse(GetResponse());
 
                         ServerMessage RingMessage = new ServerMessage(Outgoing.Doorbell);
                         RingMessage.AppendString(Session.GetHabbo().Username);
                         Room.SendMessageToUsersWithRights(RingMessage);
                     }
 
-                    response.sendResponse();
+                    response.SendResponse();
 
                     return;
                 }
@@ -628,12 +631,12 @@ namespace Butterfly.Messages
 
                         Response.Init(Outgoing.RoomError);
                         Response.AppendInt32(-100002); // can be 4009 if you want something like 'need.to.be.vip'
-                        response.appendResponse(GetResponse());
+                        response.AppendResponse(GetResponse());
 
                         Response.Init(Outgoing.OutOfRoom);
-                        response.appendResponse(GetResponse());
+                        response.AppendResponse(GetResponse());
 
-                        response.sendResponse();
+                        response.SendResponse();
                         return;
                     }
                 }
@@ -642,19 +645,19 @@ namespace Butterfly.Messages
             saltamosPasos:
 
             Response.Init(Outgoing.PrepareRoomForUsers);
-            response.appendResponse(GetResponse());
+            response.AppendResponse(GetResponse());
 
             Session.GetHabbo().comingRoom = 0;
             Session.GetHabbo().goToQueuedRoom = 0;
             Session.GetHabbo().LoadingChecksPassed = true;
 
-            response.addBytes(LoadRoomForUser().getPacket);
-            response.sendResponse();
+            response.AddBytes(LoadRoomForUser().getPacket);
+            response.SendResponse();
         }
 
         internal void ReqLoadRoomForUser()
         {
-            LoadRoomForUser().sendResponse();
+            LoadRoomForUser().SendResponse();
         }
 
         internal QueuedServerMessage LoadRoomForUser()
@@ -669,7 +672,7 @@ namespace Butterfly.Messages
             Response.Init(Outgoing.InitialRoomInformation);
             Response.AppendString(Room.RoomData.ModelName);
             Response.AppendUInt(Room.RoomId);
-            response.appendResponse(GetResponse());
+            response.AppendResponse(GetResponse());
 
             
                 if (Room.RoomData.temEmblema != "0")
@@ -684,7 +687,7 @@ namespace Butterfly.Messages
             if (Session.GetHabbo().SpectatorMode)
             {
                 Response.Init(Outgoing.SpectatorMode);
-                response.appendResponse(GetResponse());
+                response.AppendResponse(GetResponse());
             }
 
             if (Room.RoomData.OwnerId == Session.GetHabbo().Id && Session.GetHabbo().frankJaApareceu == false)
@@ -717,7 +720,7 @@ namespace Butterfly.Messages
                     Response.Init(Outgoing.RoomDecoration);
                     Response.AppendString("wallpaper");
                     Response.AppendString(Room.RoomData.Wallpaper);
-                    response.appendResponse(GetResponse());
+                    response.AppendResponse(GetResponse());
                 }
 
                 if (Room.RoomData.Floor != "0.0")
@@ -725,30 +728,30 @@ namespace Butterfly.Messages
                     Response.Init(Outgoing.RoomDecoration);
                     Response.AppendString("floor");
                     Response.AppendString(Room.RoomData.Floor);
-                    response.appendResponse(GetResponse());
+                    response.AppendResponse(GetResponse());
                 }
 
                 Response.Init(Outgoing.RoomDecoration);
                 Response.AppendString("landscape");
                 Response.AppendString(Room.RoomData.Landscape);
-                response.appendResponse(GetResponse());
+                response.AppendResponse(GetResponse());
 
                 int roomRank = Room.GetRightsLevel(Session);
 
                 Response.Init(Outgoing.RoomRightsLevel);
                 Response.AppendInt32(roomRank);
-                response.appendResponse(GetResponse());
+                response.AppendResponse(GetResponse());
 
                 if (roomRank == 4) // owner
                 {
                     Response.Init(Outgoing.HasOwnerRights);
-                    response.appendResponse(GetResponse());
+                    response.AppendResponse(GetResponse());
                 }
 
                 Response.Init(Outgoing.ScoreMeter);
                 Response.AppendInt32(Room.RoomData.Score);
                 Response.AppendBoolean(!(Session.GetHabbo().RatedRooms.Contains(Room.RoomId) || Room.CheckRights(Session, true)));
-                response.appendResponse(GetResponse());
+                response.AppendResponse(GetResponse());
             }
 
             if (Session.GetHabbo().FavoriteGroup > 0)
@@ -789,6 +792,15 @@ namespace Butterfly.Messages
 
         internal void Talk()
         {
+            string Message = Request.PopFixedString();
+            int Color = Request.PopWiredInt32();
+            int TimesSpoken = Request.PopWiredInt32();
+
+            using (var dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
+            {
+                dbClient.runFastQuery("UPDATE users SET speech_bubble = " + Color + " WHERE id = " + Session.GetHabbo().Id);
+            }
+
             Room Room = Session.GetHabbo().CurrentRoom;
             if (Room == null || Room.GetRoomUserManager() == null)
                 return;
@@ -803,7 +815,7 @@ namespace Butterfly.Messages
                 return;
             }
 
-            User.Chat(Session, OtanixEnvironment.FilterInjectionChars(Request.PopFixedString()), Request.PopWiredInt32(), false);
+            User.Chat(Session, OtanixEnvironment.FilterInjectionChars(Message), Color, false);
         }
 
         internal void Shout()
@@ -811,6 +823,15 @@ namespace Butterfly.Messages
             var Room = Session.GetHabbo().CurrentRoom;
             if (Room == null)
                 return;
+
+            string Message = Request.PopFixedString();
+            int Color = Request.PopWiredInt32();
+            int TimesSpoken = Request.PopWiredInt32();
+
+            using (var dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
+            {
+                dbClient.runFastQuery("UPDATE users SET speech_bubble = " + Color + " WHERE id = " + Session.GetHabbo().Id);
+            }
 
             var User = Room.GetRoomUserManager().GetRoomUserByHabbo(Session.GetHabbo().Id);
             if (User == null)
@@ -822,7 +843,7 @@ namespace Butterfly.Messages
                 return;
             }
 
-            User.Chat(Session, OtanixEnvironment.FilterInjectionChars(Request.PopFixedString()), Request.PopWiredInt32(), true);
+            User.Chat(Session, OtanixEnvironment.FilterInjectionChars(Message), Color, true);
         }
 
         internal void Whisper()
@@ -918,6 +939,11 @@ namespace Butterfly.Messages
             #region Show Message Progress
             var Color = Request.PopWiredInt32();
 
+            using (var dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
+            {
+                dbClient.runFastQuery("UPDATE users SET speech_bubble = " + Color + " WHERE id = " + Session.GetHabbo().Id);
+            }
+
             var User2 = Room.GetRoomUserManager().GetRoomUserByHabbo(ToUser);
             if (User2 == null || User2.IsBot || User2.GetClient() == null || User2.GetClient().GetHabbo() == null)
                 return;
@@ -930,12 +956,15 @@ namespace Butterfly.Messages
             if (Session.GetHabbo().Rank < 2 && EmuSettings.CHAT_TYPES_USERS.Contains(Color))
                 Color = 0;
 
-            // if (Session.GetHabbo().GetBadgeComponent().HasBadge(OtanixEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_BADGE) && Session.GetHabbo().GetBadgeComponent().GetBadge(OtanixEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_BADGE).Slot > 0 && OtanixEnvironment.GetGame().GetRoomRankConfig().ROOMS_TO_MODIFY.Contains((int)Room.RoomId))
-            //     Color = OtanixEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_COLOR;
+            if (Session.GetHabbo().Rank >= 5)
+                Color = 23;
+
+            // if (Session.GetHabbo().GetBadgeComponent().HasBadge(HabboEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_BADGE) && Session.GetHabbo().GetBadgeComponent().GetBadge(HabboEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_BADGE).Slot > 0 && HabboEnvironment.GetGame().GetRoomRankConfig().ROOMS_TO_MODIFY.Contains((int)Room.RoomId))
+            //     Color = HabboEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_COLOR;
 
             var ChatMessage = new ServerMessage(Outgoing.Whisp);
             ChatMessage.AppendInt32(User.VirtualId);
-            ChatMessage.AppendString(Message.Replace("<", "¤"));
+            ChatMessage.AppendString(Message);
             ChatMessage.AppendInt32(RoomUser.GetSpeechEmotion(Message));
             ChatMessage.AppendInt32(Color);
             ChatMessage.AppendInt32(0);
@@ -949,7 +978,7 @@ namespace Butterfly.Messages
             {
                 ChatMessage = new ServerMessage(Outgoing.Whisp);
                 ChatMessage.AppendInt32(User.VirtualId);
-                ChatMessage.AppendString(LanguageLocale.GetValue("moderation.whisper") + ToUser + ": " + Message.Replace("<", "¤"));
+                ChatMessage.AppendString(LanguageLocale.GetValue("moderation.whisper") + ToUser + ": " + Message);
                 ChatMessage.AppendInt32(RoomUser.GetSpeechEmotion(Message));
                 ChatMessage.AppendInt32(Color);
                 ChatMessage.AppendInt32(0);
@@ -1001,13 +1030,26 @@ namespace Butterfly.Messages
             // Permite hacer el Seat Rápido
             if (MoveX == User.X && MoveY == User.Y)
             {
+
                 if (!User.IsWalking)
                     return;
                 else
                     User.SeatCount++;
 
-                if (User.SeatCount == 5)
+                Random random = new Random();
+
+                if (User.SeatCount == random.Next(2, 4))
                     return;
+            }
+
+            if (Room.GetGameMap().GameMap[User.X, User.Y] == 2)
+            {
+                User.RemoveStatus("dance");
+
+                var Message = new ServerMessage(Outgoing.Dance);
+                Message.AppendInt32(User.VirtualId);
+                Message.AppendInt32(0);
+                Room.SendMessage(Message);
             }
 
             if (User.walkingToPet != null)
@@ -1016,7 +1058,268 @@ namespace Butterfly.Messages
                 User.walkingToPet = null;
             }
 
+            if (MoveX != User.GiveHanditemCoordinateX && MoveY != User.GiveHanditemCoordinateY && User.IsGivingHanditem)
+                User.DifferentGiveHanditemCoordinate = true;
+
+            if (Room.GetGameMap().TileContainsItems(new Point(MoveX, MoveY)))
+            {
+                foreach (var item in Room.GetGameMap().GetCoordinatedItems(new Point(MoveX, MoveY)))
+                {
+                    if (item.GetBaseItem().InteractionType == InteractionType.bed)
+                    {
+                        Console.WriteLine("Item rotation: {0}", item.Rot);
+                        Console.WriteLine("User X: {0}", User.X);
+                        Console.WriteLine("User Y: {0}", User.Y);
+                        Console.WriteLine("Item X: {0}", item.GetX);
+                        Console.WriteLine("Item Y: {0}", item.GetY);
+                        Console.WriteLine("Move X: {0}", MoveX);
+                        Console.WriteLine("Move Y: {0}", MoveY);
+
+                        if (item.GetBaseItem().Width == 1)
+                        {
+                            MoveX = item.GetX;
+                            MoveY = item.GetY;
+                        }
+
+                        else
+                        {
+                            switch (item.Rot)
+                            {
+                                case 0:
+                                    int distanceToRightEndPathX = MoveX - User.X;
+                                    int distanceToLeftEndPathX = User.X - (MoveX + 1);
+
+                                    Room.GetGameMap().GameMap[item.GetX, item.GetY + 1] = 0;
+                                    Room.GetGameMap().GameMap[item.GetX, item.GetY + 2] = 0;
+                                    Room.GetGameMap().GameMap[item.GetX + 1, item.GetY + 1] = 0;
+                                    Room.GetGameMap().GameMap[item.GetX + 1, item.GetY + 2] = 0;
+
+                                    if (User.X == item.GetX + 1 && MoveX == item.GetX && MoveY == item.GetY)
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (User.X == item.GetX + 1 && MoveX == item.GetX && MoveY == item.GetY + 1)
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (User.X == item.GetX + 1 && MoveX == item.GetX && MoveY == item.GetY + 2)
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (User.X == item.GetX && MoveX == item.GetX + 1 && MoveY == item.GetY)
+                                    {
+                                        MoveX = item.GetX + 1;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (User.X == item.GetX && MoveX == item.GetX + 1 && MoveY == item.GetY + 1)
+                                    {
+                                        MoveX = item.GetX + 1;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (User.X == item.GetX && MoveX == item.GetX + 1 && MoveY == item.GetY + 2)
+                                    {
+                                        MoveX = item.GetX + 1;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (MoveY == item.GetY && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY)) // Parte in cima a destra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (MoveY == item.GetY + 1 && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY)) // Parte di metà a destra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (MoveY == item.GetY + 2 && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY)) //  Parte di sotto a destra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY) && !Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY))
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    // Altro lato
+
+                                    if (MoveY == item.GetY && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte in cima a sinistra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (MoveY == item.GetY + 1 && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte di metà a sinistra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (MoveY == item.GetY + 2 && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) //  Parte di sotto a sinistra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY) && !Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY))
+                                    {
+                                        MoveX = item.GetX + 1;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (User.X == item.GetX && User.Y != item.GetY) // Sotto a sinistra
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (User.X == item.GetX + 1 && User.Y != item.GetY) // Sotto a destra
+                                    {
+                                        MoveX = item.GetX + 1;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (distanceToRightEndPathX > distanceToLeftEndPathX && User.X != item.GetX && User.X != item.GetX + 1) // Sinistra
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (distanceToRightEndPathX < distanceToLeftEndPathX && User.X != item.GetX && User.X != item.GetX + 1) // Destra
+                                    {
+                                        MoveX = item.GetX + 1;
+                                        MoveY = item.GetY;
+                                    }
+                                    break;
+
+                                case 2:
+                                    int distanceToRightEndPathY = MoveY - User.Y;
+                                    int distanceToLeftEndPathY = User.Y - (MoveY + 1);
+
+                                    Room.GetGameMap().GameMap[item.GetX + 1, item.GetY] = 0;
+                                    Room.GetGameMap().GameMap[item.GetX + 2, item.GetY] = 0;
+                                    Room.GetGameMap().GameMap[item.GetX + 1, item.GetY + 1] = 0;
+                                    Room.GetGameMap().GameMap[item.GetX + 2, item.GetY + 1] = 0;
+
+                                    if (User.Y == item.GetY + 1 && MoveX == item.GetX && MoveY == item.GetY)
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+                                    // Done
+                                    else if (User.Y == item.GetY + 1 && MoveX == item.GetX + 1 && MoveY == item.GetY)
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+                                    // dONE
+                                    else if (User.Y == item.GetY + 1 && MoveX == item.GetX + 2 && MoveY == item.GetY)
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+                                    //DN
+                                    else if (User.Y == item.GetY && MoveX == item.GetX && MoveY == item.GetY + 1)
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY + 1;
+                                    }
+                                    //DN
+                                    else if (User.Y == item.GetY && MoveX == item.GetX + 1 && MoveY == item.GetY + 1)
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY + 1;
+                                    }
+                                    //DN
+                                    else if (User.Y == item.GetY && MoveX == item.GetX + 2 && MoveY == item.GetY + 1)
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY + 1;
+                                    }
+                                    //DN
+                                    else if (MoveY == item.GetY + 1 && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1)) // Parte in cima a destra
+                                    {
+                                        return;
+                                    }
+                                    // DN
+                                    else if (MoveY == item.GetY + 1 && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1)) // Parte di metà a destra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (MoveY == item.GetY + 1 && MoveX == item.GetX + 2 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1)) //  Parte di sotto a destra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1) && !Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY))
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    // Altro lato
+
+                                    if (MoveY == item.GetY && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte in cima a sinistra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (MoveY == item.GetY && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte di metà a sinistra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (MoveY == item.GetY && MoveX == item.GetX + 2 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) //  Parte di sotto a sinistra
+                                    {
+                                        return;
+                                    }
+
+                                    else if (Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY) && !Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1))
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY + 1;
+                                    }
+
+                                    else if (User.Y == item.GetY && User.X != item.GetX) // Sotto a sinistra
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (User.Y == item.GetY + 1 && User.X != item.GetX) // Sotto a destra
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY + 1;
+                                    }
+
+                                    else if (distanceToRightEndPathY > distanceToLeftEndPathY && User.Y != item.GetY && User.Y != item.GetY + 1) // Sinistra
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY;
+                                    }
+
+                                    else if (distanceToRightEndPathY < distanceToLeftEndPathY && User.Y != item.GetY && User.Y != item.GetY + 1) // Destra
+                                    {
+                                        MoveX = item.GetX;
+                                        MoveY = item.GetY + 1;
+                                    }
+                                    break;
+                            }
+                        }
+                    }
+                }
+            }
+
             User.MoveTo(MoveX, MoveY);
+            Room.GetRoomUserManager().UpdateUserStatus(User, false);
         }
         #endregion
 
@@ -1396,7 +1699,7 @@ namespace Butterfly.Messages
                 /*Response.Init(Outgoing.GivePowers);
                 Response.AppendUInt(Room.RoomId);
                 Response.AppendUInt(UserId);
-                Response.AppendStringWithBreak(ButterflyEnvironment.getHabboForId(UserId).Username);
+                Response.AppendStringWithBreak(HabboEnvironment.getHabboForId(UserId).Username);
                 SendResponse();*/
 
                 Session.SendNotif(LanguageLocale.GetValue("user.giverights.error"));
@@ -1608,7 +1911,7 @@ namespace Butterfly.Messages
             var RoomId = Request.PopWiredUInt();
             var Time = Request.PopWiredInt32(); // minutes
 
-           // var Room = OtanixEnvironment.GetGame().GetRoomManager().GetRoom(RoomId);
+           // var Room = HabboEnvironment.GetGame().GetRoomManager().GetRoom(RoomId);
            // if (Room == null || (Room.RoomData.MuteFuse == 1 && !Room.CheckRights(Session)) || (Room.RoomData.MuteFuse == 0 && !Room.CheckRights(Session, true)))
            //     return;
 
@@ -1856,7 +2159,7 @@ namespace Butterfly.Messages
             if (User == null)
                 return;
 
-            User.Unidle();
+            //User.Unidle();
 
             int X = Request.PopWiredInt32();
             int Y = Request.PopWiredInt32();
@@ -1868,7 +2171,9 @@ namespace Butterfly.Messages
 
             int Rot = Rotation.Calculate(User.X, User.Y, X, Y);
 
-            User.SetRot(Rot, false);
+            if (!User.IsAsleep)
+                User.SetRot(Rot, false);
+
             User.UpdateNeeded = true;
         }
 
@@ -2361,7 +2666,7 @@ namespace Butterfly.Messages
 
             var ItemsOnSquare = Room.GetGameMap().GetCoordinatedItems(new Point(User.X, User.Y));
 
-            User.AddStatus("sit", "0.55");
+            User.AddStatus("sit", "0.5");
             User.Z = Room.GetGameMap().SqAbsoluteHeight(User.X, User.Y, ItemsOnSquare);
             User.sentadoBol = true;
             User.UpdateNeeded = true;
@@ -2423,8 +2728,17 @@ namespace Butterfly.Messages
 
             var Room = Session.GetHabbo().CurrentRoom;
 
-            if (Room == null || !Room.CheckRights(Session))
+            if (Room == null)
+                return;
+
+            else if (!Room.CheckRights(Session))
             {
+                ServerMessage Alert = new ServerMessage(Outgoing.CustomAlert);
+                Alert.AppendString("furni_placement_error");
+                Alert.AppendInt32(1);
+                Alert.AppendString("message");
+                Alert.AppendString("${room.error.cant_set_not_owner}");
+                Session.SendMessage(Alert);
                 return;
             }
 
@@ -2467,7 +2781,7 @@ namespace Butterfly.Messages
                     {
                         if(Room.GetSoccer().Ball != null)
                         {
-                            Session.SendNotif("Este quarto já tem uma bola.");
+                            Session.SendWindowManagerAlert("Possiedi già una palla in stanza.");
                             return;
                         }
                         break;
@@ -2483,9 +2797,23 @@ namespace Butterfly.Messages
                     var coordinate = new WallCoordinate(":" + PlacementData.Split(':')[1]);
                     var RoomItem = new RoomItem(Item.Id, Room.RoomId, Item.BaseItem, Item.ExtraData, Session.GetHabbo().Id, coordinate, Room, false);
 
-                    if (Room.GetRoomItemHandler().SetWallItem(Session, RoomItem))
+                    if (Room.GetRightsLevel(Session) == 3 || Room.CheckRights(Session, true))
                     {
-                        Session.GetHabbo().GetInventoryComponent().RemoveItem(ItemId, true);
+                        if (Room.GetRoomItemHandler().SetWallItem(Session, RoomItem))
+                        {
+                            Session.GetHabbo().GetInventoryComponent().RemoveItem(ItemId, true);
+                        }
+                    }
+
+                    else
+                    {
+                        ServerMessage Alert = new ServerMessage(Outgoing.CustomAlert);
+                        Alert.AppendString("furni_placement_error");
+                        Alert.AppendInt32(1);
+                        Alert.AppendString("message");
+                        Alert.AppendString("${room.error.cant_set_not_owner}");
+                        Session.SendMessage(Alert);
+                        return;
                     }
                 }
                 catch
@@ -2504,9 +2832,23 @@ namespace Butterfly.Messages
 
                 var RoomItem = new RoomItem(Item.Id, Room.RoomId, Item.BaseItem, Item.ExtraData, Session.GetHabbo().Id, X, Y, 0, Rot, Room, false);
 
-                if (Room.GetRoomItemHandler().SetFloorItem(Session, RoomItem, X, Y, Rot, true, false, true, false))
+                if (Room.GetRightsLevel(Session) == 3 || Room.CheckRights(Session, true))
                 {
-                    Session.GetHabbo().GetInventoryComponent().RemoveItem(ItemId, true);
+                    if (Room.GetRoomItemHandler().SetFloorItem(Session, RoomItem, X, Y, Rot, true, false, true, false))
+                    {
+                        Session.GetHabbo().GetInventoryComponent().RemoveItem(ItemId, true);
+                    }
+                }
+
+                else
+                {
+                    ServerMessage Alert = new ServerMessage(Outgoing.CustomAlert);
+                    Alert.AppendString("furni_placement_error");
+                    Alert.AppendInt32(1);
+                    Alert.AppendString("message");
+                    Alert.AppendString("${room.error.cant_set_not_owner}");
+                    Session.SendMessage(Alert);
+                    return;
                 }
 
                 if (WiredUtillity.TypeIsWired(Item.mBaseItem.InteractionType))
@@ -2516,17 +2858,20 @@ namespace Butterfly.Messages
                         WiredLoader.LoadWiredItem(RoomItem, Room, dbClient);
                     }
                 }
-                
-                if(Item.mBaseItem.Name == "es_skating_ice")
-                    OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_TagA", 1);
-                else if (Item.mBaseItem.Name == "val11_floor")
-                    OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_RbTagA", 1);
-                else if (Item.mBaseItem.Name == "easter11_grasspatc")
-                    OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_RbBunnyTa", 1);
-                else if (Item.mBaseItem.Name == "hole" || Item.mBaseItem.Name == "hole2")
-                    OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_RoomDecoHoleFurniCount", 1);
-                else if (Item.mBaseItem.Name == "snowb_slope")
-                    OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_snowBoardBuild", 1);
+
+                if (Room.CheckRights(Session, true))
+                {
+                    if (Item.mBaseItem.Name == "es_skating_ice")
+                        OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_TagA", 1);
+                    else if (Item.mBaseItem.Name == "val11_floor")
+                        OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_RbTagA", 1);
+                    else if (Item.mBaseItem.Name == "easter11_grasspatc")
+                        OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_RbBunnyTa", 1);
+                    else if (Item.mBaseItem.Name == "hole" || Item.mBaseItem.Name == "hole2")
+                        OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_RoomDecoHoleFurniCount", 1);
+                    else if (Item.mBaseItem.Name == "snowb_slope")
+                        OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_snowBoardBuild", 1);
+                }
 
                 if (Item.mBaseItem.InteractionType == InteractionType.breedingpet)
                 {
@@ -2549,11 +2894,17 @@ namespace Butterfly.Messages
                         Room.GetRoomItemHandler().petFoods.Add(RoomItem.Id, RoomItem);
                 }
 
-                OtanixEnvironment.GetGame().GetQuestManager().ProgressUserQuest(Session, QuestType.FURNI_PLACE);
+                if (Room.CheckRights(Session, true))
+                {
+                    OtanixEnvironment.GetGame().GetQuestManager().ProgressUserQuest(Session, QuestType.FURNI_PLACE);
+                }
             }
 
-            OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_RoomDecoFurniCount", 1);
-            OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_RoomDecoFurniTypeCount", 1);
+            if (Room.CheckRights(Session, true))
+            {
+                OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_RoomDecoFurniCount", 1);
+                OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_RoomDecoFurniTypeCount", 1);
+            }
         }
 
         internal void TakeItem()
@@ -2748,7 +3099,7 @@ namespace Butterfly.Messages
                         if (User != null)
                             User.SqState = Room.GetGameMap().GameMap[Item.OldX, Item.OldY];
                     }
-                }
+            }
 
                 if (Rotation != Item.OldRot)
                 {
@@ -3942,7 +4293,7 @@ namespace Butterfly.Messages
             if (PetUser.PetData.Type == 26) // gnome
                 OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(Session.GetHabbo().Id, "ACH_GnomeRespectGiver", 1);
 
-            //var Receiver = OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(PetUser.PetData.OwnerId);
+            //var Receiver = HabboEnvironment.GetGame().GetClientManager().GetClientByUserID(PetUser.PetData.OwnerId);
             OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(PetUser.PetData.OwnerId, "ACH_PetRespectReceiver", 1);
         }
 
@@ -4285,13 +4636,20 @@ namespace Butterfly.Messages
 
             if (User.CarryItemID > 0 && User.CarryTimer > 0)
             {
-                toGive.CarryItem(User.CarryItemID);
-                User.CarryItem(0);
+                User.GiverUser = User;
+                User.ToGiveUser = toGive;
+                User.IsGivingHanditem = true;
 
-                ServerMessage Message = new ServerMessage(Outgoing.HandItemMessage);
-                Message.AppendInt32(toGive.VirtualId);
-                Message.AppendInt32(toGive.CarryItemID);
-                toGive.GetClient().SendMessage(Message);
+                if (!Gamemap.TilesTouching(toGive.X, toGive.Y, User.X, User.Y) || !Gamemap.TilesTouching2(toGive.X, toGive.Y, User.X, User.Y))
+                    toGive.MoveToGiveHanditemCoordinate = toGive.SquareBehind;
+
+                else if (User.DifferentGiveHanditemCoordinate)
+                {
+                    User.DifferentGiveHanditemCoordinate = false;
+                    return;
+                }
+
+                User.MoveTo(User.MoveToGiveHanditemCoordinate);
             }
         }
 
@@ -4454,7 +4812,7 @@ namespace Butterfly.Messages
                         i++;
                         strPlugin = Request.PopFixedString();
 
-                        //if (OtanixEnvironment.isValidLink(strPlugin) == false)
+                        //if (HabboEnvironment.isValidLink(strPlugin) == false)
                         //{
                         //  Session.SendNotif(LanguageLocale.GetValue("url.invalid"));
                         //   return;

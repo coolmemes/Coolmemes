@@ -24,6 +24,7 @@ namespace Butterfly
                 if (Logging.DisabledState)
                     Console.Write(@"[Otanix] @ Digite o comando: ");
 
+
                 ConsoleCommandHandeling.InvokeCommand(Console.ReadLine());
             }
         }

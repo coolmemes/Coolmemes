@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using Butterfly.HabboHotel.ChatMessageStorage;
 using Butterfly.HabboHotel.Alfas.Manager;
 using Butterfly.HabboHotel.Users;
+using System.Globalization;
 
 namespace Butterfly.Messages
 {
@@ -242,8 +243,33 @@ namespace Butterfly.Messages
 
             var UserId = Request.PopWiredUInt();
             var Message = Request.PopFixedString();
-
+            
             ModerationTool.KickUser(Session, UserId, Message, false);
+        }
+
+        internal void ModAlertUser()
+        {
+
+            if (!Session.GetHabbo().HasFuse("fuse_user_alert"))
+            {
+                return;
+            }
+
+            var UserId = Request.PopWiredUInt();
+            var Message = Request.PopFixedString();
+
+            GameClient Target = OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(UserId);
+
+            Target.GetHabbo().GetSanctionManager().AddSanction(UserId, 31 * 86400, "MUTE");
+
+            // spam alert -> Il linguaggio che stai usando non si addice ad un Platinum. Modificalo o ne subirai le conseguenze!
+            // spam mute alert -> Ti avevamo avvisato! Adesso non potrai parlare per 10 minuti. Buon divertimento!
+            ServerMessage nMessage = new ServerMessage(Outgoing.SendLinkNotif);
+            nMessage.AppendString("Un piccolo avviso. Sei stato segnalato per " + Target.GetHabbo().GetSanctionManager().Reason.ToLower() + ". Forse ti serve un ripasso della Platinum Way!");
+            nMessage.AppendString("http://www." + EmuSettings.HOTEL_LINK + "/playing-habbo/safety");
+            Target.SendMessage(nMessage);
+
+            Target.GetMessageHandler().SanctionMessage();
         }
 
         internal void ModMuteUser()
@@ -255,6 +281,7 @@ namespace Butterfly.Messages
 
             var UserId = Request.PopWiredUInt();
             var Message = Request.PopFixedString();
+
             var MuteMinutes = Request.PopWiredInt32();
             // 2 str: 1,2
 
@@ -265,7 +292,7 @@ namespace Butterfly.Messages
             if (MuteMinutes == 34)
                 MuteMinutes = 60;
 
-            ModerationTool.MuteUser(Session, TargetHabbo, MuteMinutes, Message);
+            ModerationTool.MuteUser(Session, TargetHabbo, 60, Message);
         }
 
         internal void ModBanUser()
@@ -338,6 +365,107 @@ namespace Butterfly.Messages
                 message.AppendInt32(0);
             }
             Session.SendMessage(message);
+        }
+
+        internal void SanctionMessage()
+        {
+            ServerMessage Message = new ServerMessage(Outgoing.ModToolSanctionInfo);
+
+            if (Session.GetHabbo().GetSanctionManager().GetSanction(Session.GetHabbo().Id) != null)
+            {
+                Message.AppendBoolean(true);
+                Message.AppendBoolean(false);
+                Message.AppendString("ALERT");
+                Message.AppendInt32(0);
+                Message.AppendInt32(30);
+
+                
+                Message.AppendString(Session.GetHabbo().GetSanctionManager().Reason.ToLower());
+                /*
+                 * cfh.reason.EMPTY
+                 * Motivazione
+                */
+                //var offset = TimeZoneInfo.Local.GetUtcOffset(DateTime.UtcNow).TotalHours;
+                DateTime startTime = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Session.GetHabbo().GetSanctionManager().GetSanction(Session.GetHabbo().Id).StartTime);
+                Message.AppendString(startTime.ToString("dd-MM-yy HH:mm ('GMT' +0100)")); // Tempo di inizio: Datetime to String
+
+                Message.AppendInt32(Session.GetHabbo().GetSanctionManager().GetSanction(Session.GetHabbo().Id).RemainingDaysInHours); // Giorni di prova rimamenti in ore. es.: 720h = 31g
+
+                //Message.AppendString("ALERT"); // Sanzione successiva
+                Message.AppendString(Session.GetHabbo().GetSanctionManager().GetSanction(Session.GetHabbo().Id).NextSanction);
+                /* 
+                 * ALERT
+                 * MUTE
+                 * BAN
+                 * BAN_PERMANENT
+                */
+
+                int hours = 0;
+                switch (Session.GetHabbo().GetSanctionManager().GetSanction(Session.GetHabbo().Id).NextSanction)
+                {
+                    case "ALERT":
+                    case "MUTE":
+                        hours = 1;
+                        break;
+
+                    case "BAN":
+                        hours = 18;
+                        break;
+
+                }
+                Message.AppendInt32(hours); // Durata della prossima sanzione
+
+                Message.AppendInt32(0);
+                Message.AppendInt32(30);
+                Message.AppendString(""); // ??
+                Message.AppendBoolean(false);
+            }
+
+            else
+            {
+                Message.AppendBoolean(true);
+                Message.AppendBoolean(false);
+                Message.AppendString("ALERT");
+                Message.AppendInt32(0);
+                Message.AppendInt32(30);
+
+                Message.AppendString("cfh.reason.EMPTY");
+                /*
+                 * cfh.reason.EMPTY
+                 * Motivazione
+                */
+
+                Message.AppendString(""); // Tempo di inizio: Datetime to String
+
+                Message.AppendInt32(720); // Giorni di prova rimamenti in ore. es.: 720h = 31g
+
+                Message.AppendString("ALERT"); // Sanzione successiva
+                /* 
+                 * ALERT
+                 * MUTE
+                 * BAN
+                 * BAN_PERMANENT
+                */
+
+                Message.AppendInt32(1); // Durata della prossima sanzione
+
+                Message.AppendInt32(0);
+                Message.AppendInt32(30);
+                Message.AppendString(""); // ??
+                Message.AppendBoolean(false);
+            }
+            Session.SendMessage(Message);
+        }
+
+        internal void CFHTopic()
+        {
+            int j = Request.PopWiredInt32();
+            uint UserId = Request.PopWiredUInt();
+            int Topic = Request.PopWiredInt32();
+
+            GameClient Target = OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(UserId);
+
+            Target.GetHabbo().GetSanctionManager().ReasonId = Topic;
         }
     }
 }

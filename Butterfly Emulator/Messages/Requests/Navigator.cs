@@ -64,7 +64,7 @@ namespace Butterfly.Messages
             if (!Session.GetHabbo().HasFuse("fuse_add_room_staff"))
                 return;
 
-            //if (!OtanixEnvironment.GetGame().GetNewNavigatorManager().CategoryExists(EmuSettings.NAVIGATOR_STAFF_SELECTION))
+            //if (!HabboEnvironment.GetGame().GetNewNavigatorManager().CategoryExists(EmuSettings.NAVIGATOR_STAFF_SELECTION))
             //{
             //    Session.SendNotif(LanguageLocale.GetValue("navigator.contains.selection.staff").Replace("{0}", EmuSettings.NAVIGATOR_STAFF_SELECTION));
             //    return;
@@ -159,11 +159,46 @@ namespace Butterfly.Messages
                     if (currentRoom != null && currentRoom.GetRoomUserManager() != null)
                         currentRoom.GetRoomUserManager().RemoveUserFromRoom(Session, true, false);
                 }
+
                 else
                 {
                     Session.GetMessageHandler().GetResponse().Init(Outgoing.OutOfRoom);
                     Session.GetMessageHandler().SendResponse();
                 }
+
+            if (DateTime.Now.Day == 15 && Session.GetHabbo().GetClubManager().HasSubscription("club_habbo") && Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TotalSpent(Session.GetHabbo().SpentCredits) > 0)
+            {
+                string c = "";
+
+                if (Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TotalSpent(Session.GetHabbo().SpentCredits) == 1)
+                    c = "credito";
+
+                else
+                    c = "crediti";
+
+                Session.SendNotifWithImage2("Hai ricevuto " + Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TotalSpent(Session.GetHabbo().SpentCredits) + " " + c + " nel tuo Borsellino. Complimenti!", LanguageLocale.GetValue("frank.wave.image"), "Wooooow è arrivata la paga HC");
+
+                Session.GetHabbo().Moedas += Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TotalSpent(Session.GetHabbo().SpentCredits);
+                Session.GetHabbo().UpdateCreditsBalance();
+
+                using (var dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
+                {
+                    dbClient.runFastQuery("UPDATE users SET spent_credits = 0 WHERE id = " + Session.GetHabbo().Id);
+                    dbClient.runFastQuery("UPDATE user_subscriptions SET received_pay = 1 WHERE user_id = " + Session.GetHabbo().Id);
+                }
+                Session.GetHabbo().SpentCredits = 0;
+                Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").ReceivedPay = true;
+            }
+
+            if (DateTime.Now.Day == 16)
+            {
+                using (var dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
+                {
+                    dbClient.runFastQuery("UPDATE user_subscriptions SET received_pay = 0");
+                }
+                Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").ReceivedPay = false;
+            }
+
             Session.SendMessage(BonusManager.GenerateMessage(Session));
         }
 

@@ -37,7 +37,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
 
         public void Handle(RoomUser user, Team team, RoomItem item)
         {
-            //InteractorGenericSwitch.DoAnimation(itemID);
+            InteractorGenericSwitch.DoAnimation(itemID);
 
             if (user != null && !user.IsBot && user.GetClient() != null && user.GetClient().GetHabbo().GetAvatarEffectsInventoryComponent() != null && message.Length > 0)
             {

@@ -100,7 +100,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
             if (disposed)
                 return false;
 
-            //InteractorGenericSwitch.DoAnimation(item);
+            InteractorGenericSwitch.DoAnimation(item);
             var itemTriggered = false;
 
             foreach (var i in items)

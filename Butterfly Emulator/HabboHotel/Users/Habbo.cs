@@ -18,17 +18,17 @@ using HabboEvents;
 using Butterfly.HabboHotel.Users.Relationships;
 using ButterStorm.HabboHotel.Users.Inventory;
 using Butterfly.HabboHotel.Group;
-using Butterfly.HabboHotel.Users.Talents;
-using Butterfly.HabboHotel.Alfas;
 using Butterfly.HabboHotel.Rooms.Wired;
 using Butterfly.HabboHotel.Alfas.Manager;
 using Butterfly.HabboHotel.Users.Navigator;
 using Butterfly.HabboHotel.Pets;
-using Butterfly.HabboHotel.Users.Chat;
 using Butterfly.HabboHotel.Premiums.Users;
 using Butterfly.HabboHotel.Premiums;
 using Database_Manager.Database.Session_Details.Interfaces;
 using Butterfly.HabboHotel.Users.Clothing;
+using Butterfly.HabboHotel.Subscriptions.HabboClub;
+using Butterfly.HabboHotel.Items;
+using Otanix.HabboHotel.Sanctions;
 
 namespace Butterfly.HabboHotel.Users
 {
@@ -42,6 +42,7 @@ namespace Butterfly.HabboHotel.Users
         internal uint Rank;
         internal uint Diamonds;
         internal int Moedas;
+        internal int Duckets;
         internal string Look;
         internal string BackupLook;
         internal bool LastMovFGate;
@@ -85,7 +86,7 @@ namespace Butterfly.HabboHotel.Users
             {
                 if (!AlfaGuideEnabled && !AlfaHelperEnabled && !AlfaGuardianEnabled)
                     return false;
-                
+
                 return true;
             }
         }
@@ -110,8 +111,8 @@ namespace Butterfly.HabboHotel.Users
         internal int NewUserInformationStep;
         internal int tentativasLogin = 0;
         internal bool _passouPin = false;
-
         internal uint CoinsPurchased;
+        internal bool HiddenOnline;
 
         // Extra Settings:
         internal uint comingRoom;
@@ -146,6 +147,9 @@ namespace Butterfly.HabboHotel.Users
         internal uint DiceNumber;
         internal bool ConvertedOnPet;
         internal int PetType;
+        internal uint SpentCredits;
+        internal int LastSpeechBubble;
+
         internal string PetData
         {
             get
@@ -182,10 +186,10 @@ namespace Butterfly.HabboHotel.Users
         {
             get
             {
-                if (friendsCount == -1)
-                    _LoadFriendsCount();
+                //if (friendsCount == -1)
+                //    _LoadFriendsCount();
 
-                return friendsCount;
+                return 0;
             }
         }
 
@@ -217,6 +221,8 @@ namespace Butterfly.HabboHotel.Users
         private Premium premiumManager;
         private UserClothing userclothingManager;
         // private ChatSettingsManager chatSettingsManager;
+        private ClubManager clubManager;
+        private SanctionManager sanctionManager;
 
         private List<uint> mygroups;
         private bool LoadedMyGroups;
@@ -243,6 +249,7 @@ namespace Butterfly.HabboHotel.Users
         internal void setMeOnline()
         {
             //loginTime = DateTime.Now;
+
             using (var dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
             {
                 dbClient.runFastQuery("REPLACE INTO users_online VALUES ('" + Id + "')");
@@ -279,7 +286,7 @@ namespace Butterfly.HabboHotel.Users
         {
             get
             {
-                return Rank > 5 ? _passouPin : true;
+                return Rank >= 4 ? _passouPin : true;
             }
             set
             {
@@ -292,8 +299,8 @@ namespace Butterfly.HabboHotel.Users
         internal Habbo(uint Id, string Username, string RealName, uint Rank, string Motto, double UnixTime, string Look, string Gender, uint Diamonds,
             uint HomeRoom, uint Respect, uint DailyRespectPoints, uint DailyPetRespectPoints, bool HasFriendRequestsDisabled, bool FollowEnable, uint currentQuestID, uint currentQuestProgress, uint achievementPoints,
             uint nameChanges, uint FavoriteGroup, bool block_trade, string _volumenSystem, bool preferoldchat, string lastpurchase, List<uint> pollparticipation, List<uint> votedrooms,
-            string lastfollowinglogin, bool ignoreRoomInvitations, int citizenshipLevel, int helperLevel, string wiredactrewards, bool dontFocusUser, Dictionary<int, NaviLogs> naviLogs, Dictionary<uint, uint> targetedOffers, 
-            string chatColor, int newIdentity, int newBot, bool frankJaApareceu, int moedas, int corAtual, string coresjaTenho, uint coinsPurchased)
+            string lastfollowinglogin, bool ignoreRoomInvitations, int citizenshipLevel, int helperLevel, string wiredactrewards, bool dontFocusUser, Dictionary<int, NaviLogs> naviLogs, Dictionary<uint, uint> targetedOffers,
+            string chatColor, int newIdentity, int newBot, bool frankJaApareceu, int moedas, int corAtual, string coresjaTenho, uint coinsPurchased, uint SpentCredits, int Duckets, int speechBubble, bool HiddenOnline)
         {
             this.Id = Id;
             this.Username = Username;
@@ -379,10 +386,15 @@ namespace Butterfly.HabboHotel.Users
             this.showingStaffBadge = true;
             this.frankJaApareceu = frankJaApareceu;
             this.Moedas = moedas;
+            this.Duckets = Duckets;
             this.corAtual = corAtual;
             this.coresjaTenho = coresjaTenho;
             if (lastfollowinglogin == "" || !DateTime.TryParse(lastfollowinglogin, out this.LastFollowingLogin))
                 this.LastFollowingLogin = DateTime.Now;
+
+            this.SpentCredits = SpentCredits;
+            LastSpeechBubble = speechBubble;
+            this.HiddenOnline = HiddenOnline;
         }
 
         internal Habbo(uint Id, string Username, string RealName, uint Rank, string Motto, double Created, string Look, string Gender, uint Diamonds, string MachineId, uint achievementPoints, double LastOnline, uint FavoriteGroup, bool blocknewfriends, bool blocktrade, bool ignoreRoomInvitations, bool dontfocususers, bool preferoldchat, uint coins_purchased)
@@ -423,6 +435,8 @@ namespace Butterfly.HabboHotel.Users
             this.chatMessageManager = new ChatMessageManager();
             this.premiumManager = PremiumManager.LoadPremiumData(Id);
             this.userclothingManager = new UserClothing(Id);
+            clubManager = new ClubManager(Id, data);
+            sanctionManager = new SanctionManager(Id, data);
 
             if (HasFuse("fuse_chat_staff"))
             {
@@ -431,7 +445,6 @@ namespace Butterfly.HabboHotel.Users
 
             this.Messenger = new HabboMessenger(Id, data.friends, data.requests);
             this.UpdateRooms();
-            this.LoadMuteUsers();
         }
 
         internal void InitExtra()
@@ -501,7 +514,7 @@ namespace Butterfly.HabboHotel.Users
             {
                 OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(this.Id, "ACH_Login", 1);
                 OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(this.Id, "ACH_RegistrationDuration", 1);
-                if(this.Rank > 1)
+                if (this.Rank > 1)
                     OtanixEnvironment.GetGame().GetAchievementManager().ProgressUserAchievement(this.Id, "ACH_GuideEnrollmentLifetime", 1);
 
                 if (CitizenshipLevel == 2 || CitizenshipLevel == 3)
@@ -516,7 +529,7 @@ namespace Butterfly.HabboHotel.Users
 
             UserAchievement ach_friendlistsize = this.GetAchievementData("ACH_FriendListSize");
 
-            if(ach_friendlistsize != null)
+            if (ach_friendlistsize != null)
                 ach_friendlistsize.Progress = FriendsCount;
         }
 
@@ -562,7 +575,7 @@ namespace Butterfly.HabboHotel.Users
                 dbTable = dbClient.getTable();
             }
 
-            foreach(DataRow Row in dbTable.Rows)
+            foreach (DataRow Row in dbTable.Rows)
             {
                 string IgnoreId = (string)Row["ignore_id"];
 
@@ -608,8 +621,8 @@ namespace Butterfly.HabboHotel.Users
                 }
 
                 saveWardrobe();
-                saveBadges();
-                //OtanixEnvironment.GetGame().GetMuteManager().RemoveUserMute(Id);
+                SaveBadges();
+                //HabboEnvironment.GetGame().GetMuteManager().RemoveUserMute(Id);
 
                 var pollParticipation = "";
                 if (this.PollParticipation.Count > 0)
@@ -652,9 +665,9 @@ namespace Butterfly.HabboHotel.Users
                 }
 
                 var targetedoffers = "";
-                if(this.TargetedOffers.Count > 0)
+                if (this.TargetedOffers.Count > 0)
                 {
-                    foreach(KeyValuePair<uint, uint> k in this.TargetedOffers)
+                    foreach (KeyValuePair<uint, uint> k in this.TargetedOffers)
                     {
                         targetedoffers += k.Key + "-" + k.Value + ";";
                     }
@@ -686,7 +699,7 @@ namespace Butterfly.HabboHotel.Users
                     dbClient.addParameter("targetedoffers", targetedoffers);
                     dbClient.runQuery();
 
-                    dbClient.runFastQuery("DELETE FROM users_online WHERE user_id = '" + Id + "'");
+                    dbClient.runFastQuery("DELETE FROM users_online WHERE user_id = '" + Id + "'"); 
                 }
 
                 if (this.AlfaServiceEnabled)
@@ -794,6 +807,18 @@ namespace Butterfly.HabboHotel.Users
                     wardrobes.Clear();
                     wardrobes = null;
                 }
+
+                if (clubManager != null)
+                {
+                    clubManager.Clear();
+                    clubManager = null;
+                }
+
+                if (sanctionManager != null)
+                {
+                    sanctionManager.Clear();
+                    sanctionManager = null;
+                }
             }
             catch (Exception e)
             {
@@ -856,18 +881,18 @@ namespace Butterfly.HabboHotel.Users
 
 
             mClient.GetMessageHandler().GetResponse().Init(Outgoing.ActivityPointsMessageParser);
-            mClient.GetMessageHandler().GetResponse().AppendInt32(4); // count
+            mClient.GetMessageHandler().GetResponse().AppendInt32(3); // count
             mClient.GetMessageHandler().GetResponse().AppendInt32(0); // duckets
-            mClient.GetMessageHandler().GetResponse().AppendUInt(99999); // amount
+            mClient.GetMessageHandler().GetResponse().AppendUInt((uint)Duckets); // amount to modify
 
-           
+
             mClient.GetMessageHandler().GetResponse().AppendInt32(5); // Diamonds
             mClient.GetMessageHandler().GetResponse().AppendUInt(Diamonds); // amount
             mClient.GetMessageHandler().GetResponse().AppendInt32(103); // piruletas ou seja la oq for
             mClient.GetMessageHandler().GetResponse().AppendUInt(CoinsPurchased); // quantidade
             mClient.GetMessageHandler().GetResponse().AppendInt32(105); // diamantes
             mClient.GetMessageHandler().GetResponse().AppendUInt(Diamonds); // quantidade
-            
+
 
             mClient.GetMessageHandler().SendResponse();
         }
@@ -942,7 +967,7 @@ namespace Butterfly.HabboHotel.Users
         internal void GiveUserDiamonds(int p)
         {
             int SumaDiamantes = (int)Diamonds + p;
-            if(SumaDiamantes < 0)
+            if (SumaDiamantes < 0)
                 Diamonds = 0;
             else
                 Diamonds = (uint)SumaDiamantes;
@@ -976,9 +1001,151 @@ namespace Butterfly.HabboHotel.Users
             if (!AchievementsLoaded)
                 LoadAchievements();
 
-            UserAchievement achievement = null;
-            Achievements.TryGetValue(p, out achievement);
+            Achievements.TryGetValue(p, out UserAchievement achievement);
             return achievement;
+        }
+
+        internal ClubManager GetClubManager()
+        {
+            return clubManager;
+        }
+
+        internal SanctionManager GetSanctionManager()
+        {
+            return sanctionManager;
+        }
+
+        internal void UpdateHabboClubStatus()
+        {
+            if (mClient == null || mClient.GetMessageHandler() == null || mClient.GetHabbo() == null)
+                return;
+
+            mClient.GetMessageHandler().GetResponse().Init(Outgoing.SerializeClub);
+            mClient.GetMessageHandler().GetResponse().AppendString("club_habbo");
+
+            if (GetClubManager().GetSubscription("club_habbo") != null)
+            {
+                double TimeLeft = GetClubManager().GetSubscription("club_habbo").TimestampExpire - OtanixEnvironment.GetUnixTimestamp();
+                int TotalDaysLeft = (int)Math.Ceiling(TimeLeft / 86400);
+                int MonthsLeft = TotalDaysLeft / 31;
+
+                if (MonthsLeft >= 1)
+                {
+                    MonthsLeft--;
+                }
+
+                mClient.GetMessageHandler().GetResponse().AppendInt32(TotalDaysLeft - (MonthsLeft * 31));
+                mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+                mClient.GetMessageHandler().GetResponse().AppendInt32(MonthsLeft);
+
+                if (GetClubManager().GetSubscription("club_habbo").TimeLeftInHours <= 72)
+                    mClient.GetMessageHandler().GetResponse().AppendInt32(3);
+
+                else
+                    mClient.GetMessageHandler().GetResponse().AppendInt32(1);
+
+                mClient.GetMessageHandler().GetResponse().AppendBoolean(true);
+                mClient.GetMessageHandler().GetResponse().AppendBoolean(true);
+                mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+                mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetTotalMembershipLength);
+                mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetSubscription("club_habbo").TimeLeft);
+                mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetSubscription("club_habbo").TimeLeft);
+            }
+
+            else
+            {
+                mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+                mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+                mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+                mClient.GetMessageHandler().GetResponse().AppendInt32(0); // type
+                mClient.GetMessageHandler().GetResponse().AppendBoolean(false);
+                mClient.GetMessageHandler().GetResponse().AppendBoolean(false);
+                mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+                mClient.GetMessageHandler().GetResponse().AppendInt32(0); //days i have on hc
+                mClient.GetMessageHandler().GetResponse().AppendInt32(0); // days i have on vip
+                mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+            }
+            mClient.GetMessageHandler().SendResponse();
+        }
+
+        //internal void UpdateHabboClubCenter()
+        //{
+        //    if (mClient == null || mClient.GetMessageHandler() == null || mClient.GetHabbo() == null)
+        //        return;
+
+        //    mClient.GetMessageHandler().GetResponse().Init(Outgoing.ClubCenterData);
+
+        //    if (GetClubManager().HasSubscription("club_habbo"))
+        //    {
+        //        DateTime joinDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(GetClubManager().GetSubscription("club_habbo").TimestampActivated);
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetSubscription("club_habbo").StreakDurationInDays);
+
+        //        mClient.GetMessageHandler().GetResponse().AppendString(joinDate.ToString("dd-MM-yyyy"));
+
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(1069128089);
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(-1717986918);
+
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32((int)SpentCredits);
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetSubscription("club_habbo").HabboClubBonusStreak);
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetSubscription("club_habbo").TotalSpent(SpentCredits));
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(HCPayday);
+        //    }
+
+        //    else
+        //    {
+
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+
+        //        if (GetClubManager().GetSubscription("club_habbo") != null)
+        //        {
+        //            DateTime joinDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(GetClubManager().GetSubscription("club_habbo").TimestampActivated);
+        //            mClient.GetMessageHandler().GetResponse().AppendString(joinDate.ToString("dd-MM-yyyy"));
+        //        }
+
+        //        else
+        //            mClient.GetMessageHandler().GetResponse().AppendString("");
+
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(1069128089);
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(-1717986918);
+
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
+        //        mClient.GetMessageHandler().GetResponse().AppendInt32(HCPayday);
+        //    }
+        //    mClient.GetMessageHandler().SendResponse();
+        //}
+
+        internal int HCPayday
+        {
+            get
+            {
+                int TotalRemaingDaysLeft = 0;
+
+                if (DateTime.Now.Day >= 15)
+                {
+                    double conversion = (int)Math.Ceiling(OtanixEnvironment.DateTimeToUnixTimestamp(new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15).AddMonths(1)));
+                    double remainingTime = conversion - OtanixEnvironment.GetUnixTimestamp();
+                    TotalRemaingDaysLeft = (int)Math.Ceiling(remainingTime / 86400);
+
+                    return TotalRemaingDaysLeft * 1430;
+                }
+
+                else
+                {
+                    double conversion = (int)Math.Ceiling(OtanixEnvironment.DateTimeToUnixTimestamp(new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15)));
+                    double remainingTime = conversion - OtanixEnvironment.GetUnixTimestamp();
+                    TotalRemaingDaysLeft = (int)Math.Ceiling(remainingTime / 86400);
+
+                    return TotalRemaingDaysLeft * 1430;
+                }
+            }
         }
     }
 }

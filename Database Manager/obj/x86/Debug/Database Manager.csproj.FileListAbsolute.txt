@@ -1,0 +1,70 @@
+C:\Users\Test\Desktop\Habbo\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\Test\Desktop\Habbo\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\Test\Desktop\Habbo\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\Test\Desktop\Habbo\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\Test\Desktop\Habbo\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\Test\Desktop\Habbo\Database Manager\obj\x86\Debug\Database Manager.csprojAssemblyReference.cache
+C:\Users\Test\Desktop\Habbo\Database Manager\obj\x86\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\Habbo\Database Manager\obj\x86\Debug\Database Manager.csproj.CopyComplete
+C:\Users\Test\Desktop\Habbo\Database Manager\obj\x86\Debug\Database Manager.dll
+C:\Users\Test\Desktop\Habbo\Database Manager\obj\x86\Debug\Database Manager.pdb
+C:\Users\New\Desktop\Habbo\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\New\Desktop\Habbo\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\New\Desktop\Habbo\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\New\Desktop\Habbo\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\New\Desktop\Habbo\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\New\Desktop\Habbo\Database Manager\obj\x86\Debug\Database Manager.csprojAssemblyReference.cache
+C:\Users\New\Desktop\Habbo\Database Manager\obj\x86\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\New\Desktop\Habbo\Database Manager\obj\x86\Debug\Database Manager.csproj.CopyComplete
+C:\Users\New\Desktop\Habbo\Database Manager\obj\x86\Debug\Database Manager.dll
+C:\Users\New\Desktop\Habbo\Database Manager\obj\x86\Debug\Database Manager.pdb
+C:\Users\New\Desktop\Otanix\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\New\Desktop\Otanix\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\New\Desktop\Otanix\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\New\Desktop\Otanix\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\New\Desktop\Otanix\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\New\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csprojAssemblyReference.cache
+C:\Users\New\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\New\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csproj.CopyComplete
+C:\Users\New\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.dll
+C:\Users\New\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.pdb
+C:\Users\New2\Desktop\Otanix\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\New2\Desktop\Otanix\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\New2\Desktop\Otanix\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\New2\Desktop\Otanix\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\New2\Desktop\Otanix\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\New2\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csprojAssemblyReference.cache
+C:\Users\New2\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\New2\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csproj.CopyComplete
+C:\Users\New2\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.dll
+C:\Users\New2\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.pdb
+C:\Users\Test\Desktop\Otanix\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\Test\Desktop\Otanix\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\Test\Desktop\Otanix\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\Test\Desktop\Otanix\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\Test\Desktop\Otanix\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\Test\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csprojAssemblyReference.cache
+C:\Users\Test\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csproj.CopyComplete
+C:\Users\Test\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.dll
+C:\Users\Test\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.pdb
+C:\Users\test2\Desktop\Otanix\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\test2\Desktop\Otanix\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\test2\Desktop\Otanix\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\test2\Desktop\Otanix\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\test2\Desktop\Otanix\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\test2\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csprojAssemblyReference.cache
+C:\Users\test2\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\test2\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csproj.CopyComplete
+C:\Users\test2\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.dll
+C:\Users\test2\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.pdb
+C:\Users\new4\Desktop\Otanix\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\new4\Desktop\Otanix\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\new4\Desktop\Otanix\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\new4\Desktop\Otanix\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\new4\Desktop\Otanix\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\new4\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csprojAssemblyReference.cache
+C:\Users\new4\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\new4\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.csproj.CopyComplete
+C:\Users\new4\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.dll
+C:\Users\new4\Desktop\Otanix\Database Manager\obj\x86\Debug\Database Manager.pdb

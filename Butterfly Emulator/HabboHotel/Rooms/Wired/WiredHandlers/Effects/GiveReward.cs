@@ -122,7 +122,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                 // 7: Acabas de recibir una Placa. Mira en Mis Cosas.
                 */
 
-                // InteractorGenericSwitch.DoAnimation(item);
+                InteractorGenericSwitch.DoAnimation(item);
 
                 if (user != null && !user.IsBot && user.GetClient() != null && isCorrectInt(user))
                 {
@@ -270,7 +270,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                             {
                                 Amount--;
 
-                                /*using (var dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
+                                /*using (var dbClient = HabboEnvironment.GetDatabaseManager().getQueryreactor())
                                 {
                                     var newGenerate = ExtraInfo.ToString() + ";" + Amount + "," + Type + "," + AllUsers + ";false";
                                     dbClient.setQuery("REPLACE INTO items_wired (item_id, wired_data) VALUES (@id, @nG)");

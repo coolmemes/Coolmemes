@@ -64,7 +64,7 @@ namespace Butterfly.HabboHotel.Users.Clothing
                                             bool Selectable = OtanixEnvironment.EnumToBool(reader.GetAttribute("selectable"));
 
                                             // Añadimos el color a la paleta.
-                                            // Console.WriteLine("Log: ColorId [" + ColorID + "], IndexID [" + IndexID + "], Club [" + Club + "], Selectable [" + Selectable + "]");
+                                            Console.WriteLine("Log: ColorId [" + ColorID + "], IndexID [" + IndexID + "], Club [" + Club + "], Selectable [" + Selectable + "]");
                                             this.PaletteColors[PaletteId].Add(new Palette(PaletteId, ColorID, IndexID, Club, Selectable));
                                         }
                                         else if (type == XmlNodeType.EndElement && reader.Name == "palette")
@@ -102,11 +102,12 @@ namespace Butterfly.HabboHotel.Users.Clothing
                                             int Club = int.Parse(reader.GetAttribute("club"));
                                             bool Colorable = OtanixEnvironment.EnumToBool(reader.GetAttribute("colorable"));
                                             bool Sellable = OtanixEnvironment.EnumToBool(reader.GetAttribute("sellable"));
+                                            bool PreSelectable = OtanixEnvironment.EnumToBool(reader.GetAttribute("preselectable"));
                                             // ...
 
                                             // Ropas
                                             // Console.WriteLine("Log: Id [" + Id + "], Gender [" + Gender + "], Club [" + Club + "], Colorable [" + Colorable + "]");
-                                            this.Clothes[Type].Add(new Clothing.Clothes(Type, PaletteId, Id, Gender, Club, Colorable, Sellable));
+                                            this.Clothes[Type].Add(new Clothing.Clothes(Type, PaletteId, Id, Gender, Club, Colorable, Sellable, PreSelectable));
 
                                             // <part>
                                         }

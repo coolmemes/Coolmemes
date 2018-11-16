@@ -78,7 +78,7 @@ namespace ConsoleWriter
         public static void LogPacketException(string Packet, string Exception)
         {
             WriteToFile(@"Logs\packeterror.txt", "<" + DateTime.Now + "> Error in packet " + Packet + ": \r\n" + Exception + "\r\n\r\n");
-            WriteLine("User disconnection logged");
+            //WriteLine("User disconnection logged");
         }
 
         public static void HandleException(Exception pException, string pLocation)

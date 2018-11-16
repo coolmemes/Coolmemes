@@ -97,7 +97,11 @@ namespace Butterfly.HabboHotel.Users.Authenticator
             var corAtual = Convert.ToInt32(dRow["corAtual"]);
             var coresjaTenho = Convert.ToString(dRow["coresJaTenho"]);
             var coinsPurchased = Convert.ToUInt32(dRow["coins_purchased"]);
-            return new Habbo(id, username, realname, rank, motto, created, look, gender, diamonds, homeRoom, respect, dailyRespect, dailyPetRespect, blockFriends, followenable, questID, questProgress, achiecvementPoints, NameChanges, favoriteGroup, tradeBlocked, volumenSystem, preferOldChat, lastPurchase, pollparticipation, votedrooms, lastfollowinglogin, ignoreroominvitations, citizenshiplevel, helperlevel, wiredactrewards, dontfocususers, navilogs, targetedoffers, chatColor, newIdentity, newBot, frankJaApareceu, moedas, corAtual, coresjaTenho, coinsPurchased);
+            var spentCredits = Convert.ToUInt32(dRow["spent_credits"]);
+            var duckets = Convert.ToInt32(dRow["duckets"]);
+            var speech_bubble = Convert.ToInt32(dRow["speech_bubble"]);
+            var hidden_online = Convert.ToBoolean(dRow["hidden_profile"]);
+            return new Habbo(id, username, realname, rank, motto, created, look, gender, diamonds, homeRoom, respect, dailyRespect, dailyPetRespect, blockFriends, followenable, questID, questProgress, achiecvementPoints, NameChanges, favoriteGroup, tradeBlocked, volumenSystem, preferOldChat, lastPurchase, pollparticipation, votedrooms, lastfollowinglogin, ignoreroominvitations, citizenshiplevel, helperlevel, wiredactrewards, dontfocususers, navilogs, targetedoffers, chatColor, newIdentity, newBot, frankJaApareceu, moedas, corAtual, coresjaTenho, coinsPurchased, spentCredits, duckets, speech_bubble, hidden_online);
         }
 
         internal static Habbo GenerateHabboCache(DataRow dRow)

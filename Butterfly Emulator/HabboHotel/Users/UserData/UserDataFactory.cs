@@ -1,19 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using Butterfly.HabboHotel.Items;
-using Butterfly.HabboHotel.Pets;
-using Butterfly.HabboHotel.Rooms;
 using Butterfly.HabboHotel.Users.Inventory;
 using Butterfly.HabboHotel.Users.Messenger;
 using ButterStorm;
 using Butterfly.HabboHotel.Users.Authenticator;
-using Butterfly.HabboHotel.Users.Relationships;
-using Butterfly.Messages;
-using HabboEvents;
-using System.Diagnostics;
 using Database_Manager.Database.Session_Details.Interfaces;
+using Butterfly.HabboHotel.Subscriptions.HabboClub;
+using Otanix.HabboHotel.Sanctions;
 
 namespace Butterfly.HabboHotel.Users.UserDataManagement
 {
@@ -26,6 +20,8 @@ namespace Butterfly.HabboHotel.Users.UserDataManagement
             DataTable dEffects;
             DataTable dFriends;
             DataTable dRequests;
+            DataTable dClub;
+            DataTable dSanctions;
             UInt32 userID;
 
             using (IQueryAdapter dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
@@ -36,7 +32,6 @@ namespace Butterfly.HabboHotel.Users.UserDataManagement
 
                 if (dUserInfo == null)
                 {
-                    // Si no existe el ticket; Este fallo no debería existir NUNCA.
                     return null;
                 }
 
@@ -80,6 +75,12 @@ namespace Butterfly.HabboHotel.Users.UserDataManagement
                                         "ON users.id = messenger_requests.sender " +
                                         "WHERE messenger_requests.receiver = " + userID + " LIMIT " + EmuSettings.FRIENDS_REQUEST_LIMIT);
                 dRequests = dbClient.getTable();
+
+                dbClient.setQuery("SELECT * FROM user_subscriptions WHERE user_id = '" + userID + "'");
+                dClub = dbClient.getTable();
+
+                dbClient.setQuery("SELECT * FROM moderation_sanctions WHERE user_id = '" + userID + "'");
+                dSanctions = dbClient.getTable();
             }
            
             List<uint> favouritedRooms = new List<uint>();
@@ -119,6 +120,18 @@ namespace Butterfly.HabboHotel.Users.UserDataManagement
                 }
             }
 
+            Dictionary<string, Club> clubSubscriptions = new Dictionary<string, Club>();
+            foreach (DataRow dRow in dClub.Rows)
+            {
+                clubSubscriptions.Add(Convert.ToString(dRow["subscription_id"]), new Club(Convert.ToString(dRow["subscription_id"]), Convert.ToInt32(dRow["timestamp_activated"]), Convert.ToInt32(dRow["timestamp_expire"]), Convert.ToBoolean(dRow["received_pay"])));
+            }
+
+            Dictionary<uint, Sanction> Sanctions = new Dictionary<uint, Sanction>();
+            foreach (DataRow dRow in dSanctions.Rows)
+            {
+                Sanctions.Add(Convert.ToUInt32(dRow["user_id"]), new Sanction(Convert.ToUInt32(dRow["user_id"]), Convert.ToInt32(dRow["reason"]), Convert.ToInt32(dRow["start_time"]), Convert.ToInt32(dRow["remaining_time"]), Convert.ToString(dRow["next_sanction"])));
+            }
+
             Habbo user = HabboFactory.GenerateHabbo(dUserInfo);
 
             dUserInfo = null;
@@ -127,7 +140,7 @@ namespace Butterfly.HabboHotel.Users.UserDataManagement
             dFriends = null;
             dRequests = null;
 
-            return new UserData(favouritedRooms, effects, friends, requests, user);
+            return new UserData(favouritedRooms, effects, friends, requests, user, clubSubscriptions, Sanctions);
         }
 
         internal static Habbo GetUserDataCache(uint userId)

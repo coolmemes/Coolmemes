@@ -112,6 +112,8 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
 
         public void Handle(RoomUser user, Team team, RoomItem item)
         {
+            InteractorGenericSwitch.DoAnimation(itemID);
+
             cycles = 0;
             if (delay == 0)
             {
@@ -125,8 +127,6 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
 
         private bool HandleItems()
         {
-            //InteractorGenericSwitch.DoAnimation(itemID);
-
             var itemIsMoved = false;
             foreach (var item in items)
             {

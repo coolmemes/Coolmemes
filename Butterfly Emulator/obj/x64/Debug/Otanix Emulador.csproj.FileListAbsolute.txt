@@ -142,3 +142,209 @@ C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\obj\x64\Debug
 C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
 C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\obj\x64\Debug\Otanix.exe
 C:\Users\DIEL\Desktop\Otanix Emulador By Thiago\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojAssemblyReference.cache
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CopyComplete
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojAssemblyReference.cache
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CopyComplete
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\Test\Desktop\Habbo\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojAssemblyReference.cache
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CopyComplete
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\New\Desktop\Habbo\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojAssemblyReference.cache
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CopyComplete
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\New\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.config
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.config
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojAssemblyReference.cache
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CopyComplete
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\New2\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\Test\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.config
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.config
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojAssemblyReference.cache
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CopyComplete
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\test2\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.config
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojAssemblyReference.cache
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CopyComplete
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\new3\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.config
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojAssemblyReference.cache
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CopyComplete
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\new4\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.pdb

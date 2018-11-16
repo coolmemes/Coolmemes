@@ -20,6 +20,7 @@ using Butterfly.HabboHotel.Pathfinding;
 using Butterfly.HabboHotel.Rooms.Extras;
 using Butterfly.HabboHotel.Filter;
 using Butterfly.HabboHotel.Items;
+using System.Threading;
 
 namespace Butterfly.HabboHotel.Rooms
 {
@@ -46,9 +47,15 @@ namespace Butterfly.HabboHotel.Rooms
         internal bool AllowOverride;
         internal bool TeleportEnabled;
         internal bool isKicking;
+        internal bool IsGivingHanditem = false;
 
         internal int GoalX;
         internal int GoalY;
+        internal int GiveHanditemCoordinateX;
+        internal int GiveHanditemCoordinateY;
+
+        internal RoomUser GiverUser;
+        internal RoomUser ToGiveUser;
 
         internal uint tentId;
 
@@ -99,6 +106,7 @@ namespace Butterfly.HabboHotel.Rooms
         internal bool montandoBol = false;
         internal bool sentadoBol = false;
         internal bool acostadoBol = false;
+        internal bool DifferentGiveHanditemCoordinate = false;
         internal int montandoID = 0;
         internal double lastTeleBanzai = 0;
 
@@ -109,12 +117,23 @@ namespace Butterfly.HabboHotel.Rooms
         internal Stopwatch lastActionStopwatch;
 
         internal Stopwatch enteredStopwatch;
+        internal bool InteractingGate = false;
         internal Point Coordinate
         {
             get
             {
                 return new Point(X, Y);
             }
+        }
+
+        internal Point MoveToGiveHanditemCoordinate
+        {
+            get
+            {
+                return new Point(GiveHanditemCoordinateX, GiveHanditemCoordinateY);
+            }
+
+            set => MoveToGiveHanditemCoordinate = value;
         }
 
         internal Point SquareInFront
@@ -525,7 +544,7 @@ namespace Butterfly.HabboHotel.Rooms
             }
             #endregion       
 
-            if (Message.StartsWith("@red@") || Message.StartsWith("@blue@") || Message.StartsWith("@cyan@") || Message.StartsWith("@green@") || Message.StartsWith("@purple@") || Message.StartsWith("@normal@"))
+            if (Message.StartsWith("@red@") || Message.StartsWith("@blue@") || Message.StartsWith("@cyan@") || Message.StartsWith("@green@") || Message.StartsWith("@purple@"))
             {
                 if (Message.StartsWith("@red@")) { 
                     Session.GetHabbo().ChatColor = "@red@";
@@ -547,11 +566,10 @@ namespace Butterfly.HabboHotel.Rooms
                     Session.GetHabbo().ChatColor = "@purple@";
                     Message = Message.Replace("@purple@", "");
                 }
-                else if (Message.StartsWith("@normal@")){
-                    Session.GetHabbo().ChatColor = "";
-                    Message = Message.Replace("@normal@", "");
-                }
             }
+
+            else
+                Session.GetHabbo().ChatColor = "";
 
             #region Commands
             if (Message.StartsWith(":")) // Si el mensaje comienza por :
@@ -635,8 +653,11 @@ namespace Butterfly.HabboHotel.Rooms
             if (Session.GetHabbo().Rank < 2 && EmuSettings.CHAT_TYPES_USERS.Contains(Color))
                 Color = 0;
 
-            // if (Session.GetHabbo().GetBadgeComponent().HasBadge(OtanixEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_BADGE) && Session.GetHabbo().GetBadgeComponent().GetBadge(OtanixEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_BADGE).Slot > 0 && OtanixEnvironment.GetGame().GetRoomRankConfig().ROOMS_TO_MODIFY.Contains((int)GetRoom().RoomId))
-            //     Color = OtanixEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_COLOR; // si la sala está elegida como sala para bots, mejor que cada bot hable con su tipo de chat, no?
+            if (Session.GetHabbo().Rank >= 5)
+                Color = 23;
+
+            // if (Session.GetHabbo().GetBadgeComponent().HasBadge(HabboEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_BADGE) && Session.GetHabbo().GetBadgeComponent().GetBadge(HabboEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_BADGE).Slot > 0 && HabboEnvironment.GetGame().GetRoomRankConfig().ROOMS_TO_MODIFY.Contains((int)GetRoom().RoomId))
+            //     Color = HabboEnvironment.GetGame().GetRoomRankConfig().BOTS_DEFAULT_COLOR; // si la sala está elegida como sala para bots, mejor que cada bot hable con su tipo de chat, no?
 
             Unidle();
             OtanixEnvironment.GetGame().GetQuestManager().ProgressUserQuest(Session, QuestType.SOCIAL_CHAT); // miramos el reto
@@ -711,7 +732,7 @@ namespace Butterfly.HabboHotel.Rooms
 
             ServerMessage ChatMessage = new ServerMessage(Outgoing.Whisp);
             ChatMessage.AppendInt32(VirtualId);
-            ChatMessage.AppendString(Message.Replace("<", "¤"));
+            ChatMessage.AppendString(Message);
             ChatMessage.AppendInt32(RoomUser.GetSpeechEmotion(Message));
             ChatMessage.AppendInt32(ChatStyle);
             ChatMessage.AppendInt32(0);
@@ -737,7 +758,7 @@ namespace Butterfly.HabboHotel.Rooms
                 GetRoom().OnUserSay(this, Message, message.shout);
             }
 
-            message.Dispose();
+            //message.Dispose();
             #endregion
         }
 
@@ -829,7 +850,10 @@ namespace Butterfly.HabboHotel.Rooms
 
             // Si hay un usuario o un item, evitamos crear un nuevo path.
             if (!GetRoom().GetGameMap().tileIsWalkable(pX, pY, true, false, guildGateUser) && !AllowOverride && walkingToPet == null)
+            {
+                Unidle();
                 return;
+            }
 
             if (ByteToItemEffectEnum.Parse(GetRoom().GetGameMap().EffectMap[pX, pY]) == ItemEffectType.HorseJump)
                 return;
@@ -857,7 +881,7 @@ namespace Butterfly.HabboHotel.Rooms
             GoalY = pY;
             PathRecalcNeeded = true;
             throwBallAtGoal = false;
-            // GetRoom().GetRoomUserManager().UpdateUsersPath = true;
+            //GetRoom().GetRoomUserManager().UpdateUsersPath = true;
         }
 
         internal void UnlockWalking()
@@ -900,14 +924,14 @@ namespace Butterfly.HabboHotel.Rooms
             GetRoom().SendMessage(Message);
         }
 
-        internal void SetRot(int Rotation, bool HeadOnly, bool All = false)
+        internal void SetRot(int rotation, bool HeadOnly, bool All = false)
         {
             if (Statusses.ContainsKey("lay") || IsWalking)
             {
                 return;
             }
 
-            var diff = RotBody - Rotation;
+            var diff = RotBody - rotation;
 
             RotHead = RotBody;
 
@@ -938,12 +962,12 @@ namespace Butterfly.HabboHotel.Rooms
             }
             else if (diff <= -2 || diff >= 2 || All)
             {
-                RotHead = Rotation;
-                RotBody = Rotation;
+                RotHead = rotation;
+                RotBody = rotation;
             }
             else
             {
-                RotHead = Rotation;
+                RotHead = rotation;
             }
 
             UpdateNeeded = true;

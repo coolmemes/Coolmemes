@@ -18,6 +18,7 @@ using Butterfly.Util;
 using HabboEvents;
 using Butterfly.HabboHotel.Navigators.RoomQueue;
 using System.Collections.Concurrent;
+using System.Threading;
 
 namespace Butterfly.HabboHotel.Rooms
 {
@@ -935,15 +936,18 @@ namespace Butterfly.HabboHotel.Rooms
                                         if (bedCoord.X != User.X)
                                             bedCoord.X = User.X;
                                     }
+
                                     else if (Item.Rot == 2)
                                     {
                                         if (bedCoord.Y != User.Y)
                                             bedCoord.Y = User.Y;
+
+                                        
                                     }
                                 }
 
-                                room.GetGameMap().UpdateUserMovement(User.Coordinate, bedCoord, User);
-                                User.SetPos(bedCoord.X, bedCoord.Y, Item.GetZ);
+                                //room.GetGameMap().UpdateUserMovement(User.Coordinate, bedCoord, User);
+                                User.SetDiagonalRotation();
                                 User.SetRot(Item.Rot, false);
 
                                 if (!User.Statusses.ContainsKey("lay"))
@@ -1020,7 +1024,7 @@ namespace Butterfly.HabboHotel.Rooms
                                         NewLook += Part + ".";
                                     }
 
-                                    /*if (!OtanixEnvironment.GetGame().GetUserLookManager().IsValidLook(User.GetClient().GetHabbo(), NewLook))
+                                    /*if (!HabboEnvironment.GetGame().GetUserLookManager().IsValidLook(User.GetClient().GetHabbo(), NewLook))
                                     {
                                         User.WhisperComposer("El look que intentas ponerte no es válido para tu usuario.");
                                         break;
@@ -1215,6 +1219,26 @@ namespace Butterfly.HabboHotel.Rooms
                         RemoveUserFromRoom(User.GetClient(), false, false);
                     else
                         RemoveRoomUser(User);
+                }
+
+                if (User.ToGiveUser != null && User.GiverUser != null)
+                {
+                    if (User.GiverUser.Coordinate == User.ToGiveUser.MoveToGiveHanditemCoordinate || Gamemap.TilesTouching(User.ToGiveUser.X, User.ToGiveUser.Y, User.GiverUser.X, User.GiverUser.Y) && User.GiverUser.IsGivingHanditem)
+                    {
+                        int rotation = PathFinder.CalculateRotation(User.ToGiveUser.X, User.ToGiveUser.Y, User.GiverUser.X, User.GiverUser.Y);
+
+                        User.ToGiveUser.SetRot(rotation, false);
+
+                        User.ToGiveUser.CarryItem(User.GiverUser.CarryItemID);
+                        User.GiverUser.CarryItem(0);
+
+                        ServerMessage Message = new ServerMessage(Outgoing.HandItemMessage);
+                        Message.AppendInt32(User.ToGiveUser.VirtualId);
+                        Message.AppendInt32(User.ToGiveUser.CarryItemID);
+                        User.ToGiveUser.GetClient().SendMessage(Message);
+
+                        User.GiverUser.IsGivingHanditem = false;
+                    }
                 }
 
                 // Incrementamos el tiempo ausente.
@@ -1579,6 +1603,7 @@ namespace Butterfly.HabboHotel.Rooms
 
             // Desactivamos el updatePath
             // UpdateUsersPath = false;
+            
         }
 
         public void GenerateNewPath(RoomUser User)

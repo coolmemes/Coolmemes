@@ -108,7 +108,7 @@ namespace Butterfly.HabboHotel.Users.Messenger
 
         internal void FriendConnectAlert(string Username)
         {
-            /*GameClient client = OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(UserId);
+            /*GameClient client = HabboEnvironment.GetGame().GetClientManager().GetClientByUserID(UserId);
             if (client == null)
                 return;
 

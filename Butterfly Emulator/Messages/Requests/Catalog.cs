@@ -24,7 +24,7 @@ namespace Butterfly.Messages
             {
                 Session.SendMessage(OtanixEnvironment.GetGame().GetCatalog().GetIndexMessageForRank(Session.GetHabbo().Rank));
             }
-            else if(CatalogType.Equals("BUILDERS_CLUB"))
+            else if (CatalogType.Equals("BUILDERS_CLUB"))
             {
                 Session.SendMessage(PremiumManager.SerializePremiumItemsCount(Session.GetHabbo()));
                 Session.SendMessage(OtanixEnvironment.GetGame().GetCatalogPremium().CatalogPagesCache);
@@ -46,9 +46,23 @@ namespace Butterfly.Messages
                     return;
                 }
 
-                Session.SendMessage(Page.GetMessage);
+                if (Page.Layout.Equals("vip_buy"))
+                {
+                    ServerMessage Message = new ServerMessage(Outgoing.ClubComposer);
+                    Message.AppendInt32(Page.Items.Values.Count);
+                    foreach (CatalogItem Item in Page.Items.Values)
+                    {
+                        Item.SerializeClub(Message, Session);
+                    }
+                    Message.AppendInt32(1);
+                    Session.SendMessage(Page.GetMessage);
+                    Session.SendMessage(Message);
+                }
+
+                else
+                    Session.SendMessage(Page.GetMessage);
             }
-            else if(CatalogType == "BUILDERS_CLUB")
+            else if (CatalogType == "BUILDERS_CLUB")
             {
                 CatalogPremiumPage Page = OtanixEnvironment.GetGame().GetCatalogPremium().GetPage(PageId);
 
@@ -57,6 +71,7 @@ namespace Butterfly.Messages
 
                 Session.SendMessage(Page.GetMessage());
             }
+
         }
 
         internal void RedeemVoucher()
@@ -280,7 +295,7 @@ namespace Butterfly.Messages
             GetResponse().AppendBoolean(true);
             SendResponse();
 
-            if(Session != null && Session.GetHabbo() != null && Session.GetHabbo().GetInventoryComponent() != null)
+            if (Session != null && Session.GetHabbo() != null && Session.GetHabbo().GetInventoryComponent() != null)
                 Session.GetHabbo().GetInventoryComponent().UpdateItems(false);
         }
 
@@ -317,7 +332,7 @@ namespace Butterfly.Messages
                 dbClient.runFastQuery("DELETE FROM catalog_marketplace_offers WHERE user_id = " + Session.GetHabbo().Id + " AND state = 2");
             }
         }
-       
+
         internal void MarketplacePurchase()
         {
             uint ItemId = Request.PopWiredUInt();
@@ -501,8 +516,8 @@ namespace Butterfly.Messages
             }
 
             if (!Session.GetHabbo().lastPhotoPreview.Contains("-"))
-                return;           
-            
+                return;
+
             string roomId = Session.GetHabbo().lastPhotoPreview.Split('-')[0];
             string timestamp = Session.GetHabbo().lastPhotoPreview.Split('-')[1];
             string md5image = URLPost.GetMD5(Session.GetHabbo().lastPhotoPreview);
@@ -566,6 +581,64 @@ namespace Butterfly.Messages
             }
 
             Session.GetHabbo().GetInventoryComponent().UpdateItems(false);
+        }
+
+        internal void ClubDiscountMessage()
+        {
+            Session.GetMessageHandler().GetResponse().Init(Outgoing.ClubDiscountComposer);
+            Session.GetMessageHandler().GetResponse().AppendInt32(11091);
+            Session.GetMessageHandler().GetResponse().AppendString("HABBO_CLUB_VIP_1_MONTH");
+            Session.GetMessageHandler().GetResponse().AppendBoolean(false);
+            Session.GetMessageHandler().GetResponse().AppendInt32(0);
+            Session.GetMessageHandler().GetResponse().AppendInt32(0);
+            Session.GetMessageHandler().GetResponse().AppendInt32(5);
+            Session.GetMessageHandler().GetResponse().AppendBoolean(false);
+            Session.GetMessageHandler().GetResponse().AppendInt32(1);
+            Session.GetMessageHandler().GetResponse().AppendInt32(31);
+            Session.GetMessageHandler().GetResponse().AppendBoolean(false);
+            Session.GetMessageHandler().GetResponse().AppendInt32(32);
+
+            Session.GetMessageHandler().GetResponse().AppendInt32(2018);
+            Session.GetMessageHandler().GetResponse().AppendInt32(11);
+            Session.GetMessageHandler().GetResponse().AppendInt32(6);
+
+            Session.GetMessageHandler().GetResponse().AppendInt32(0);
+            Session.GetMessageHandler().GetResponse().AppendInt32(0);
+            Session.GetMessageHandler().GetResponse().AppendInt32(5);
+            Session.GetMessageHandler().GetResponse().AppendInt32(1);
+            Session.GetMessageHandler().SendResponse();
+        }
+
+        internal void BuyClubDiscount()
+        {
+            int Cost = 45;
+            using (IQueryAdapter dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
+            {
+                dbClient.runFastQuery("UPDATE users SET moedas = moedas - " + Cost + " WHERE id = " + Session.GetHabbo().Id);
+            }
+            Session.GetHabbo().Moedas -= Cost;
+            Session.GetHabbo().UpdateCreditsBalance();
+
+            Session.GetHabbo().GetClubManager().AddOrExtendSubscription(Session, "club_habbo", 31 * 86400, (uint)Cost, 1);
+        }
+
+        internal void HabboCatalogClubPage()
+        {
+            CatalogPage Page = OtanixEnvironment.GetGame().GetCatalog().GetPage(EmuSettings.CLUB_PAGE_ID);
+
+            if (Page == null || !Page.Enabled || !Page.Visible || Page.MinRank > Session.GetHabbo().Rank)
+            {
+                return;
+            }
+
+            ServerMessage Message = new ServerMessage(Outgoing.ClubComposer);
+            Message.AppendInt32(Page.Items.Values.Count);
+            foreach (CatalogItem Item in Page.Items.Values)
+            {
+                Item.SerializeClub(Message, Session);
+            }
+            Message.AppendInt32(1);
+            Session.SendMessage(Message);
         }
     }
 }

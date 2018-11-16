@@ -73,7 +73,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Conditions
 
         public bool AllowsExecution(RoomUser user)
         {
-            // InteractorGenericSwitch.DoAnimation(item);
+            InteractorGenericSwitch.DoAnimation(item);
            
             if(items.Count <= 0)
                 return true;

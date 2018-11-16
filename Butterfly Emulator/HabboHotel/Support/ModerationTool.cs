@@ -60,6 +60,8 @@ namespace Butterfly.HabboHotel.Support
                         ModCategories[parentId].AddSubCategory(topicId, topicName, topicAction);
                     }
                 }
+
+
             }
         }
 
@@ -505,12 +507,45 @@ namespace Butterfly.HabboHotel.Support
             OtanixEnvironment.GetGame().GetBanManager().BanUser(Client, Client.GetHabbo().Username, "", Message, Length, ModSession);
         }
 
+        internal static void ModKickUser(GameClient ModSession, uint UserId, string Reason)
+        {
+            var Client = OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(UserId);
+
+            if (Client == null || Client.GetHabbo().CurrentRoomId < 1 || Client.GetHabbo().Id == ModSession.GetHabbo().Id)
+            {
+                return;
+            }
+
+            if (Client.GetHabbo().Rank >= ModSession.GetHabbo().Rank)
+            {
+                ModSession.SendNotif(LanguageLocale.GetValue("moderation.kick.missingrank"));
+                return;
+            }
+
+            var Room = OtanixEnvironment.GetGame().GetRoomManager().GetRoom(Client.GetHabbo().CurrentRoomId);
+
+            if (Room == null)
+            {
+                return;
+            }
+
+            Room.GetRoomUserManager().RemoveUserFromRoom(Client, true, false);
+
+            if (Client != null)
+            {
+                ServerMessage nMessage = new ServerMessage(Outgoing.SendLinkNotif);
+                nMessage.AppendString("Un piccolo avviso. Sei stato segnalato per " + Reason.ToLower() + ". Forse ti serve un ripasso della Platinum Way!");
+                nMessage.AppendString("http://www." + EmuSettings.HOTEL_LINK + "/playing-habbo/safety");
+                Client.SendMessage(nMessage);
+            }
+        }
+
         internal static void MuteUser(GameClient ModSession, Habbo Client, int Length, String Message)
         {
             if (OtanixEnvironment.GetGame().GetMuteManager().UserIsMuted(Client.Id))
             {
                 if(ModSession != null)
-                    ModSession.SendNotif("El usuario ya está muteado.");
+                    ModSession.SendWindowManagerAlert("L'utente risulta già essere mutato.");
 
                 return;
             }
@@ -519,12 +554,16 @@ namespace Butterfly.HabboHotel.Support
 
             if (Client.GetClient() != null)
             {
-                DateTime newDateTime = OtanixEnvironment.UnixTimeStampToDateTime(OtanixEnvironment.GetGame().GetMuteManager().UsersMuted[Client.Id].ExpireTime);
+                DateTime expire = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(OtanixEnvironment.GetGame().GetMuteManager().UsersMuted[Client.Id].ExpireTime);
 
                 ServerMessage nMessage = new ServerMessage(Outgoing.SendLinkNotif);
-                nMessage.AppendString("Tu keko no podrá hablar hasta " + newDateTime.ToString() + " Eh, levanta el pie. Tú también puedes hacer que tod@s pasen un rato agradable en " + EmuSettings.HOTEL_LINK + ". ¡Respeto sí! ¡Bullyng no! Vale, vale, ¡tiempo muerto! No vendría mal releer la Manera " + EmuSettings.HOTEL_LINK + " y los Términos de Servicio.");
-                nMessage.AppendString("http://www." + EmuSettings.HOTEL_LINK + "/legal/terms-of-service");
+                nMessage.AppendString("A volte il silenzio è un dono raro: il tuo Platinum non parlerà sino a " + expire.ToString("dd-MM-yy HH:mm:ss") + ". Sei stato mutato per " + Client.GetSanctionManager().Reason.ToLower() + ". Forse ti serve un ripasso della Platinum Way!");
+                nMessage.AppendString("http://www." + EmuSettings.HOTEL_LINK + "/playing-habbo/safety");
                 Client.GetClient().SendMessage(nMessage);
+
+                GameClient Target = OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(Client.Id);
+                Target.GetHabbo().GetSanctionManager().AddSanction(Client.Id, 31 * 86400, "BAN");
+                Target.GetMessageHandler().SanctionMessage();
             }
         }
 
@@ -568,7 +607,7 @@ namespace Butterfly.HabboHotel.Support
                 Message.AppendString((string)User["look"]);
                 Message.AppendInt32(RegisterTimer);
                 Message.AppendInt32((Int32)LastLoginMinutes);
-                Message.AppendBoolean(OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(Convert.ToUInt32(User["id"])) != null);
+                Message.AppendBoolean(OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(Convert.ToUInt32(User["id"])) != null); //online
 
                 if (Info != null)
                 {

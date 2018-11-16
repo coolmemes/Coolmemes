@@ -528,7 +528,7 @@ namespace Butterfly.HabboHotel.Rooms
             GroupItem group = OtanixEnvironment.GetGame().GetGroup().LoadGroup(RoomData.GroupId);
             if (group != null) // si la sala contiene un grupo
             {
-                if (group.Admins.ContainsKey(Session.GetHabbo().Id))
+                if (group.Admins.ContainsKey(Session.GetHabbo().Id) || group.RightsType == 0)
                     return 3;
             }
 
@@ -582,6 +582,7 @@ namespace Butterfly.HabboHotel.Rooms
                                 return true;
                             }
                         }
+
                     }
 
                     if (UsersWithRights.Contains(Session.GetHabbo().Id))

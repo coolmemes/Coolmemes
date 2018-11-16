@@ -43,3 +43,15 @@ C:\Tudo\kash network\emulador 28-01 - Copia\emulador\HabboEvents\bin\Debug\Habbo
 C:\Tudo\kash network\emulador 28-01 - Copia\emulador\HabboEvents\obj\Debug\HabboEvents.csprojResolveAssemblyReference.cache
 C:\Tudo\kash network\emulador 28-01 - Copia\emulador\HabboEvents\obj\Debug\HabboEvents.dll
 C:\Tudo\kash network\emulador 28-01 - Copia\emulador\HabboEvents\obj\Debug\HabboEvents.pdb
+C:\Users\Test\Desktop\Otanix\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Users\Test\Desktop\Otanix\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Users\Test\Desktop\Otanix\HabboEvents\obj\Debug\HabboEvents.csprojAssemblyReference.cache
+C:\Users\Test\Desktop\Otanix\HabboEvents\obj\Debug\HabboEvents.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\Otanix\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Users\Test\Desktop\Otanix\HabboEvents\obj\Debug\HabboEvents.pdb
+C:\Users\New\Desktop\Otanix\HabboEvents\bin\Debug\HabboEvents.dll
+C:\Users\New\Desktop\Otanix\HabboEvents\bin\Debug\HabboEvents.pdb
+C:\Users\New\Desktop\Otanix\HabboEvents\obj\Debug\HabboEvents.csprojAssemblyReference.cache
+C:\Users\New\Desktop\Otanix\HabboEvents\obj\Debug\HabboEvents.csproj.CoreCompileInputs.cache
+C:\Users\New\Desktop\Otanix\HabboEvents\obj\Debug\HabboEvents.dll
+C:\Users\New\Desktop\Otanix\HabboEvents\obj\Debug\HabboEvents.pdb

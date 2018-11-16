@@ -60,7 +60,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                         {
                             var user = (RoomUser)delayedUsers.Dequeue();
                             TeleportUser(user);
-                            //InteractorGenericSwitch.DoAnimation(itemID);
+                            InteractorGenericSwitch.DoAnimation(itemID);
                         }
                     }
                 }

@@ -58,7 +58,7 @@ namespace Butterfly.HabboHotel.Users.Clothing
 
             using (IQueryAdapter dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
             {
-                dbClient.runFastQuery("INSERT IGNORE INTO user_clothing VALUES ('" + UserId + "','" + ClothesName + "')");
+                dbClient.runFastQuery("INSERT IGNORE INTO user_clothing VALUES ('','" + UserId + "','" + ClothesName + "')");
             }
         }
 

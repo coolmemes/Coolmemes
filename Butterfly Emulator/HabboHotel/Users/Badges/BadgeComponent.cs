@@ -6,6 +6,7 @@ using System.Collections;
 using ButterStorm;
 using HabboEvents;
 using System.Collections.Specialized;
+using Butterfly.HabboHotel.Users.UserDataManagement;
 
 namespace Butterfly.HabboHotel.Users.Badges
 {
@@ -37,7 +38,7 @@ namespace Butterfly.HabboHotel.Users.Badges
 
         internal int temEmblemaEquipado(string emblema)
         {
-             return Badges.Values.Cast<Badge>().Count(Badge => Badge.Slot > 0 && Badge.Code == emblema);
+            return Badges.Values.Cast<Badge>().Count(Badge => Badge.Slot > 0 && Badge.Code == emblema);
         }
 
         internal HybridDictionary BadgeList
@@ -101,7 +102,7 @@ namespace Butterfly.HabboHotel.Users.Badges
             Badges.Add(Badge, _badge);
 
             var Session = OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(UserId);
-            if(Session != null)
+            if (Session != null)
                 Session.SendMessage(Serialize());
         }
 
@@ -129,11 +130,11 @@ namespace Butterfly.HabboHotel.Users.Badges
             Badges.Remove(BadgeName + (BadgeLevel - 1));
 
             var _badge = new Badge(BadgeName, BadgeLevel.ToString(), badge.Slot) { needInsert = true };
-            if(!Badges.Contains(Badge))
+            if (!Badges.Contains(Badge))
                 Badges.Add(Badge, _badge);
 
             var Session = OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(UserId);
-            if(Session != null)
+            if (Session != null)
                 Session.SendMessage(Serialize());
         }
 

@@ -114,9 +114,9 @@ namespace Butterfly.HabboHotel.Users.Inventory
                 dbClient.setQuery("SELECT items.item_id FROM items JOIN items_users ON items_users.item_id = items.item_id WHERE items_users.user_id = " + UserId);
                 DataTable dTable = dbClient.getTable();
 
-                if(dTable != null)
+                if (dTable != null)
                 {
-                    foreach(DataRow dRow in dTable.Rows)
+                    foreach (DataRow dRow in dTable.Rows)
                     {
                         int ItemId = int.Parse(dRow["item_id"].ToString());
 
@@ -204,7 +204,7 @@ namespace Butterfly.HabboHotel.Users.Inventory
 
             if (!inventoryHaveBots.ContainsKey(Bot.BotId))
                 inventoryHaveBots.Add(Bot.BotId, Bot.AiType);
-           
+
             if (Bot == null)
                 return;
 
@@ -212,7 +212,7 @@ namespace Butterfly.HabboHotel.Users.Inventory
             if (!InventoryBots.ContainsKey(Bot.BotId))
                 InventoryBots.Add(Bot.BotId, Bot);
         }
-#endregion
+        #endregion
 
         internal void LoadInventory()
         {
@@ -267,7 +267,7 @@ namespace Butterfly.HabboHotel.Users.Inventory
                     if (!discs.Contains(id))
                         discs.Add(id, item);
                 }
-                
+
                 if (item.isWallItem)
                 {
                     if (!wallItems.Contains(id))
@@ -375,7 +375,7 @@ namespace Butterfly.HabboHotel.Users.Inventory
             {
                 if (item.BaseItem == BaseId)
                 {
-                    floorItems.Remove(item.Id); 
+                    floorItems.Remove(item.Id);
                     return;
                 }
             }
@@ -402,7 +402,7 @@ namespace Butterfly.HabboHotel.Users.Inventory
             if (Count > 0)
                 return Count;
 
-            foreach(UserItem item in wallItems.Values)
+            foreach (UserItem item in wallItems.Values)
             {
                 if (item.BaseItem == BaseId)
                     Count++;
@@ -458,7 +458,7 @@ namespace Butterfly.HabboHotel.Users.Inventory
                         }
 
                         dbClient.runFastQuery("INSERT INTO items_users VALUES (" + Id + "," + UserId + ")");
-                        
+
                         if (SaveRareLog)
                         {
                             dbClient.setQuery("INSERT INTO catalog_rares_logs VALUES (" + Id + ",@itemname," + UserId + ")");

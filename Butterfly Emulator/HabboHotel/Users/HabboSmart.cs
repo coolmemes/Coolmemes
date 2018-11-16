@@ -1,6 +1,7 @@
 ﻿using Butterfly.HabboHotel.Achievements;
 using Butterfly.HabboHotel.Users.Badges;
 using Butterfly.HabboHotel.Users.Relationships;
+using Butterfly.HabboHotel.Users.UserDataManagement;
 using ButterStorm;
 using ButterStorm.HabboHotel.Users.Inventory;
 using System;
@@ -57,7 +58,7 @@ namespace Butterfly.HabboHotel.Users
             BadgeComponentLoaded = true;
         }
 
-        internal void saveBadges()
+        internal void SaveBadges()
         {
             if (BadgeComponent != null && BadgeComponent.BadgeList != null && BadgeComponent.BadgeList.Count > 0)
             {

@@ -1311,6 +1311,11 @@
         {
             handler.SMSVerificar();
         }
+
+        internal static void SMSVerificar2(GameClientMessageHandler handler)
+        {
+            handler.SMSVerificar2();
+        }
         internal static void GetNuxPresentEvent(GameClientMessageHandler handler)
         {
             handler.GetNuxPresentEvent();
@@ -1319,6 +1324,41 @@
         internal static void NuxMsgseiLaOq(GameClientMessageHandler handler)
         {
             handler.NuxMsgseiLaOq();
-        }    
+        }
+
+        internal static void RequestCameraConfiguration(GameClientMessageHandler handler)
+        {
+            handler.RequestCameraConfiguration();
+        }
+
+        internal static void SanctionMessage(GameClientMessageHandler handler)
+        {
+            handler.SanctionMessage();
+        }
+
+        internal static void GetClubCenterData(GameClientMessageHandler handler)
+        {
+            handler.ClubCenterData();
+        }
+
+        internal static void HabboClubDiscountMessage(GameClientMessageHandler handler)
+        {
+            handler.ClubDiscountMessage();
+        }
+
+        internal static void BuyClubDiscount(GameClientMessageHandler handler)
+        {
+            handler.BuyClubDiscount();
+        }
+
+        internal static void CFHTopic(GameClientMessageHandler handler)
+        {
+            handler.CFHTopic();
+        }
+
+        internal static void ModActionAlertUser(GameClientMessageHandler handler)
+        {
+            handler.ModAlertUser();
+        }
     }
 }

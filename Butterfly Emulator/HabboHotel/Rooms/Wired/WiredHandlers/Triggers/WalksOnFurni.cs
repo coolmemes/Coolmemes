@@ -51,7 +51,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Triggers
             }
 
             handler.RequestStackHandle(item, (RoomItem)sender, e.user, e.user.team);
-            //InteractorGenericSwitch.DoAnimation(item);
+            InteractorGenericSwitch.DoAnimation(item);
         }
 
         public void Dispose()

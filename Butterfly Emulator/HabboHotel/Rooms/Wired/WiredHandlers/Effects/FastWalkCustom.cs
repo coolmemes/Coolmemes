@@ -63,7 +63,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Triggers
                             var user = (RoomUser)delayedUsers.Dequeue();
                             normalWalk(user);
                             cycleCount = 0;
-                            //InteractorGenericSwitch.DoAnimation(itemID);
+                            InteractorGenericSwitch.DoAnimation(item);
                         }
                     }
                 }

@@ -17,17 +17,17 @@ namespace Butterfly.HabboHotel.Rooms
     {
         #region Variables
         /// <summary>
-        /// La variable que mantiene la información de sala.
+        /// La variabile che contiene le informazioni sulla stanza.
         /// </summary>
         private Room room;
 
         /// <summary>
-        /// Modelo de sala que no varia NUNCA.
+        /// Modello di stanza che non varia MAI.
         /// </summary>
         private RoomModel mStaticModel;
 
         /// <summary>
-        /// Items que encontramos sobre una baldosa.
+        /// Oggetti che troviamo su una casella.
         /// </summary>
         private Hashtable mCoordinatedItems;
 
@@ -37,7 +37,7 @@ namespace Butterfly.HabboHotel.Rooms
         private Hashtable mTileHeightApilable;
 
         /// <summary>
-        /// Estado de la casilla (CERRADA = 0, ABIERTA = 1, SILLA = 2, ENTRADA = 3)
+        ///Stato della casella(CLOSED = 0, OPEN = 1, CHAIR = 2, ENTRY = 3)
         /// </summary>
         private byte[,] mGameMap;
 
@@ -52,7 +52,7 @@ namespace Butterfly.HabboHotel.Rooms
         private double[,] mItemHeightMap;
 
         /// <summary>
-        /// En esta podremos encontrar los usuarios que están sobre las baldosas.
+        /// In questo possiamo trovare gli utenti che si trovano sulle tessere.
         /// </summary>
         private Hashtable userMap;
 
@@ -502,6 +502,7 @@ namespace Butterfly.HabboHotel.Rooms
                 else if (Item.GetBaseItem().InteractionType == InteractionType.footballgoalblue || Item.GetBaseItem().InteractionType == InteractionType.footballgoalgreen || Item.GetBaseItem().InteractionType == InteractionType.footballgoalred || Item.GetBaseItem().InteractionType == InteractionType.footballgoalyellow)
                 {
                     mGameMap[Coord.X, Coord.Y] = 1;
+                    
                 }
                 else if (Item.GetBaseItem().InteractionType == InteractionType.gate && Item.ExtraData == "1") // If this item is a gate, open, and on the floor, allow users to walk here.
                 {
@@ -634,29 +635,32 @@ namespace Butterfly.HabboHotel.Rooms
                 int XValue = To.X - From.X;
                 int YValue = To.Y - From.Y;
 
-                if (XValue == -1 && YValue == -1) // Cima Esquerdo
+                if (XValue == -1 && YValue == -1) // In alto a sinistra
                 {
-                    Point itemEntreCoords1 = new Point(To.X+1, To.Y), itemEntreCoords2 = new Point(To.X, To.Y+1);
+                    //equerda -> sinistra
+                    Point itemEntreCoords1 = new Point(To.X + 1, To.Y), itemEntreCoords2 = new Point(To.X, To.Y + 1);
                     List<RoomItem> itensEsquerda = GetCoordinatedItems(itemEntreCoords1), itensDireita = GetCoordinatedItems(itemEntreCoords2);
-                    if(itensDireita.Count > 0 && itensEsquerda.Count > 0)
+                    if (itensDireita.Count > 0 && itensEsquerda.Count > 0)
                     {
                         bool esquerdaBool = false, direitaBool = false;
                         foreach (RoomItem meuItem in itensEsquerda)
-                            if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                        {
+                            if (!meuItem.GetBaseItem().Walkable)
                                 esquerdaBool = true;
-                        
+                        }
+
 
                         foreach (RoomItem meuItem in itensDireita)
-                            if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                            if (!meuItem.GetBaseItem().Walkable)
                                 direitaBool = true;
-                           
+
                         if (esquerdaBool && direitaBool == true)
                             return false;
                     }
-                    if (mGameMap[To.X + 1, To.Y + 1] != 1 && mGameMap[To.X + 1, To.Y + 1] != 2)// && mGameMap[To.X, To.Y + 1] != 1)
+                    if (mGameMap[To.X + 1, To.Y + 1] != 1 && mGameMap[To.X + 1, To.Y + 1] != 2 && mGameMap[To.X, To.Y + 1] != 1)
                         return false;
                 }
-                else if (XValue == 1 && YValue == -1) // Cima direita
+                else if (XValue == 1 && YValue == -1) // In alto a destra
                 {
                     Point itemEntreCoords1 = new Point(To.X - 1, To.Y), itemEntreCoords2 = new Point(To.X, To.Y + 1);
                     List<RoomItem> itensEsquerda = GetCoordinatedItems(itemEntreCoords1), itensDireita = GetCoordinatedItems(itemEntreCoords2);
@@ -664,21 +668,23 @@ namespace Butterfly.HabboHotel.Rooms
                     {
                         bool esquerdaBool = false, direitaBool = false;
                         foreach (RoomItem meuItem in itensEsquerda)
-                            if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                            //if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                            if (!meuItem.GetBaseItem().Walkable)
                                 esquerdaBool = true;
-                        
+
 
                         foreach (RoomItem meuItem in itensDireita)
-                            if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                            //if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                            if (!meuItem.GetBaseItem().Walkable)
                                 direitaBool = true;
-                        
+
                         if (esquerdaBool && direitaBool == true)
                             return false;
                     }
-                    if (mGameMap[To.X - 1, To.Y + 1] != 1 && mGameMap[To.X - 1, To.Y + 1] != 2)// && mGameMap[To.X, To.Y + 1] != 1)
+                    if (mGameMap[To.X - 1, To.Y + 1] != 1 && mGameMap[To.X - 1, To.Y + 1] != 2 && mGameMap[To.X, To.Y + 1] != 1)
                         return false;
                 }
-                else if (XValue == 1 && YValue == 1) // Baixo direito
+                else if (XValue == 1 && YValue == 1) // In basso a destra
                 {
                     Point itemEntreCoords1 = new Point(To.X - 1, To.Y), itemEntreCoords2 = new Point(To.X, To.Y - 1);
                     List<RoomItem> itensEsquerda = GetCoordinatedItems(itemEntreCoords1), itensDireita = GetCoordinatedItems(itemEntreCoords2);
@@ -686,20 +692,22 @@ namespace Butterfly.HabboHotel.Rooms
                     {
                         bool esquerdaBool = false, direitaBool = false;
                         foreach (RoomItem meuItem in itensEsquerda)
-                            if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                            if (!meuItem.GetBaseItem().Walkable)
+                                //if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
                                 esquerdaBool = true;
 
                         foreach (RoomItem meuItem in itensDireita)
-                            if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                            if (!meuItem.GetBaseItem().Walkable)
+                                //if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
                                 direitaBool = true;
 
                         if (esquerdaBool && direitaBool == true)
                             return false;
                     }
-                    if (mGameMap[To.X - 1, To.Y - 1] != 1 && mGameMap[To.X - 1, To.Y - 1] != 2)// && mGameMap[To.X, To.Y - 1] != 1)
+                    if (mGameMap[To.X - 1, To.Y - 1] != 1 && mGameMap[To.X - 1, To.Y - 1] != 2 && mGameMap[To.X, To.Y - 1] != 1)
                         return false;
                 }
-                else if (XValue == -1 && YValue == 1) // Baixo esquerda
+                else if (XValue == -1 && YValue == 1) // In basso a sinistra
                 {
                     Point itemEntreCoords1 = new Point(To.X + 1, To.Y), itemEntreCoords2 = new Point(To.X, To.Y - 1);
                     List<RoomItem> itensEsquerda = GetCoordinatedItems(itemEntreCoords1), itensDireita = GetCoordinatedItems(itemEntreCoords2);
@@ -707,19 +715,24 @@ namespace Butterfly.HabboHotel.Rooms
                     {
                         bool esquerdaBool = false, direitaBool = false;
                         foreach (RoomItem meuItem in itensEsquerda)
-                            if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                            if (!meuItem.GetBaseItem().Walkable)
+                                //if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
                                 esquerdaBool = true;
 
                         foreach (RoomItem meuItem in itensDireita)
-                            if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                            if (!meuItem.GetBaseItem().Walkable)
+                            //if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
                                 direitaBool = true;
 
                         if (esquerdaBool && direitaBool == true)
                             return false;
                     }
-                    if (mGameMap[To.X + 1, To.Y - 1] != 1 && mGameMap[To.X + 1, To.Y - 1] != 2)// && mGameMap[To.X, To.Y - 1] != 1)
+                    if (mGameMap[To.X + 1, To.Y - 1] != 1 && mGameMap[To.X + 1, To.Y - 1] != 2 && mGameMap[To.X, To.Y - 1] != 1)
                         return false;
                 }
+
+                
+     
             }
 
             // Si es una puerta de grupo y pertenecemos al grupo, podemos pisar por esta baldosa.
@@ -839,14 +852,15 @@ namespace Butterfly.HabboHotel.Rooms
         {
              List<RoomUser> users = new List<RoomUser>();
 
-            for (int i = 0; i < PathFinder.TilesArround.Length; i++)
+            for (int i = 0; i < PathFinder.TilesAround.Length; i++)
             {
-                Point newTile = new Point(tile.X + PathFinder.TilesArround[i].X, tile.Y + PathFinder.TilesArround[i].Y);
+                Point newTile = new Point(tile.X + PathFinder.TilesAround[i].X, tile.Y + PathFinder.TilesAround[i].Y);
                 if (SquareHasUsers(newTile.X, newTile.Y))
                 users.AddRange(GetRoomUsers(newTile));
             }
             return users;
         }
+
 
 
         internal MovementState GetChasingMovement(int X, int Y)
@@ -858,7 +872,7 @@ namespace Butterfly.HabboHotel.Rooms
 
             for (int i = 1; i < 4; i++)
             {
-                // Left
+                //// Left
                 if (moveToLeft)
                 {
                     if (moveToLeft && SquareHasUsers(X - i, Y))
@@ -1037,6 +1051,16 @@ namespace Butterfly.HabboHotel.Rooms
         internal static bool TilesTouching(int X1, int Y1, int X2, int Y2)
         {
             if (!(Math.Abs(X1 - X2) > 1 || Math.Abs(Y1 - Y2) > 1))
+                return true;
+            if (X1 == X2 && Y1 == Y2)
+                return true;
+
+            return false;
+        }
+
+        internal static bool TilesTouching2(int X1, int Y1, int X2, int Y2)
+        {
+            if (!(Math.Abs(X1 - X2) > 2 || Math.Abs(Y1 - Y2) > 2))
                 return true;
             if (X1 == X2 && Y1 == Y2)
                 return true;
@@ -1273,7 +1297,7 @@ namespace Butterfly.HabboHotel.Rooms
                 return false;
             }
 
-            if (X < 0 || Y < 0 || X >= Model.MapSizeX || Y >= Model.MapSizeY || (Model.SqState[X,Y] == SquareState.BLOCKED && validaCorreto == true))
+            if (X < 0 || Y < 0 || X >= Model.MapSizeX || Y >= Model.MapSizeY || (Model.SqState[X, Y] == SquareState.BLOCKED && validaCorreto == true))
             {
                 return false;
             }

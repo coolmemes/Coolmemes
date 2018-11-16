@@ -12,6 +12,7 @@ using Butterfly.Core;
 using Butterfly.HabboHotel.GameClients;
 using Butterfly.HabboHotel.Filter;
 using Butterfly.HabboHotel.Misc;
+using Butterfly.HabboHotel.Items;
 
 namespace Butterfly.Messages
 {
@@ -249,12 +250,12 @@ namespace Butterfly.Messages
                 return;
 
             if (BlackWordsManager.Check(GroupName, BlackWordType.Hotel, Session, "<SaveGroupIdentity>"))
-                Group.Name = "Mensaje bloqueado por el filtro bobba.";
+                Group.Name = "Nome inappropriato";
             else
                 Group.Name = GroupName;
 
             if (BlackWordsManager.Check(GroupDescription, BlackWordType.Hotel, Session, "<SaveGroupIdentity>"))
-                Group.Description = "Mensaje bloqueado por el filtro bobba.";
+                Group.Description = "";
             else
                 Group.Description = GroupDescription;
 
@@ -298,6 +299,7 @@ namespace Butterfly.Messages
             Group.GroupBase = Request.PopWiredInt32();
             Group.GroupBaseColor = Request.PopWiredInt32();
             Group.GroupBasePosition = Request.PopWiredInt32();
+
             for (int k = 0; k < ArrayItem; k++)
             {
                 if (k == 0)
@@ -331,6 +333,13 @@ namespace Butterfly.Messages
             Update2.AppendInt32(Room.RoomData.WallThickness);
             Update2.AppendInt32(Room.RoomData.FloorThickness);
             Room.SendMessage(Update2);
+
+
+            ServerMessage UpdateUserGroup = new ServerMessage(Outgoing.SendGroup);
+            UpdateUserGroup.AppendInt32(1);
+            UpdateUserGroup.AppendUInt(Group.Id);
+            UpdateUserGroup.AppendString(Group.GroupImage);
+            Room.SendMessage(UpdateUserGroup);
         }
 
         internal void SaveGroupColours()
@@ -696,6 +705,19 @@ namespace Butterfly.Messages
                     UpdateUserGroup.AppendString("");
                     User.CurrentRoom.SendMessage(UpdateUserGroup);
                 }
+            }
+            if (Group.Admins.ContainsKey(UserId))
+                Group.Admins.Remove(UserId);
+
+            Room Room = Session.GetHabbo().CurrentRoom;
+            foreach (RoomItem item in Room.GetRoomItemHandler().mFloorItems.Values)
+            {
+                Room.GetRoomItemHandler().RemoveUserFurniture(Session);
+            }
+
+            foreach (RoomItem item in Room.GetRoomItemHandler().mWallItems.Values)
+            {
+                Room.GetRoomItemHandler().RemoveUserFurniture(Session);
             }
         }
 
@@ -1123,7 +1145,7 @@ namespace Butterfly.Messages
             if (ThreadId == 0 && (PostIssue.Length < 10 || PostIssue.Length > 120))
                 return;
 
-            string PostMessage = Request.PopFixedString(); //OtanixEnvironment.FilterInjectionChars(Request.PopFixedString());
+            string PostMessage = Request.PopFixedString(); //HabboEnvironment.FilterInjectionChars(Request.PopFixedString());
             if (PostMessage.Length < 10 || PostMessage.Length > 4000)
                 return;
 
@@ -1485,14 +1507,14 @@ namespace Butterfly.Messages
 
         internal void ReportForumPost()
         {
-            Session.SendNotif("Esta función todavía está desactivada...");
-            return;
+            //Session.SendNotif("Esta función todavía está desactivada...");
+            //return;
 
-            /*if (Session == null || Session.GetHabbo() == null)
+            if (Session == null || Session.GetHabbo() == null)
                 return;
 
             int GroupId = Request.PopWiredInt32();
-            var Group = OtanixEnvironment.GetGame().GetGroup().LoadGroup(GroupId);
+            var Group = OtanixEnvironment.GetGame().GetGroup().LoadGroup((uint)GroupId);
             if (Group == null || Group.Forum == null)
                 return;
 
@@ -1507,11 +1529,11 @@ namespace Butterfly.Messages
             int Type = Request.PopWiredInt32();
             string Report = Request.PopFixedString();
 
-            OtanixEnvironment.GetGame().GetModerationTool().SendNewTicket(Session, Type, 0, Report);
+            OtanixEnvironment.GetGame().GetModerationTool().SendNewTicket(Session, Type, 0, Report, new string[0]);
 
             ServerMessage Messagee = new ServerMessage(Outgoing.TicketAlert);
             Messagee.AppendInt32(0);
-            Session.SendMessage(Messagee);*/
+            Session.SendMessage(Messagee);
         }
 
         internal void DeleteGroup()

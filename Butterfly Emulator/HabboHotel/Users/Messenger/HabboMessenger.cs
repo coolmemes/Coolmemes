@@ -79,7 +79,10 @@ namespace Butterfly.HabboHotel.Users.Messenger
                 if (client == null || client.GetHabbo() == null || client.GetHabbo().GetMessenger() == null)
                     continue;
 
-                client.GetHabbo().GetMessenger().UpdateFriend(UserId, client);
+                var friend = OtanixEnvironment.GetGame().GetClientManager().GetClientByUserID(UserId);
+
+                if (!friend.GetHabbo().HiddenOnline)
+                    client.GetHabbo().GetMessenger().UpdateFriend(UserId, client);
             }
         }
 
@@ -345,7 +348,7 @@ namespace Butterfly.HabboHotel.Users.Messenger
 
             if (GetClient() != null && GetClient().GetHabbo() != null && !GetClient().GetHabbo().passouPin)
             {
-                GetClient().SendNotif("Você precisa digitar o pin staff");
+                GetClient().SendWindowManagerAlert("Devi inserire il codice di sicurezza per consegnare un messaggio privato.");
                 return;
             }
 
@@ -455,7 +458,7 @@ namespace Butterfly.HabboHotel.Users.Messenger
             reply.AppendInt32(1100); // limite de amigos HC
             reply.AppendInt32(1); // categorys (foreach) int = id da categoria, string = Nome da categoria
             reply.AppendInt32(1); // id da categoria
-            reply.AppendString("Chats de Grupos"); // nome da categoria
+            reply.AppendString("Chat di Gruppo"); // nome da categoria
             reply.AppendInt32(100);
             reply.AppendInt32(0);
 

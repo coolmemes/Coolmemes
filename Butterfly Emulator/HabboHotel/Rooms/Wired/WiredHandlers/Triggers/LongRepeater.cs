@@ -45,7 +45,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Triggers
             if (cycleCount > ((cyclesRequired * 10) - 0.5))
             {
                 handler.RequestStackHandle(item, null, null, Team.none);
-                //InteractorGenericSwitch.DoAnimation(item);
+                InteractorGenericSwitch.DoAnimation(item);
                 cycleCount = 0;
             }
             return true;

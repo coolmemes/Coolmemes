@@ -28,22 +28,22 @@ namespace Butterfly.Messages
             userConnection = null;
         }
 
-        private void appendBytes(byte[] bytes)
+        private void AppendBytes(byte[] bytes)
         {
             packet.AddRange(bytes);
         }
 
-        internal void appendResponse(ServerMessage message)
+        internal void AppendResponse(ServerMessage message)
         {
-            appendBytes(message.GetBytes());
+            AppendBytes(message.GetBytes());
         }
 
-        internal void addBytes(byte[] bytes)
+        internal void AddBytes(byte[] bytes)
         {
-            appendBytes(bytes);
+            AppendBytes(bytes);
         }
 
-        internal void sendResponse()
+        internal void SendResponse()
         {
             userConnection.SendMuchData(packet.ToArray());
             Dispose();

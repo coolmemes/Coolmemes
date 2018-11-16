@@ -31,7 +31,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -74,6 +74,10 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>analyzeset.ruleset</CodeAnalysisRuleSet>
     <RunCodeAnalysis>true</RunCodeAnalysis>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <OutputPath>bin\x64\Release\</OutputPath>
@@ -84,6 +88,9 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Azure.Encryption, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -134,6 +141,10 @@
     <Compile Include="HabboHotel\Catalogs\Bundles\BundleQuarto.cs" />
     <Compile Include="HabboHotel\Catalogs\Bundles\BundleQuartoManager.cs" />
     <Compile Include="HabboHotel\Catalogs\CatalogPageExtra.cs" />
+    <Compile Include="HabboHotel\Catalogs\HabboClub\CatalogClubGift.cs" />
+    <Compile Include="HabboHotel\Catalogs\HabboClub\CatalogClubOffer.cs" />
+    <Compile Include="HabboHotel\Catalogs\HabboClub\CatalogClubOfferType.cs" />
+    <Compile Include="HabboHotel\Catalogs\HabboClub\HabboClubManager.cs" />
     <Compile Include="HabboHotel\ChatMessageStorage\ChatColorido\CorManager.cs" />
     <Compile Include="HabboHotel\ChatMessageStorage\SpyChatMessage.cs" />
     <Compile Include="HabboHotel\Misc\AntiMutant.cs" />
@@ -144,6 +155,13 @@
     <Compile Include="HabboHotel\Misc\NotificaStaff.cs" />
     <Compile Include="HabboHotel\Navigators\Bonus\BonusManager.cs" />
     <Compile Include="HabboHotel\Navigators\Landing\LandingTopUsers.cs" />
+    <Compile Include="HabboHotel\Pathfinding\Coord.cs" />
+    <Compile Include="HabboHotel\Pathfinding\CoordinationUtil.cs" />
+    <Compile Include="HabboHotel\Pathfinding\MinHeap.cs" />
+    <Compile Include="HabboHotel\Pathfinding\PathFinder.cs" />
+    <Compile Include="HabboHotel\Pathfinding\PathFinderNode.cs" />
+    <Compile Include="HabboHotel\Pathfinding\Rotation.cs" />
+    <Compile Include="HabboHotel\Pathfinding\Vector2D.cs" />
     <Compile Include="HabboHotel\Premiums\Catalog\CatalogPremium.cs" />
     <Compile Include="HabboHotel\Premiums\Catalog\CatalogPremiumItem.cs" />
     <Compile Include="HabboHotel\Premiums\Catalog\CatalogPremiumPage.cs" />
@@ -169,10 +187,6 @@
     <Compile Include="HabboHotel\Navigators\RoomQueue\RoomQueue.cs" />
     <Compile Include="HabboHotel\Navigators\RoomQueue\RoomQueueManager.cs" />
     <Compile Include="HabboHotel\Navigators\SearchResultList.cs" />
-    <Compile Include="HabboHotel\Pathfinding\MinHeap.cs" />
-    <Compile Include="HabboHotel\Pathfinding\PathFinder.cs" />
-    <Compile Include="HabboHotel\Pathfinding\PathFinderNode.cs" />
-    <Compile Include="HabboHotel\Pathfinding\Vector2D.cs" />
     <Compile Include="HabboHotel\Pets\PetBreeding.cs" />
     <Compile Include="HabboHotel\Pets\PetOrders.cs" />
     <Compile Include="HabboHotel\Pets\Plantas\PlantsName.cs" />
@@ -251,6 +265,10 @@
     <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Conditions\FurniHasFurni.cs" />
     <Compile Include="HabboHotel\Rooms\Wired\WiredHandlers\Triggers\LongRepeater.cs" />
     <Compile Include="HabboHotel\Rooms\Wired\WiredLoaderSQL.cs" />
+    <Compile Include="HabboHotel\Sanctions\Sanction.cs" />
+    <Compile Include="HabboHotel\Sanctions\SanctionManager.cs" />
+    <Compile Include="HabboHotel\Subscriptions\HabboClub\ClubManager.cs" />
+    <Compile Include="HabboHotel\Subscriptions\HabboClub\Club.cs" />
     <Compile Include="HabboHotel\Support\Ban.cs" />
     <Compile Include="HabboHotel\Support\ModActions\ModCategory.cs" />
     <Compile Include="HabboHotel\Support\ModActions\ModSubCategory.cs" />
@@ -320,8 +338,6 @@
     <Compile Include="HabboHotel\Misc\CrossdomainPolicy.cs" />
     <Compile Include="HabboHotel\Navigators\FlatCat.cs" />
     <Compile Include="HabboHotel\Navigators\Navigator.cs" />
-    <Compile Include="HabboHotel\Pathfinding\Coord.cs" />
-    <Compile Include="HabboHotel\Pathfinding\Rotation.cs" />
     <Compile Include="HabboHotel\Pets\Pet.cs" />
     <Compile Include="HabboHotel\Pets\PetLocale.cs" />
     <Compile Include="HabboHotel\Quests\Quest.cs" />
@@ -446,7 +462,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="HabboHotel\Pathfinding\CoordinationUtil.cs" />
     <Compile Include="Scripts\AchConverter.cs" />
     <Compile Include="Scripts\ChangeRoomState.cs" />
     <Compile Include="Scripts\GiftFix.cs" />
@@ -504,6 +519,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -511,8 +527,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icon.ico" />
     <Content Include="iconeotanix.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

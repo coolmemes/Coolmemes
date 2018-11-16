@@ -14,6 +14,7 @@ using Otanix.HabboHotel.Rooms.Wired;
 using Butterfly.HabboHotel.Rooms.Games;
 using Butterfly.Core;
 using Butterfly.HabboHotel.Filter;
+using Butterfly.HabboHotel.Items.Interactors;
 
 namespace Butterfly.HabboHotel.Rooms.Wired
 {
@@ -33,6 +34,8 @@ namespace Butterfly.HabboHotel.Rooms.Wired
                 item.wiredHandler.Dispose();
                 item.wiredHandler = null;
             }
+
+            InteractorGenericSwitch.DoAnimation(item);
 
             var type = item.GetBaseItem().InteractionType;
             switch (type)

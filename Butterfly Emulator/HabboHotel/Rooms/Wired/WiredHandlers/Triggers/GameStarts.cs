@@ -26,7 +26,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Triggers
         private void gameManager_OnGameStart(object sender, EventArgs e)
         {
             handler.RequestStackHandle(item, null, null, Team.none);
-            //InteractorGenericSwitch.DoAnimation(item);
+            InteractorGenericSwitch.DoAnimation(item);
         }
 
         public void Dispose()

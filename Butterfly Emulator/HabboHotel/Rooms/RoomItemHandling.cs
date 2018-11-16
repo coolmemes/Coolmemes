@@ -952,7 +952,7 @@ namespace Butterfly.HabboHotel.Rooms
                     if (room.GetGameMap().Model.SqState[coord.X, coord.Y] != SquareState.OPEN)
                         return false;
                 }
-                if (!Item.GetBaseItem().IsSeat)
+                if (!Item.GetBaseItem().IsSeat && Item.GetBaseItem().InteractionType != InteractionType.bed)
                 {
                     if (room.GetGameMap().SquareHasUsers(newX, newY))
                         return false;
@@ -1002,6 +1002,8 @@ namespace Butterfly.HabboHotel.Rooms
             if (Item == null || Item.GetBaseItem() == null)
                 return false;
 
+            Room Room = Session.GetHabbo().CurrentRoom;
+
             var NeedsReAdd = false;
             if (!newItem)
                 NeedsReAdd = room.GetGameMap().RemoveFromMap(Item);
@@ -1028,7 +1030,7 @@ namespace Butterfly.HabboHotel.Rooms
                 goto MagicTile;
             }
 
-            if (!room.GetGameMap().ValidTile(newX, newY) || room.GetGameMap().SquareHasUsers(newX, newY) && !Item.GetBaseItem().IsSeat && !isPiñata)
+            if (!room.GetGameMap().ValidTile(newX, newY) || room.GetGameMap().SquareHasUsers(newX, newY) && !Item.GetBaseItem().IsSeat &&  Item.GetBaseItem().InteractionType != InteractionType.bed &&!isPiñata)
             {
                 if (NeedsReAdd)
                 {
@@ -1055,7 +1057,7 @@ namespace Butterfly.HabboHotel.Rooms
 
             foreach (var Tile in AffectedTiles.Values)
             {
-                if (!room.GetGameMap().ValidTile(Tile.X, Tile.Y) || (room.GetGameMap().SquareHasUsers(Tile.X, Tile.Y) && !Item.GetBaseItem().IsSeat && !isPiñata))
+                if (!room.GetGameMap().ValidTile(Tile.X, Tile.Y) || (room.GetGameMap().SquareHasUsers(Tile.X, Tile.Y) && !Item.GetBaseItem().IsSeat && Item.GetBaseItem().InteractionType != InteractionType.bed && !isPiñata))
                 {
                     if (NeedsReAdd)
                     {
@@ -1071,7 +1073,7 @@ namespace Butterfly.HabboHotel.Rooms
 
             if (!OnRoller && (room.GetGameMap().Model.DoorX != newX && room.GetGameMap().Model.DoorY != newY) && !isPiñata)
             {
-                if (room.GetGameMap().Model.SqState[newX, newY] != SquareState.OPEN && !Item.GetBaseItem().IsSeat)
+                if (room.GetGameMap().Model.SqState[newX, newY] != SquareState.OPEN && !Item.GetBaseItem().IsSeat && Item.GetBaseItem().InteractionType != InteractionType.bed)
                 {
                     if (NeedsReAdd)
                     {
@@ -1083,7 +1085,7 @@ namespace Butterfly.HabboHotel.Rooms
 
                 foreach (var Tile in AffectedTiles.Values)
                 {
-                    if (room.GetGameMap().Model.SqState[Tile.X, Tile.Y] != SquareState.OPEN && !Item.GetBaseItem().IsSeat)
+                    if (room.GetGameMap().Model.SqState[Tile.X, Tile.Y] != SquareState.OPEN && !Item.GetBaseItem().IsSeat && Item.GetBaseItem().InteractionType != InteractionType.bed)
                     {
                         if (NeedsReAdd)
                         {
@@ -1095,7 +1097,7 @@ namespace Butterfly.HabboHotel.Rooms
                 }
 
                 // And that we have no users
-                if (!Item.GetBaseItem().IsSeat && !Item.IsRoller)
+                if (!Item.GetBaseItem().IsSeat && Item.GetBaseItem().InteractionType != InteractionType.bed && !Item.IsRoller)
                 {
                     foreach (var Tile in AffectedTiles.Values)
                     {
@@ -1194,7 +1196,7 @@ namespace Butterfly.HabboHotel.Rooms
                 }
             }
 
-        MagicTile:
+            MagicTile:
 
             Item.OldX = Item.GetX;
             Item.OldY = Item.GetY;
@@ -1235,6 +1237,7 @@ namespace Butterfly.HabboHotel.Rooms
                     }
                     AddItem(Item);
                 }
+
                 else
                 {
                     AddItem(Item);
@@ -1278,7 +1281,6 @@ namespace Butterfly.HabboHotel.Rooms
                     }
                 }
             }
-
             room.GetGameMap().AddItemToMap(Item);
 
             if (TileHeightItem == null)

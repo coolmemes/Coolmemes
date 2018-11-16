@@ -106,20 +106,20 @@ namespace ButterStorm
         internal static void Initialize()
         {
             ServerStarted = DateTime.Now;
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine("\n                                                                 ");
-            Console.WriteLine(@"        $$$$$$\    $$\                         $$\                ");
-            Console.WriteLine(@"       $$  __$$\   $$ |                        \__|               ");
-            Console.WriteLine(@"       $$ /  $$ |$$$$$$\    $$$$$$\  $$$$$$$\  $$\ $$\   $$\      ");
-            Console.WriteLine(@"       $$ |  $$ |\_$$  _|   \____$$\ $$  __$$\ $$ |\$$\ $$  |     ");
-            Console.WriteLine(@"       $$ |  $$ |  $$ |     $$$$$$$ |$$ |  $$ |$$ | \$$$$  /      ");
-            Console.WriteLine(@"       $$ |  $$ |  $$ |$$\ $$  __$$ |$$ |  $$ |$$ | $$  $$<       ");
-            Console.WriteLine(@"        $$$$$$  |  \$$$$  |\$$$$$$$ |$$ |  $$ |$$ |$$  /\$$\      ");
-            Console.WriteLine(@"        \______/    \____/  \_______|\__|  \__|\__|\__/  \__|     ");
-            Console.WriteLine("\n                                                                 ");
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine(@"   © 2016 - 2017 - Todos os direitos reservados ao Thiago Araujo.");
-            Console.WriteLine(@"                                                                 ");
+            //Console.ForegroundColor = ConsoleColor.DarkBlue;
+            //Console.WriteLine("\n                                                                 ");
+            //Console.WriteLine(@"        $$$$$$\    $$\                         $$\                ");
+            //Console.WriteLine(@"       $$  __$$\   $$ |                        \__|               ");
+            //Console.WriteLine(@"       $$ /  $$ |$$$$$$\    $$$$$$\  $$$$$$$\  $$\ $$\   $$\      ");
+            //Console.WriteLine(@"       $$ |  $$ |\_$$  _|   \____$$\ $$  __$$\ $$ |\$$\ $$  |     ");
+            //Console.WriteLine(@"       $$ |  $$ |  $$ |     $$$$$$$ |$$ |  $$ |$$ | \$$$$  /      ");
+            //Console.WriteLine(@"       $$ |  $$ |  $$ |$$\ $$  __$$ |$$ |  $$ |$$ | $$  $$<       ");
+            //Console.WriteLine(@"        $$$$$$  |  \$$$$  |\$$$$$$$ |$$ |  $$ |$$ |$$  /\$$\      ");
+            //Console.WriteLine(@"        \______/    \____/  \_______|\__|  \__|\__|\__/  \__|     ");
+            //Console.WriteLine("\n                                                                 ");
+            //Console.ForegroundColor = ConsoleColor.DarkGreen;
+            //Console.WriteLine(@"   © 2016 - 2017 - Todos os direitos reservados ao Thiago Araujo.");
+            //Console.WriteLine(@"                                                                 ");
             Console.ForegroundColor = ConsoleColor.Gray;
 
             try
@@ -203,8 +203,8 @@ namespace ButterStorm
             catch (KeyNotFoundException e)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Logging.WriteLine("[Otanix] @ Alerta de erro: Cheque seu arquivo de configurações - Alguns valores parecem estar faltando.");
-                Logging.WriteLine("[Otanix] @ Alerta de erro: Pressione alguma tecla para finalizar ...");
+                Logging.WriteLine("Avviso: controlla il file di configurazione, alcuni valori sembrano mancare.");
+                Logging.WriteLine("Avviso: premere un tasto qualsiasi per terminare il programma...");
                 Logging.WriteLine(e.ToString());
                 Console.ReadKey(true);
                 Destroy();
@@ -212,8 +212,8 @@ namespace ButterStorm
             catch (InvalidOperationException e)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Logging.WriteLine("[Otanix] @ Alerta de erro: Falha ao iniciar o OtanixEmulator: " + e.Message);
-                Logging.WriteLine("[Otanix] @ Alerta de erro: Pressione alguma tecla para finalizar ...");
+                Logging.WriteLine("Avviso: impossibile avviare il programma, " + e.Message);
+                Logging.WriteLine("Avviso: premere un tasto qualsiasi per terminare il programma...");
 
                 Console.ReadKey(true);
                 Destroy();
@@ -221,8 +221,8 @@ namespace ButterStorm
             catch (Exception e)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("[Otanix] @ Alerta de erro: Erro fatal na inicialização: " + e);
-                Console.WriteLine("[Otanix] @ Alerta de erro: Pressione alguma tecla para finalizar ...");
+                Console.WriteLine("Avviso: errore di avvio irreversibile, " + e);
+                Console.WriteLine("Avviso: premere un tasto qualsiasi per terminare il programma...");
 
                 Console.ReadKey();
                 Environment.Exit(1);
@@ -232,7 +232,7 @@ namespace ButterStorm
 
         private static void Destroy()
         {
-            Logging.WriteLine("[Otanix] @ Alerta: Finalizando Otanix Environment...");
+            Logging.WriteLine("Avviso: arresto del programma...");
 
             if (GetGame() != null)
             {
@@ -242,24 +242,24 @@ namespace ButterStorm
 
             if (GetConnectionManager() != null)
             {
-                Logging.WriteLine("[Otanix] @ Alerta: Finalizando o controle de conexão.");
+                Logging.WriteLine("Avviso: chiusura della connessione...");
                 GetConnectionManager().Destroy();
             }
 
             if (manager != null)
             {
-                Logging.WriteLine("[Otanix] @ Alerta: Finalizando o controle da database.");
+                Logging.WriteLine("Avviso: chiusura del database...");
                 manager.destroy();
             }
 
-            Logging.WriteLine("[Otanix] @ Alerta: Processo de desligamento feito com sucesso, desligando...");
+            Logging.WriteLine("Avviso: il processo di spegnimento è stato eseguito correttamente, arresto in corso...");
         }
 
         internal static void PreformShutDown()
         {
             if (ShutdownInitiated)
             {
-                Console.WriteLine("[Otanix] @ Alerta: Processo de shutdown inicializado. Retornando ...");
+                Console.WriteLine("Avviso: processo di arresto inizializzato...");
                 return;
             }
 
@@ -274,22 +274,22 @@ namespace ButterStorm
             AppendTimeStampWithComment(ref builder, MessaMessage, "Hotel pre-warning");
 
             Game.StopGameLoop();
-            Console.Write(@"[Otanix] @ Alerta: Game loop parado");
+            Console.WriteLine("Avviso: game loop arrestato.");
 
             var ConnectionClose = DateTime.Now;
-            Console.WriteLine("[Otanix] @ Alerta: Servidor sendo finalizado...");
+            Console.WriteLine("Avviso: server in fase di chiusura...");
 
-            Console.Title = "[Otanix] @ Alerta: Otanix foi desligado com sucesso!";
+            Console.Title = "Avviso: server chiuso con successo.";
 
             GetConnectionManager().Destroy();
-            AppendTimeStampWithComment(ref builder, ConnectionClose, "[Otanix] @ Alerta: Socket fechado");
+            AppendTimeStampWithComment(ref builder, ConnectionClose, "Avviso: socket chiuso.");
 
             var sConnectionClose = DateTime.Now;
             GetGame().GetClientManager().CloseAll();
-            AppendTimeStampWithComment(ref builder, sConnectionClose, "[Otanix] @ Alerta: Furni pre-save and connection close");
+            AppendTimeStampWithComment(ref builder, sConnectionClose, "Avviso: pre-salvataggio furni e chiusura connessione...");
 
             var RoomRemove = DateTime.Now;
-            Console.WriteLine("[Otanix] @ Alerta: SALVANDO OS QUARTOS");
+            Console.WriteLine("Avviso: salvataggio delle stanze.");
             Game.GetRoomManager().RemoveAllRooms();
             AppendTimeStampWithComment(ref builder, RoomRemove, "Room destructor");
             var DbSave = DateTime.Now;
@@ -306,7 +306,7 @@ namespace ButterStorm
 
             var databaseDeconstructor = DateTime.Now;
 
-            Console.WriteLine("[Otanix] @ Alerta: Finalizando o controle da database...");
+            Console.WriteLine("Avviso: completamento chiusura del database...");
             manager.destroy();
 
             Game.GetMuteManager().saveToDatabase();
@@ -314,12 +314,12 @@ namespace ButterStorm
             AppendTimeStampWithComment(ref builder, databaseDeconstructor, "Database shutdown");
 
             var timeUsedOnShutdown = DateTime.Now - ShutdownStart;
-            builder.AppendLine("[Otanix] @ Alerta: Tempo total do processo de fechamento: " + TimeSpanToString(timeUsedOnShutdown));
+            builder.AppendLine("Avviso: tempo totale di chiusura del processo: " + TimeSpanToString(timeUsedOnShutdown));
             builder.AppendLine();
 
             Logging.LogShutdown(builder);
 
-            Console.WriteLine("[Otanix] @ Alerta: Sistema completamente fechado, até a proxima!");
+            Console.WriteLine("Avviso: sistema completamente arrestato.");
            
             Environment.Exit(Environment.ExitCode);
         }
@@ -361,7 +361,7 @@ namespace ButterStorm
 
         internal static int GetUnixTimestamp()
         {
-            var ts = (DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0));
+            var ts = (DateTime.Now - new DateTime(1970, 1, 1, 0, 0, 0));
             var unixTime = ts.TotalSeconds;
 
             return (int) unixTime;

@@ -7,15 +7,8 @@ namespace Butterfly.Messages
     public class ServerMessage
     {
         private List<byte> Message = new List<byte>();
-        private int MessageId = 0;
 
-        public int Id
-        {
-            get
-            {
-                return MessageId;
-            }
-        }
+        public int Id { get; private set; } = 0;
 
         public ServerMessage()
         {
@@ -29,11 +22,11 @@ namespace Butterfly.Messages
         public void Init(int Header)
         {
             Message = new List<byte>();
-            MessageId = Header;
+            Id = Header;
             AppendShort(Header);
         }
 
-        public void setInt(int i, int startOn)
+        public void SetInt(int i, int startOn)
         {
             try
             {

@@ -9,6 +9,7 @@ using Butterfly.Util;
 using ButterStorm;
 using Database_Manager.Database.Session_Details.Interfaces;
 using HabboEvents;
+using System;
 
 namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
 {
@@ -36,8 +37,6 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
 
         public void Handle(RoomUser user, Team team, RoomItem item)
         {
-            //InteractorGenericSwitch.DoAnimation(itemID);
-
             if (user != null && !user.IsBot && user.GetClient() != null && message.Length > 0)
             {
                 string specialMessage = BlackWordsManager.SpecialReplace(message, user);
@@ -51,6 +50,8 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                 servermsg.AppendInt32(-1);
 
                 user.GetClient().SendMessage(servermsg);
+
+                InteractorGenericSwitch.DoAnimation(itemID);
             }
         }
 

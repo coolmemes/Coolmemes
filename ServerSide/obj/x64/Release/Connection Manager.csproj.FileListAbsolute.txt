@@ -22,3 +22,63 @@ C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\obj\x64\Release\Sh
 C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\obj\x64\Release\Connection Manager.csproj.GenerateResource.Cache
 C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\obj\x64\Release\Connection Manager.dll
 C:\Users\carlos\Documents\GitHub\Emulator\Servidor\ServerSide\obj\x64\Release\Connection Manager.pdb
+C:\Users\Test\Desktop\Otanix\ServerSide\bin\x64\Release\MySql.Data.dll
+C:\Users\Test\Desktop\Otanix\ServerSide\bin\x64\Release\Connection Manager.dll
+C:\Users\Test\Desktop\Otanix\ServerSide\bin\x64\Release\Connection Manager.pdb
+C:\Users\Test\Desktop\Otanix\ServerSide\bin\x64\Release\Azure.Encryption.dll
+C:\Users\Test\Desktop\Otanix\ServerSide\bin\x64\Release\Database Manager.dll
+C:\Users\Test\Desktop\Otanix\ServerSide\bin\x64\Release\ConsoleWriter.dll
+C:\Users\Test\Desktop\Otanix\ServerSide\bin\x64\Release\Database Manager.pdb
+C:\Users\Test\Desktop\Otanix\ServerSide\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\Test\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csprojAssemblyReference.cache
+C:\Users\Test\Desktop\Otanix\ServerSide\obj\x64\Release\SharedPacketLib.Properties.Resources.resources
+C:\Users\Test\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.GenerateResource.cache
+C:\Users\Test\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.CopyComplete
+C:\Users\Test\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.dll
+C:\Users\Test\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.pdb
+C:\Users\New\Desktop\Otanix\ServerSide\bin\x64\Release\MySql.Data.dll
+C:\Users\New\Desktop\Otanix\ServerSide\bin\x64\Release\Connection Manager.dll
+C:\Users\New\Desktop\Otanix\ServerSide\bin\x64\Release\Connection Manager.pdb
+C:\Users\New\Desktop\Otanix\ServerSide\bin\x64\Release\Azure.Encryption.dll
+C:\Users\New\Desktop\Otanix\ServerSide\bin\x64\Release\Database Manager.dll
+C:\Users\New\Desktop\Otanix\ServerSide\bin\x64\Release\ConsoleWriter.dll
+C:\Users\New\Desktop\Otanix\ServerSide\bin\x64\Release\Database Manager.pdb
+C:\Users\New\Desktop\Otanix\ServerSide\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\New\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csprojAssemblyReference.cache
+C:\Users\New\Desktop\Otanix\ServerSide\obj\x64\Release\SharedPacketLib.Properties.Resources.resources
+C:\Users\New\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.GenerateResource.cache
+C:\Users\New\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\New\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.CopyComplete
+C:\Users\New\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.dll
+C:\Users\New\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.pdb
+C:\Users\new3\Desktop\Otanix\ServerSide\bin\x64\Release\MySql.Data.dll
+C:\Users\new3\Desktop\Otanix\ServerSide\bin\x64\Release\Connection Manager.dll
+C:\Users\new3\Desktop\Otanix\ServerSide\bin\x64\Release\Connection Manager.pdb
+C:\Users\new3\Desktop\Otanix\ServerSide\bin\x64\Release\Azure.Encryption.dll
+C:\Users\new3\Desktop\Otanix\ServerSide\bin\x64\Release\Database Manager.dll
+C:\Users\new3\Desktop\Otanix\ServerSide\bin\x64\Release\ConsoleWriter.dll
+C:\Users\new3\Desktop\Otanix\ServerSide\bin\x64\Release\Database Manager.pdb
+C:\Users\new3\Desktop\Otanix\ServerSide\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\new3\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csprojAssemblyReference.cache
+C:\Users\new3\Desktop\Otanix\ServerSide\obj\x64\Release\SharedPacketLib.Properties.Resources.resources
+C:\Users\new3\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.GenerateResource.cache
+C:\Users\new3\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\new3\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.CopyComplete
+C:\Users\new3\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.dll
+C:\Users\new3\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.pdb
+C:\Users\new4\Desktop\Otanix\ServerSide\bin\x64\Release\MySql.Data.dll
+C:\Users\new4\Desktop\Otanix\ServerSide\bin\x64\Release\Connection Manager.dll
+C:\Users\new4\Desktop\Otanix\ServerSide\bin\x64\Release\Connection Manager.pdb
+C:\Users\new4\Desktop\Otanix\ServerSide\bin\x64\Release\Azure.Encryption.dll
+C:\Users\new4\Desktop\Otanix\ServerSide\bin\x64\Release\Database Manager.dll
+C:\Users\new4\Desktop\Otanix\ServerSide\bin\x64\Release\ConsoleWriter.dll
+C:\Users\new4\Desktop\Otanix\ServerSide\bin\x64\Release\Database Manager.pdb
+C:\Users\new4\Desktop\Otanix\ServerSide\bin\x64\Release\ConsoleWriter.pdb
+C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csprojAssemblyReference.cache
+C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Release\SharedPacketLib.Properties.Resources.resources
+C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.GenerateResource.cache
+C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.csproj.CopyComplete
+C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.dll
+C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Release\Connection Manager.pdb

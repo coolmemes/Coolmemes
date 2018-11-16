@@ -319,10 +319,17 @@ namespace Butterfly.Messages.StaticMessageHandlers
             handlers[(int)Incoming.PurchasableClothingConfirmation] = new StaticRequestHandler(SharedPacketLib.PurchasableClothingConfirmation);
             handlers[(int)Incoming.ShowNewUserInformation] = new StaticRequestHandler(SharedPacketLib.ShowNewUserInformation);
             handlers[(int)Incoming.SMSVerificar] = new StaticRequestHandler(SharedPacketLib.SMSVerificar);
-            handlers[(int)Incoming.SMSVerificarBotaoDeBaixo] = new StaticRequestHandler(SharedPacketLib.SMSVerificar);
+            handlers[(int)Incoming.SMSVerificarBotaoDeBaixo] = new StaticRequestHandler(SharedPacketLib.SMSVerificar2);
             handlers[(int)Incoming.GetNuxPresentEvent] = new StaticRequestHandler(SharedPacketLib.GetNuxPresentEvent);
             handlers[(int)Incoming.NuxMsgseiLaOq] = new StaticRequestHandler(SharedPacketLib.NuxMsgseiLaOq);
+            handlers[(int)Incoming.RequestCameraConfiguration] = new StaticRequestHandler(SharedPacketLib.RequestCameraConfiguration);
+            handlers[(int)Incoming.SanctionMessage] = new StaticRequestHandler(SharedPacketLib.SanctionMessage);
+            handlers[(int)Incoming.GetClubData] = new StaticRequestHandler(SharedPacketLib.GetClubCenterData);
+            handlers[(int)Incoming.ClubDiscount] = new StaticRequestHandler(SharedPacketLib.HabboClubDiscountMessage);
+            handlers[(int)Incoming.BuyClubDiscount] = new StaticRequestHandler(SharedPacketLib.BuyClubDiscount);
+            handlers[(int)Incoming.CFHTopic] = new StaticRequestHandler(SharedPacketLib.CFHTopic);
+            handlers[(int)Incoming.ModActionAlertUser] = new StaticRequestHandler(SharedPacketLib.ModActionAlertUser);
         }
-    #endregion
-}
+        #endregion
+    }
 }
