@@ -1037,13 +1037,7 @@ namespace Butterfly.HabboHotel.Users
                 mClient.GetMessageHandler().GetResponse().AppendInt32(TotalDaysLeft - (MonthsLeft * 31));
                 mClient.GetMessageHandler().GetResponse().AppendInt32(0);
                 mClient.GetMessageHandler().GetResponse().AppendInt32(MonthsLeft);
-
-                if (GetClubManager().GetSubscription("club_habbo").TimeLeftInHours <= 72)
-                    mClient.GetMessageHandler().GetResponse().AppendInt32(3);
-
-                else
-                    mClient.GetMessageHandler().GetResponse().AppendInt32(1);
-
+                mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetSubscription("club_habbo").TimeLeftInHours <= 72 ? 3 : 1);
                 mClient.GetMessageHandler().GetResponse().AppendBoolean(true);
                 mClient.GetMessageHandler().GetResponse().AppendBoolean(true);
                 mClient.GetMessageHandler().GetResponse().AppendInt32(0);
