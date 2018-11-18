@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
@@ -1068,83 +1068,23 @@ namespace Butterfly.HabboHotel.Users
             mClient.GetMessageHandler().SendResponse();
         }
 
-        //internal void UpdateHabboClubCenter()
-        //{
-        //    if (mClient == null || mClient.GetMessageHandler() == null || mClient.GetHabbo() == null)
-        //        return;
-
-        //    mClient.GetMessageHandler().GetResponse().Init(Outgoing.ClubCenterData);
-
-        //    if (GetClubManager().HasSubscription("club_habbo"))
-        //    {
-        //        DateTime joinDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(GetClubManager().GetSubscription("club_habbo").TimestampActivated);
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetSubscription("club_habbo").StreakDurationInDays);
-
-        //        mClient.GetMessageHandler().GetResponse().AppendString(joinDate.ToString("dd-MM-yyyy"));
-
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(1069128089);
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(-1717986918);
-
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
-
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32((int)SpentCredits);
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetSubscription("club_habbo").HabboClubBonusStreak);
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetSubscription("club_habbo").TotalSpent(SpentCredits));
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(HCPayday);
-        //    }
-
-        //    else
-        //    {
-
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
-
-        //        if (GetClubManager().GetSubscription("club_habbo") != null)
-        //        {
-        //            DateTime joinDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(GetClubManager().GetSubscription("club_habbo").TimestampActivated);
-        //            mClient.GetMessageHandler().GetResponse().AppendString(joinDate.ToString("dd-MM-yyyy"));
-        //        }
-
-        //        else
-        //            mClient.GetMessageHandler().GetResponse().AppendString("");
-
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(1069128089);
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(-1717986918);
-
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
-
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(0);
-        //        mClient.GetMessageHandler().GetResponse().AppendInt32(HCPayday);
-        //    }
-        //    mClient.GetMessageHandler().SendResponse();
-        //}
-
         internal int HCPayday
         {
             get
             {
-                int TotalRemaingDaysLeft = 0;
+                int totalRemaingDaysLeft = 0;
+                double totalRemainingSeconds = 0.0;
 
                 if (DateTime.Now.Day >= 15)
-                {
-                    double conversion = (int)Math.Ceiling(OtanixEnvironment.DateTimeToUnixTimestamp(new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15).AddMonths(1)));
-                    double remainingTime = conversion - OtanixEnvironment.GetUnixTimestamp();
-                    TotalRemaingDaysLeft = (int)Math.Ceiling(remainingTime / 86400);
-
-                    return TotalRemaingDaysLeft * 1430;
-                }
+                    totalRemainingSeconds = (int)Math.Ceiling(OtanixEnvironment.DateTimeToUnixTimestamp(new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15).AddMonths(1)));
 
                 else
-                {
-                    double conversion = (int)Math.Ceiling(OtanixEnvironment.DateTimeToUnixTimestamp(new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15)));
-                    double remainingTime = conversion - OtanixEnvironment.GetUnixTimestamp();
-                    TotalRemaingDaysLeft = (int)Math.Ceiling(remainingTime / 86400);
+                    totalRemainingSeconds = (int)Math.Ceiling(OtanixEnvironment.DateTimeToUnixTimestamp(new DateTime(DateTime.Now.Year, DateTime.Now.Month, 15)));
 
-                    return TotalRemaingDaysLeft * 1430;
-                }
+                double remainingTime = totalRemainingSeconds - OtanixEnvironment.GetUnixTimestamp();
+                totalRemaingDaysLeft = (int)Math.Ceiling(remainingTime / 86400);
+
+                return totalRemaingDaysLeft * 1430;
             }
         }
     }
