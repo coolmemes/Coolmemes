@@ -172,12 +172,8 @@ namespace Butterfly.HabboHotel.GameClients
                     sendClub.AppendInt32(TotalDaysLeft - (MonthsLeft * 31));
                     sendClub.AppendInt32(0);
                     sendClub.AppendInt32(MonthsLeft);
-
-                    if (GetHabbo().GetClubManager().GetSubscription("club_habbo").TimeLeftInHours <= 72)
-                        sendClub.AppendInt32(3);
-
-                    else
-                        sendClub.AppendInt32(1);
+                    
+                    sendClub.AppendInt32(GetHabbo().GetClubManager().GetSubscription("club_habbo").TimeLeftInHours <= 72 ? 3 : 1);
 
                     sendClub.AppendBoolean(true);
                     sendClub.AppendBoolean(true);
