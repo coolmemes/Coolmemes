@@ -348,3 +348,29 @@ C:\Users\new4\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.cs
 C:\Users\new4\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CopyComplete
 C:\Users\new4\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.exe
 C:\Users\new4\Desktop\Otanix\Butterfly Emulator\obj\x64\Debug\Otanix.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\MySql.Data.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Otanix.exe.config
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Otanix.exe
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Otanix.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Otanix.exe.CodeAnalysisLog.xml
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Otanix.exe.lastcodeanalysissucceeded
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\AStar.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Connection Manager.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\ConsoleWriter.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Database Manager.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\enclosuretest.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\HabboEvents.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\AStar.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\AStar.dll.config
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\ConsoleWriter.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Database Manager.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\enclosuretest.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\HabboEvents.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Connection Manager.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csprojAssemblyReference.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CoreCompileInputs.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\obj\x64\Debug\Otanix Emulador.csproj.CopyComplete
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\obj\x64\Debug\Otanix.exe
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\obj\x64\Debug\Otanix.pdb

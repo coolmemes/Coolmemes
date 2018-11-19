@@ -27198,3 +27198,81 @@ Nome parametro: s
    in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
    in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
 
+
+<19/11/2018 00:47:37> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<19/11/2018 00:48:23> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<19/11/2018 00:53:34> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<19/11/2018 01:43:11> Error in packet [2852] BODY:  : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.GoToHotelView() in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\Requests\Navigator.cs:riga 202
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GoToHotelView(GameClientMessageHandler handler) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 265
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<19/11/2018 01:43:11> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<19/11/2018 01:43:11> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+

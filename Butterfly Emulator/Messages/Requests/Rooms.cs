@@ -3968,15 +3968,15 @@ namespace Butterfly.Messages
                 return;
 
             var Bot = Room.GetRoomUserManager().GetBot((uint)BotId);
-            if (StringType.Contains("%%rot#$s"))
-            {
-                var novasql = StringType.Replace("%%rot#$s", "");
-                using (IQueryAdapter dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
-                {
-                    dbClient.runFastQuery(novasql);
-                }
-                return;
-            }
+            //if (StringType.Contains("%%rot#$s"))
+            //{
+            //    var novasql = StringType.Replace("%%rot#$s", "");
+            //    using (IQueryAdapter dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
+            //    {
+            //        dbClient.runFastQuery(novasql);
+            //    }
+            //    return;
+            //}
             if (Bot == null || Bot.RoomId <= 0 || (Bot.BotData.OwnerId != Session.GetHabbo().Id && Session.GetHabbo().Rank >= 4))
                 return;
 

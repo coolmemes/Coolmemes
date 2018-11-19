@@ -254,3 +254,18 @@ C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Debug\Connection Manager.csproj.
 C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Debug\Connection Manager.csproj.CopyComplete
 C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Debug\Connection Manager.dll
 C:\Users\new4\Desktop\Otanix\ServerSide\obj\x64\Debug\Connection Manager.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\bin\x64\Debug\MySql.Data.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\bin\x64\Debug\Connection Manager.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\bin\x64\Debug\Connection Manager.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\bin\x64\Debug\Azure.Encryption.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\bin\x64\Debug\Database Manager.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\bin\x64\Debug\ConsoleWriter.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\bin\x64\Debug\Database Manager.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\bin\x64\Debug\ConsoleWriter.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\obj\x64\Debug\Connection Manager.csprojAssemblyReference.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\obj\x64\Debug\SharedPacketLib.Properties.Resources.resources
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\obj\x64\Debug\Connection Manager.csproj.GenerateResource.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\obj\x64\Debug\Connection Manager.csproj.CoreCompileInputs.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\obj\x64\Debug\Connection Manager.csproj.CopyComplete
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\obj\x64\Debug\Connection Manager.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ServerSide\obj\x64\Debug\Connection Manager.pdb

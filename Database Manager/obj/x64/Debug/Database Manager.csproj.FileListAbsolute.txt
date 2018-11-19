@@ -245,3 +245,13 @@ C:\Users\new4\Desktop\Otanix\Database Manager\obj\x64\Debug\Database Manager.csp
 C:\Users\new4\Desktop\Otanix\Database Manager\obj\x64\Debug\Database Manager.csproj.CopyComplete
 C:\Users\new4\Desktop\Otanix\Database Manager\obj\x64\Debug\Database Manager.dll
 C:\Users\new4\Desktop\Otanix\Database Manager\obj\x64\Debug\Database Manager.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Database Manager\bin\Debug\MySql.Data.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Database Manager\bin\Debug\Database Manager.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Database Manager\bin\Debug\Database Manager.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Database Manager\bin\Debug\ConsoleWriter.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Database Manager\bin\Debug\ConsoleWriter.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Database Manager\obj\x64\Debug\Database Manager.csprojAssemblyReference.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Database Manager\obj\x64\Debug\Database Manager.csproj.CoreCompileInputs.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Database Manager\obj\x64\Debug\Database Manager.csproj.CopyComplete
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Database Manager\obj\x64\Debug\Database Manager.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Database Manager\obj\x64\Debug\Database Manager.pdb

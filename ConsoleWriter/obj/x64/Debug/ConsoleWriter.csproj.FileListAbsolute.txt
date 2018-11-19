@@ -107,3 +107,9 @@ C:\Users\new4\Desktop\Otanix\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
 C:\Users\new4\Desktop\Otanix\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csproj.CoreCompileInputs.cache
 C:\Users\new4\Desktop\Otanix\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
 C:\Users\new4\Desktop\Otanix\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ConsoleWriter\bin\Debug\ConsoleWriter.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ConsoleWriter\bin\Debug\ConsoleWriter.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csprojAssemblyReference.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ConsoleWriter\obj\x64\Debug\ConsoleWriter.csproj.CoreCompileInputs.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ConsoleWriter\obj\x64\Debug\ConsoleWriter.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\ConsoleWriter\obj\x64\Debug\ConsoleWriter.pdb

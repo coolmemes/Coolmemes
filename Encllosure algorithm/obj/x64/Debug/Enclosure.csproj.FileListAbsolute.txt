@@ -199,3 +199,15 @@ C:\Users\new4\Desktop\Otanix\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj
 C:\Users\new4\Desktop\Otanix\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.CopyComplete
 C:\Users\new4\Desktop\Otanix\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
 C:\Users\new4\Desktop\Otanix\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\bin\Debug\enclosuretest.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\bin\Debug\enclosuretest.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\bin\Debug\AStar.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\bin\Debug\AStar.pdb
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\bin\Debug\AStar.dll.config
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\obj\x64\Debug\Enclosure.csprojAssemblyReference.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\obj\x64\Debug\enclosuretest.Properties.Resources.resources
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.GenerateResource.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.CoreCompileInputs.cache
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\obj\x64\Debug\Enclosure.csproj.CopyComplete
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\obj\x64\Debug\enclosuretest.dll
+C:\Users\new4\Source\Repos\coolmemes\Coolmemes\Encllosure algorithm\obj\x64\Debug\enclosuretest.pdb
