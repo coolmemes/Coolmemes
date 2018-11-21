@@ -193,3 +193,4 @@ C:\Users\new4\Desktop\Otanix\Astar\obj\x64\Debug\AStar.csproj.GenerateResource.c
 C:\Users\new4\Desktop\Otanix\Astar\obj\x64\Debug\AStar.csproj.CoreCompileInputs.cache
 C:\Users\new4\Desktop\Otanix\Astar\obj\x64\Debug\AStar.dll
 C:\Users\new4\Desktop\Otanix\Astar\obj\x64\Debug\AStar.pdb
+C:\Users\new4\Desktop\Otanix\Astar\obj\x64\Debug\AStar.csprojAssemblyReference.cache

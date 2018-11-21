@@ -142,7 +142,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                     {
                         item.ExtraData = oldCoordinate.ExtraData;
                         item.UpdateState(false, true);
-                        if(item.GetBaseItem().InteractionType == InteractionType.gate)
+                        if(item.GetBaseItem().InteractionType == InteractionType.gate || item.GetBaseItem().InteractionType == InteractionType.club_gate)
                             item.GetRoom().GetGameMap().updateMapForItem(item);
 
                         foreach (Point tile in item.GetCoords)

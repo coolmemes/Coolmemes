@@ -196,7 +196,8 @@ namespace Butterfly.HabboHotel.Items
         club_3_month,
         club_6_month,
         CLUB_VIP,
-        CLUB_VIP2
+        CLUB_VIP2,
+        club_gate
     }
 
     class InterractionTypes
@@ -581,6 +582,8 @@ namespace Butterfly.HabboHotel.Items
                     return InteractionType.CLUB_VIP;
                 case "CLUB_VIP2":
                     return InteractionType.CLUB_VIP2;
+                case "club_gate":
+                    return InteractionType.club_gate;
                 default:
                     {
                         Console.WriteLine("Unknown interaction type in parse code: " + pType);

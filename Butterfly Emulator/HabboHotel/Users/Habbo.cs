@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
@@ -98,6 +98,7 @@ namespace Butterfly.HabboHotel.Users
         internal Dictionary<int, NaviLogs> navigatorLogs;
         internal double DiamondsCycleUpdate;
         internal double MoedasCycleUpdate;
+        internal double ClubExpirationCycleUpdate;
         internal int UltimaNotificacao = 0;
         internal bool exibeNotifi = true;
         internal Dictionary<uint, UInt32> TargetedOffers;
@@ -361,6 +362,7 @@ namespace Butterfly.HabboHotel.Users
             this.PetType = -1;
             this.DiamondsCycleUpdate = OtanixEnvironment.GetUnixTimestamp();
             this.MoedasCycleUpdate = OtanixEnvironment.GetUnixTimestamp();
+            this.ClubExpirationCycleUpdate = OtanixEnvironment.GetUnixTimestamp();
             this.TargetedOffers = targetedOffers;
             this.ChatColor = chatColor;
             this.NewIdentity = newIdentity;
@@ -1037,7 +1039,13 @@ namespace Butterfly.HabboHotel.Users
                 mClient.GetMessageHandler().GetResponse().AppendInt32(TotalDaysLeft - (MonthsLeft * 31));
                 mClient.GetMessageHandler().GetResponse().AppendInt32(0);
                 mClient.GetMessageHandler().GetResponse().AppendInt32(MonthsLeft);
-                mClient.GetMessageHandler().GetResponse().AppendInt32(GetClubManager().GetSubscription("club_habbo").TimeLeftInHours <= 72 ? 3 : 1);
+
+                if (GetClubManager().GetSubscription("club_habbo").TimeLeftInHours <= 72)
+                    mClient.GetMessageHandler().GetResponse().AppendInt32(3);
+
+                else
+                    mClient.GetMessageHandler().GetResponse().AppendInt32(1);
+
                 mClient.GetMessageHandler().GetResponse().AppendBoolean(true);
                 mClient.GetMessageHandler().GetResponse().AppendBoolean(true);
                 mClient.GetMessageHandler().GetResponse().AppendInt32(0);

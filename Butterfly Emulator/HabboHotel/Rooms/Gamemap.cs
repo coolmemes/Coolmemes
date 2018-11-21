@@ -10,6 +10,7 @@ using Butterfly.HabboHotel.Rooms.Wired;
 using ButterStorm;
 using Butterfly.HabboHotel.GameClients;
 using Butterfly.Messages;
+using HabboEvents;
 
 namespace Butterfly.HabboHotel.Rooms
 {
@@ -504,7 +505,7 @@ namespace Butterfly.HabboHotel.Rooms
                     mGameMap[Coord.X, Coord.Y] = 1;
                     
                 }
-                else if (Item.GetBaseItem().InteractionType == InteractionType.gate && Item.ExtraData == "1") // If this item is a gate, open, and on the floor, allow users to walk here.
+                else if (Item.GetBaseItem().InteractionType == InteractionType.gate || Item.GetBaseItem().InteractionType == InteractionType.club_gate && Item.ExtraData == "1") // If this item is a gate, open, and on the floor, allow users to walk here.
                 {
                     mGameMap[Coord.X, Coord.Y] = 1;
                 }
@@ -764,6 +765,14 @@ namespace Butterfly.HabboHotel.Rooms
                     }
                 }
             }
+
+            //bool HasHcGate = room.GetRoomItemHandler().mFloorItems.ToList().Where(x => x.Value.GetBaseItem().InteractionType == InteractionType.club_gate).ToList().Count() > 0;
+            ////if (HasHcGate)
+            ////{
+            //    RoomItem Item = room.GetRoomItemHandler().mFloorItems.FirstOrDefault(x => x.Value.GetBaseItem().InteractionType == InteractionType.club_gate).Value;
+            //    
+            //    }
+            //}
 
             // Si hay un usuario o la baldosa está cerrada.
             if (!tileIsWalkable(To.X, To.Y, true, EndOfPath))

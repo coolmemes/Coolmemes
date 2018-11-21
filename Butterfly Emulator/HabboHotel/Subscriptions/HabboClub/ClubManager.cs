@@ -98,7 +98,6 @@ namespace Butterfly.HabboHotel.Subscriptions.HabboClub
                 clubSubscriptions.Add(SubscriptionId, new Club(SubscriptionId, TimestampActivated, TimestampExpire, false));
 
                 Session.GetHabbo().SpentCredits += Cost;
-                //Session.GetHabbo().GetBadgeComponent().GiveBadge("ACH_VipHC1");
 
                 var fuse = new ServerMessage(Outgoing.Fuserights);
                 fuse.AppendInt32(Session.GetHabbo().GetClubManager().HasSubscription("club_habbo") ? 2 : 1); // normal|hc|vip

@@ -672,6 +672,68 @@ namespace Butterfly.HabboHotel.Items.Interactors
         }
     }
 
+    class InteractorClubGate : FurniInteractor
+    {
+        readonly int Modes;
+
+        internal InteractorClubGate(int Modes)
+        {
+            this.Modes = (Modes - 1);
+
+            if (this.Modes < 0)
+            {
+                this.Modes = 0;
+            }
+        }
+
+        internal override void OnPlace(GameClient Session, RoomItem Item) { }
+        internal override void OnRemove(GameClient Session, RoomItem Item) { }
+
+        internal override void OnTrigger(GameClient Session, RoomItem Item, int Request, bool UserHasRights)
+        {
+            if (!UserHasRights)
+            {
+                return;
+            }
+
+            if (Item.GetBaseItem().InteractionType != InteractionType.club_gate)
+                return;
+
+            if (Modes == 0)
+            {
+                Item.UpdateState(false, true);
+            }
+
+            var currentMode = 0;
+            var newMode = 0;
+
+            int.TryParse(Item.ExtraData, out currentMode);
+
+            if (currentMode <= 0)
+            {
+                newMode = 1;
+            }
+            else if (currentMode >= Modes)
+            {
+                newMode = 0;
+            }
+            else
+            {
+                newMode = currentMode + 1;
+            }
+
+            if (newMode == 0)
+            {
+                if (!Item.GetRoom().GetGameMap().tileIsWalkable(Item.GetX, Item.GetY, false))
+                    return;
+            }
+
+            Item.ExtraData = newMode.ToString();
+            Item.UpdateState();
+            Item.GetRoom().GetGameMap().updateMapForItem(Item);
+        }
+    }
+
     class InteractorScoreboard : FurniInteractor
     {
         internal override void OnPlace(GameClient Session, RoomItem Item) { }

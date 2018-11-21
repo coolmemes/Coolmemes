@@ -994,6 +994,7 @@ namespace Butterfly.HabboHotel.Rooms
                                 Item.UpdateState(false, true);
                                 break;
                             }
+
                         case InteractionType.fbgate:
                             {
                                 if (User.GetClient().GetHabbo().LastMovFGate && User.GetClient().GetHabbo().BackupGender == User.GetClient().GetHabbo().Gender)
@@ -1315,6 +1316,12 @@ namespace Butterfly.HabboHotel.Rooms
 
                             User.ApplyEffect(114);
                         }
+
+                        else if (item.GetBaseItem().InteractionType == InteractionType.club_gate)
+                        {
+                            item.ExtraData = "0";
+                            item.UpdateState();
+                        }
                     }
 
                     // Por fin, actualizamos las coordenadas del usuario a la nueva baldosa.
@@ -1450,13 +1457,13 @@ namespace Butterfly.HabboHotel.Rooms
                         Vector2D NextStep = User.Path[s];
                         User.PathStep++;
 
-                        if(User.fastWalk && User.PathStep < User.Path.Count)
+                        if (User.fastWalk && User.PathStep < User.Path.Count)
                         {
                             s = (User.Path.Count - User.PathStep) - 1;
                             NextStep = User.Path[s];
                             User.PathStep++;
                         }
-                        
+
                         // Estas son las coordenadas de la siguiente baldosa.
                         int nextX = NextStep.X;
                         int nextY = NextStep.Y;
@@ -1549,6 +1556,8 @@ namespace Butterfly.HabboHotel.Rooms
                                     room.SendMessage(mess);
                                 }
                             }
+
+                            
                         }
 
                         if (User.PathRecalcNeeded && !User.SetStep)
@@ -1558,6 +1567,43 @@ namespace Butterfly.HabboHotel.Rooms
                     // Si no está montado en un caballo, actualizamos el estado.
                     if (!User.montandoBol)
                         User.UpdateNeeded = true;
+
+                    foreach (RoomItem item in room.GetRoomItemHandler().mFloorItems.Values)
+                    {
+                        switch (item.GetBaseItem().InteractionType)
+                        {
+                            case InteractionType.club_gate:
+                                {
+                                    if (User.Coordinate == item.Coordinate && User.GetClient().GetHabbo().GetClubManager().HasSubscription("club_habbo"))
+                                    {
+                                        item.ExtraData = "1";
+                                        item.UpdateState();
+
+                                        item.InteractingUser = User.GetClient().GetHabbo().Id;
+                                    }
+
+                                    if (item.Coordinate == User.SquareInFront && item.ExtraData == "0" && !User.GetClient().GetHabbo().GetClubManager().HasSubscription("club_habbo"))
+                                    {
+                                        if (User.ShowClubAlert && !User.IsClubAlertShowed)
+                                        {
+                                            ServerMessage ShowClubAlert = new ServerMessage(Outgoing.OtherAlertId);
+                                            ShowClubAlert.AppendInt32(3);
+                                            User.GetClient().SendMessage(ShowClubAlert);
+
+                                            User.IsClubAlertShowed = true;
+                                        }
+
+                                        //User.IsWalking = false;
+                                        //User.RemoveStatus("mv");
+                                        //User.UpdateNeeded = true;
+                                        // ClearMovement(true);  not working
+
+                                    }
+
+                                    break;
+                                }
+                        }
+                    }
                 }
                 else
                 {

@@ -1,536 +1,96 @@
 
-<12/12/2017 20:00:57> Error in thread Room cycle task for room 6: 
-System.NullReferenceException: Refer?ncia de objeto n?o definida para uma inst?ncia de um objeto.
-   em Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Rooms\Gamemap.cs:linha 720
-   em Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Pathfinding\PathFinder.cs:linha 72
-   em Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Pathfinding\PathFinder.cs:linha 18
-   em Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:linha 1592
-   em Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:linha 1339
-   em Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) na C:\Users\evert\Downloads\b\emulador\Butterfly Emulator\HabboHotel\Rooms\Room.cs:linha 689
-
-
-<08/10/2018 00:35:54> Error in thread Room cycle task for room 4: 
-System.ArgumentException: La stringa non pu? avere lunghezza zero.
-Nome parametro: oldValue
-   in System.String.ReplaceInternal(String oldValue, String newValue)
-   in System.String.Replace(String oldValue, String newValue)
-   in Butterfly.HabboHotel.Rooms.RoomChat.GenerateMessage(Boolean OldChat)
-   in Butterfly.HabboHotel.Rooms.Room.WorkRoomChatServerMessageThread()
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<23/10/2018 18:51:11> Error in thread Room cycle task for room 9: 
+<20/11/2018 01:54:44> Error in thread Room cycle task for room 88: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUser.Chat(GameClient Session, String Message, Int32 Color, Boolean Shout, Boolean frank)
-   in Butterfly.HabboHotel.RoomBots.PetBot.OnTimerTick()
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<23/10/2018 18:53:41> Error in thread Room cycle task for room 9: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUser.Chat(GameClient Session, String Message, Int32 Color, Boolean Shout, Boolean frank)
-   in Butterfly.HabboHotel.RoomBots.PetBot.OnTimerTick()
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<23/10/2018 19:07:55> Error in thread Room cycle task for room 9: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomChat.GenerateMessage(Boolean OldChat)
-   in Butterfly.HabboHotel.Rooms.Room.WorkRoomChatServerMessageThread()
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<23/10/2018 19:50:32> Error in thread Room cycle task for room 9: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomChat.GenerateMessage(Boolean OldChat)
-   in Butterfly.HabboHotel.Rooms.Room.WorkRoomChatServerMessageThread()
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<27/10/2018 19:44:08> Error in thread Room cycle task for room 27: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.Games.Soccer.OnUserWalk(RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Games\Soccer.cs:riga 184
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1506
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 689
-
-
-<29/10/2018 15:53:24> Error in thread Room cycle task for room 24: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.Gamemap.TileContainsItems(Point coord) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Gamemap.cs:riga 796
-   in Butterfly.HabboHotel.Rooms.Gamemap.tileIsWalkable(Int32 pX, Int32 pY, Boolean isUser, Boolean endPath, Boolean guildGate) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Gamemap.cs:riga 1036
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Gamemap.cs:riga 757
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Pathfinding\PathFinder.cs:riga 72
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Pathfinding\PathFinder.cs:riga 18
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1592
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1339
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 689
-
-
-<29/10/2018 23:15:45> Error in thread Room cycle task for room 34: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<30/10/2018 22:34:35> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Gamemap.cs:riga 725
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Pathfinding\PathFinder.cs:riga 72
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Pathfinding\PathFinder.cs:riga 18
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1592
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1339
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 689
-
-
-<30/10/2018 22:39:36> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<30/10/2018 22:58:03> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<30/10/2018 23:00:19> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<30/10/2018 23:01:14> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<30/10/2018 23:07:32> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<30/10/2018 23:27:22> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<30/10/2018 23:27:28> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 17:06:43> Error in thread Room cycle task for room 36: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 17:07:10> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 17:07:58> Error in thread Room cycle task for room 34: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 17:18:14> Error in thread Room cycle task for room 33: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 17:18:26> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 17:19:15> Error in thread Room cycle task for room 35: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:04:13> Error in thread Room cycle task for room 32: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:04:42> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:04:54> Error in thread Room cycle task for room 33: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:05:44> Error in thread Room cycle task for room 34: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:07:18> Error in thread Room cycle task for room 35: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:10:11> Error in thread Room cycle task for room 36: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:10:32> Error in thread Room cycle task for room 35: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:11:04> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:12:48> Error in thread Room cycle task for room 32: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:13:08> Error in thread Room cycle task for room 35: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:13:56> Error in thread Room cycle task for room 34: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 18:17:58> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 19:35:32> Error in thread Room cycle task for room 19: 
-System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<31/10/2018 21:04:04> Error in thread Room cycle task for room 19: 
-System.OverflowException: Overflow di un'operazione aritmetica.
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<01/11/2018 21:31:45> Error in thread Room cycle task for room 19: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.Gamemap.SqAbsoluteHeight(Int32 X, Int32 Y)
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<02/11/2018 01:25:25> Error in thread Room cycle task for room 19: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.Gamemap.SquareHasUsers(Int32 X, Int32 Y)
-   in Butterfly.HabboHotel.Rooms.Gamemap.tileIsWalkable(Int32 pX, Int32 pY, Boolean isUser, Boolean endPath, Boolean guildGate)
-   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<09/11/2018 22:43:40> Error in thread Room cycle task for room 42: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1223
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.UpdateUserCount(Int32 count) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 669
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1627
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
 
 
-<09/11/2018 23:04:48> Error in thread Room cycle task for room 43: 
+<20/11/2018 02:05:53> Error in thread Room cycle task for room 88: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.UpdateUserCount(Int32 count)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<20/11/2018 07:54:15> Error in thread Room cycle task for room 36: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
 
 
-<10/11/2018 00:09:15> Error in thread Room cycle task for room 42: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1223
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<10/11/2018 00:23:45> Error in thread Room cycle task for room 41: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1223
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<10/11/2018 00:23:54> Error in thread Room cycle task for room 41: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1223
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<10/11/2018 00:24:09> Error in thread Room cycle task for room 42: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1223
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<10/11/2018 00:25:31> Error in thread Room cycle task for room 41: 
+<20/11/2018 07:54:16> Error in thread Room cycle task for room 36: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
 
 
-<10/11/2018 00:30:33> Error in thread Room cycle task for room 42: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1223
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<10/11/2018 00:33:20> Error in thread Room cycle task for room 42: 
+<20/11/2018 07:54:30> Error in thread Room cycle task for room 36: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
 
 
-<10/11/2018 00:34:50> Error in thread Room cycle task for room 42: 
+<20/11/2018 07:54:31> Error in thread Room cycle task for room 36: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
 
 
-<10/11/2018 00:35:58> Error in thread Room cycle task for room 42: 
+<20/11/2018 07:55:04> Error in thread Room cycle task for room 90: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
 
 
-<10/11/2018 00:37:01> Error in thread Room cycle task for room 42: 
+<20/11/2018 07:55:20> Error in thread Room cycle task for room 90: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
 
 
-<10/11/2018 00:39:35> Error in thread Room cycle task for room 42: 
+<20/11/2018 07:55:23> Error in thread Room cycle task for room 90: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
 
 
-<10/11/2018 00:41:26> Error in thread Room cycle task for room 42: 
+<20/11/2018 07:55:24> Error in thread Room cycle task for room 90: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
 
 
-<10/11/2018 00:43:13> Error in thread Room cycle task for room 42: 
+<20/11/2018 16:10:29> Error in thread Room cycle task for room 88: 
+System.InvalidCastException: Impossibile eseguire il cast di oggetti di tipo 'System.Collections.Generic.List`1[Butterfly.HabboHotel.Items.RoomItem]' sul tipo 'Butterfly.HabboHotel.Items.RoomItem'.
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<20/11/2018 16:11:06> Error in thread Room cycle task for room 88: 
+System.InvalidCastException: Impossibile eseguire il cast di oggetti di tipo 'System.Collections.Generic.List`1[Butterfly.HabboHotel.Items.RoomItem]' sul tipo 'Butterfly.HabboHotel.Items.RoomItem'.
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<20/11/2018 16:11:16> Error in thread Room cycle task for room 88: 
+System.InvalidCastException: Impossibile eseguire il cast di oggetti di tipo 'System.Collections.Generic.List`1[Butterfly.HabboHotel.Items.RoomItem]' sul tipo 'Butterfly.HabboHotel.Items.RoomItem'.
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<20/11/2018 17:56:21> Error in thread Room cycle task for room 88: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
 
 
-<10/11/2018 00:45:10> Error in thread Room cycle task for room 42: 
+<20/11/2018 18:41:27> Error in thread Room cycle task for room 23: 
 System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
-
-
-<14/11/2018 20:35:40> Error in thread Room cycle task for room 23: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1583
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<14/11/2018 20:35:47> Error in thread Room cycle task for room 23: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1583
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<14/11/2018 20:35:55> Error in thread Room cycle task for room 23: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1583
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<14/11/2018 20:58:15> Error in thread Room cycle task for room 23: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1588
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<14/11/2018 22:00:31> Error in thread Room cycle task for room 23: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1583
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<14/11/2018 22:00:32> Error in thread Room cycle task for room 23: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1583
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<14/11/2018 22:01:05> Error in thread Room cycle task for room 87: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1583
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<14/11/2018 22:01:10> Error in thread Room cycle task for room 87: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1583
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<14/11/2018 22:01:33> Error in thread Room cycle task for room 23: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1583
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
-
-
-<14/11/2018 22:01:35> Error in thread Room cycle task for room 23: 
-System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
-   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1583
-   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
 

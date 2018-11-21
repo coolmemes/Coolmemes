@@ -53,6 +53,9 @@ namespace Butterfly.HabboHotel.Rooms
         internal int GoalY;
         internal int GiveHanditemCoordinateX;
         internal int GiveHanditemCoordinateY;
+        internal bool ShowClubAlert = false;
+        internal bool IsClubAlertShowed = false;
+        internal bool BlockedMovementToClubGate = true;
 
         internal RoomUser GiverUser;
         internal RoomUser ToGiveUser;

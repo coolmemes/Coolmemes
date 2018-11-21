@@ -464,6 +464,8 @@ namespace Butterfly.HabboHotel.Items
                         return new InteractorVendor();
                     case InteractionType.gate:
                         return new InteractorGate(GetBaseItem().Modes);
+                    case InteractionType.club_gate:
+                        return new InteractorClubGate(GetBaseItem().Modes);
                     case InteractionType.scoreboard:
                         return new InteractorScoreboard();
                     case InteractionType.football:

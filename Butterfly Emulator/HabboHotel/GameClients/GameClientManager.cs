@@ -12,6 +12,7 @@ using System.Threading;
 using Butterfly.HabboHotel.Users.Messenger;
 using Butterfly.HabboHotel.Misc;
 using Butterfly.HabboHotel.Group;
+using Otanix.HabboHotel.Misc;
 
 namespace Butterfly.HabboHotel.GameClients
 {
@@ -184,6 +185,7 @@ namespace Butterfly.HabboHotel.GameClients
                         Diamonds.GiveCycleDiamonds(client);
                         Moedas.GiveCycleMoedas(client);
                         MensagensAutomaticas.MostraNotificacaoUser(client);
+                        Club.UpdateClubCycleExpiration(client);
                     }
 
                     OnlineTimeStopwatch.Restart();
@@ -345,45 +347,6 @@ namespace Butterfly.HabboHotel.GameClients
                     }
                 }
             }
-        }
-
-        private void UpdateClubExpiration()
-        {
-            try
-            {
-                foreach (GameClient client in clients.Values)
-                {
-                    if (client == null || client.GetHabbo() == null)
-                        continue;
-
-                    if (client.GetHabbo().GetClubManager().HasSubscription("club_habbo"))
-                    {
-                        if (client.GetHabbo().GetClubManager().GetSubscription("club_habbo").DaysLeft >= 1)
-                        {
-                            Thread.Sleep((int)8.64e+7);
-                            client.GetHabbo().UpdateHabboClubStatus();
-                        }
-
-                        else if (client.GetHabbo().GetClubManager().GetSubscription("club_habbo").HoursLeft >= 1 && client.GetHabbo().GetClubManager().GetSubscription("club_habbo").DaysLeft < 1)
-                        {
-                            Thread.Sleep((int)3.6e+6);
-                            client.GetHabbo().UpdateHabboClubStatus();
-                        }
-
-                        else if (client.GetHabbo().GetClubManager().GetSubscription("club_habbo").MinutesLeft >= 1 && client.GetHabbo().GetClubManager().GetSubscription("club_habbo").HoursLeft < 1)
-                        {
-                            Thread.Sleep(60000);
-                            client.GetHabbo().UpdateHabboClubStatus();
-                        }
-                    }
-
-                    else if (!client.GetHabbo().GetClubManager().HasSubscription("club_habbo"))
-                    {
-                        client.GetHabbo().UpdateHabboClubStatus();
-                    }
-                }
-            }
-            catch { }
         }
 
         #endregion

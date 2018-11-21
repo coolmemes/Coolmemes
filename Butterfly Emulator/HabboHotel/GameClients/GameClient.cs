@@ -172,8 +172,12 @@ namespace Butterfly.HabboHotel.GameClients
                     sendClub.AppendInt32(TotalDaysLeft - (MonthsLeft * 31));
                     sendClub.AppendInt32(0);
                     sendClub.AppendInt32(MonthsLeft);
-                    
-                    sendClub.AppendInt32(GetHabbo().GetClubManager().GetSubscription("club_habbo").TimeLeftInHours <= 72 ? 3 : 1);
+
+                    if (GetHabbo().GetClubManager().GetSubscription("club_habbo").TimeLeftInHours <= 72)
+                        sendClub.AppendInt32(3);
+
+                    else
+                        sendClub.AppendInt32(1);
 
                     sendClub.AppendBoolean(true);
                     sendClub.AppendBoolean(true);
@@ -416,10 +420,10 @@ namespace Butterfly.HabboHotel.GameClients
                     string c = "";
 
                     if (Habbo.GetClubManager().GetSubscription("club_habbo").TotalSpent(Habbo.SpentCredits) == 1)
-                        c = "Credito";
+                        c = "credito";
 
                     else
-                        c = "Crediti";
+                        c = "crediti";
 
                     SendNotifWithImage2("Hai ricevuto " + Habbo.GetClubManager().GetSubscription("club_habbo").TotalSpent(Habbo.SpentCredits) + " " + c + " nel tuo Borsellino. Complimenti!", LanguageLocale.GetValue("frank.wave.image"), "Wooooow è arrivata la paga HC");
 
@@ -438,18 +442,13 @@ namespace Butterfly.HabboHotel.GameClients
                 if (DateTime.Now.Day == 16)
                 {
                     using (var dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
-                    {
                         dbClient.runFastQuery("UPDATE user_subscriptions SET received_pay = 0");
-                    }
 
                     if (Habbo.GetClubManager().HasSubscription("club_habbo"))
-                    {
                         Habbo.GetClubManager().GetSubscription("club_habbo").ReceivedPay = false;
-                    }
                 }
 
                 SendMessage(sendClub);
-                //HabboEnvironment.GetGame().GetAchievementManager().TryProgressHabboClubAchievements(this);
 
                 return true;
             }
