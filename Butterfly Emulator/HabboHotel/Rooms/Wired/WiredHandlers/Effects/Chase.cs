@@ -100,7 +100,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                     users.Clear();
                     users = null;
                 }
-                else if (room.GetGameMap().tileIsWalkable(newPoint.X, newPoint.Y, false))
+                else if (room.GetGameMap().TileIsWalkable(newPoint.X, newPoint.Y, false))
                 {
                     room.GetRoomItemHandler().SetFloorItem(null, item, newPoint.X, newPoint.Y, item.Rot, false, false, true, true);
                 }

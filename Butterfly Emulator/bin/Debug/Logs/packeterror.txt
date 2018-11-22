@@ -1506,3 +1506,926 @@ Nome parametro: s
    in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
    in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
 
+
+<21/11/2018 13:11:28> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 13:21:58> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 105: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 13:35:26> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 13:44:06> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 14:10:25> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 14:12:08> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 14:13:11> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 14:13:21> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 14:13:56> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 14:36:56> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 14:51:46> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 15:04:09> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 15:04:26> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 15:05:25> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 15:23:32> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 15:24:13> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 15:25:09> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 15:31:44> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 15:52:29> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 15:58:10> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 16:00:08> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 16:21:36> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 16:21:37> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 16:21:38> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 16:22:57> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 16:22:57> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 16:25:17> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 16:31:15> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 22:31:35> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 22:42:38> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 22:43:30> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 23:03:47> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 105: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 23:20:43> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 105: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 23:23:26> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<21/11/2018 23:30:45> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 105: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 23:54:03> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 88: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<21/11/2018 23:57:08> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<22/11/2018 00:37:24> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 00:37:24> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 08:22:38> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 08:22:55> Error in packet [2852] BODY:  : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.GoToHotelView()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GoToHotelView(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 08:22:56> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 08:26:34> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<22/11/2018 08:33:38> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<22/11/2018 15:35:50> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<22/11/2018 15:46:37> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 15:56:18> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 90: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 15:56:22> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 15:56:54> Error in packet [2852] BODY:  : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.GoToHotelView()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GoToHotelView(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 15:56:54> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 15:56:54> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 15:57:07> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 15:57:24> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 15:57:57> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:08:45> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 109: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:08:46> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 109: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:09:44> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 109: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:15:07> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<22/11/2018 16:15:49> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<22/11/2018 16:23:32> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:23:33> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : CurrentRoomId: 106: 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:39:31> Error in packet [2852] BODY:  : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.GoToHotelView()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GoToHotelView(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:39:32> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:55:46> Error in packet [2852] BODY:  : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.GoToHotelView()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GoToHotelView(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:55:46> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:55:46> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 16:59:59> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s)
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session)
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData()
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler)
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message)
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request)
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message)
+
+
+<22/11/2018 17:05:29> Error in packet [2852] BODY:  : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.GoToHotelView() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Navigator.cs:riga 202
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.GoToHotelView(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 265
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<22/11/2018 17:05:30> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<22/11/2018 17:05:30> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+
+
+<22/11/2018 17:05:51> Error in packet [2532] BODY: [0],2015-08-18 13:00,gamesmaker;2015-08-19 13:00 : : 
+System.ArgumentNullException: Riferimento a una stringa non impostato su un'istanza di stringa.
+Nome parametro: s
+   in System.Text.Encoding.GetBytes(String s)
+   in Butterfly.Messages.ServerMessage.AppendString(String s) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\ServerMessage.cs:riga 73
+   in Butterfly.HabboHotel.Navigators.Bonus.BonusManager.GenerateMessage(GameClient Session) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Navigators\Bonus\BonusManager.cs:riga 48
+   in Butterfly.Messages.GameClientMessageHandler.SendCampaingData() in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\Requests\Users.cs:riga 137
+   in Butterfly.Messages.StaticMessageHandlers.SharedPacketLib.SendCampaingData(GameClientMessageHandler handler) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\SharedPacketLib.cs:riga 37
+   in Butterfly.Messages.StaticMessageHandlers.StaticClientMessageHandler.HandlePacket(GameClientMessageHandler handler, ClientMessage message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\StaticMessageHandlers\StaticClientMessageHandler.cs:riga 39
+   in Butterfly.Messages.GameClientMessageHandler.HandleRequest(ClientMessage request) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\Messages\GameClientMessageHander.cs:riga 46
+   in Butterfly.HabboHotel.GameClients.GameClient.parser_onNewPacket(ClientMessage Message) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\GameClients\GameClient.cs:riga 69
+

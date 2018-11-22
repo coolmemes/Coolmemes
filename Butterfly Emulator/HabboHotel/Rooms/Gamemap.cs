@@ -11,6 +11,7 @@ using ButterStorm;
 using Butterfly.HabboHotel.GameClients;
 using Butterfly.Messages;
 using HabboEvents;
+using System.Threading;
 
 namespace Butterfly.HabboHotel.Rooms
 {
@@ -722,7 +723,7 @@ namespace Butterfly.HabboHotel.Rooms
 
                         foreach (RoomItem meuItem in itensDireita)
                             if (!meuItem.GetBaseItem().Walkable)
-                            //if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
+                                //if (meuItem.GetBaseItem().Name.StartsWith("CF_"))
                                 direitaBool = true;
 
                         if (esquerdaBool && direitaBool == true)
@@ -731,9 +732,131 @@ namespace Butterfly.HabboHotel.Rooms
                     if (mGameMap[To.X + 1, To.Y - 1] != 1 && mGameMap[To.X + 1, To.Y - 1] != 2 && mGameMap[To.X, To.Y - 1] != 1)
                         return false;
                 }
+            }
 
-                
-     
+            else
+            {
+                int XValue = To.X - From.X;
+                int YValue = To.Y - From.Y;
+                bool userHasClubSubscription = User.GetClient().GetHabbo().GetClubManager().UserHasSubscription("club_habbo");
+
+                if (YValue == -1) // Destra
+                {
+                    Point itemOnTheRight = new Point(To.X, To.Y + 1);
+                    List<RoomItem> itemsOnTheLeft = GetCoordinatedItems(itemOnTheRight);
+                    if (itemsOnTheLeft.Count > 0)
+                    {
+                        foreach (RoomItem item in itemsOnTheLeft)
+                        {
+                            if (item.GetBaseItem().InteractionType == InteractionType.club_gate && !userHasClubSubscription && item.ExtraData == "0")
+                            {
+                                if (!TilesTouching(item.GetX, item.GetY, User.X, User.Y))
+                                    User.MoveTo(item.SquareBehind);
+
+                                if (TilesTouching(item.GetX, item.GetY, User.X, User.Y))
+                                    return false;
+
+                                if (User.Coordinate == item.SquareBehind && !User.IsClubAlertShowed)
+                                {
+                                    ServerMessage ShowClubAlert = new ServerMessage(Outgoing.OtherAlertId);
+                                    ShowClubAlert.AppendInt32(3);
+                                    User.GetClient().SendMessage(ShowClubAlert);
+
+                                    User.IsClubAlertShowed = true;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                else if (YValue == 1) // Sinistra
+                {
+                    Point itemOnTheLeft = new Point(To.X, To.Y - 1);
+                    List<RoomItem> itemsOnTheLeft = GetCoordinatedItems(itemOnTheLeft);
+                    if (itemsOnTheLeft.Count > 0)
+                    {
+                        foreach (RoomItem item in itemsOnTheLeft)
+                        {
+                            if (item.GetBaseItem().InteractionType == InteractionType.club_gate && !userHasClubSubscription && item.ExtraData == "0")
+                            {
+                                if (!TilesTouching(item.GetX, item.GetY, User.X, User.Y))
+                                    User.MoveTo(item.SquareInFront);
+
+                                if (TilesTouching(item.GetX, item.GetY, User.X, User.Y))
+                                    return false;
+
+                                if (User.Coordinate == item.SquareInFront && !User.IsClubAlertShowed)
+                                {
+                                    ServerMessage ShowClubAlert = new ServerMessage(Outgoing.OtherAlertId);
+                                    ShowClubAlert.AppendInt32(3);
+                                    User.GetClient().SendMessage(ShowClubAlert);
+
+                                    User.IsClubAlertShowed = true;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                else if (XValue == -1) // Basso
+                {
+                    Point itemUp = new Point(To.X + 1, To.Y);
+                    List<RoomItem> itemsUp = GetCoordinatedItems(itemUp);
+                    if (itemsUp.Count > 0)
+                    {
+                        foreach (RoomItem item in itemsUp)
+                        {
+                            if (item.GetBaseItem().InteractionType == InteractionType.club_gate && !userHasClubSubscription && item.ExtraData == "0")
+                            {
+                                if (!TilesTouching(item.GetX, item.GetY, User.X, User.Y))
+                                    User.MoveTo(item.LeftSide);
+
+                                if (TilesTouching(item.GetX, item.GetY, User.X, User.Y))
+                                    return false;
+
+                                if (User.Coordinate == item.LeftSide && !User.IsClubAlertShowed)
+                                {
+                                    ServerMessage ShowClubAlert = new ServerMessage(Outgoing.OtherAlertId);
+                                    ShowClubAlert.AppendInt32(3);
+                                    User.GetClient().SendMessage(ShowClubAlert);
+
+                                    User.IsClubAlertShowed = true;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                else if (XValue == 1) // Sopra
+                {
+                    Point itemAbove = new Point(To.X - 1, To.Y);
+                    List<RoomItem> itemsAbove = GetCoordinatedItems(itemAbove);
+                    if (itemsAbove.Count > 0)
+                    {
+                        foreach (RoomItem item in itemsAbove)
+                        {
+                            if (item.GetBaseItem().InteractionType == InteractionType.club_gate && !userHasClubSubscription && item.ExtraData == "0")
+                            {
+                                if (!TilesTouching(item.GetX, item.GetY, User.X, User.Y))
+                                    User.MoveTo(item.RightSide);
+
+                                if (TilesTouching(item.GetX, item.GetY, User.X, User.Y))
+                                    return false;
+
+                                if (User.Coordinate == item.RightSide && !User.IsClubAlertShowed)
+                                {
+                                    ServerMessage ShowClubAlert = new ServerMessage(Outgoing.OtherAlertId);
+                                    ShowClubAlert.AppendInt32(3);
+                                    User.GetClient().SendMessage(ShowClubAlert);
+
+                                    User.IsClubAlertShowed = true;
+                                }
+                            }
+                        }
+
+                    }
+                }
             }
 
             // Si es una puerta de grupo y pertenecemos al grupo, podemos pisar por esta baldosa.
@@ -766,16 +889,10 @@ namespace Butterfly.HabboHotel.Rooms
                 }
             }
 
-            //bool HasHcGate = room.GetRoomItemHandler().mFloorItems.ToList().Where(x => x.Value.GetBaseItem().InteractionType == InteractionType.club_gate).ToList().Count() > 0;
-            ////if (HasHcGate)
-            ////{
-            //    RoomItem Item = room.GetRoomItemHandler().mFloorItems.FirstOrDefault(x => x.Value.GetBaseItem().InteractionType == InteractionType.club_gate).Value;
-            //    
-            //    }
-            //}
+            
 
             // Si hay un usuario o la baldosa está cerrada.
-            if (!tileIsWalkable(To.X, To.Y, true, EndOfPath))
+            if (!TileIsWalkable(To.X, To.Y, true, EndOfPath))
             {
                 if (EndOfPath && User.walkingToPet != null) { }
                 else
@@ -886,7 +1003,7 @@ namespace Butterfly.HabboHotel.Rooms
                 {
                     if (moveToLeft && SquareHasUsers(X - i, Y))
                         return MovementState.left;
-                    else if (i == 1 && !tileIsWalkable(X - i, Y, false))
+                    else if (i == 1 && !TileIsWalkable(X - i, Y, false))
                         moveToLeft = false;
                 }
 
@@ -895,7 +1012,7 @@ namespace Butterfly.HabboHotel.Rooms
                 {
                     if (moveToRight && SquareHasUsers(X + i, Y))
                         return MovementState.right;
-                    else if (i == 1 && !tileIsWalkable(X + i, Y, false))
+                    else if (i == 1 && !TileIsWalkable(X + i, Y, false))
                         moveToRight = false;
                 }
 
@@ -904,7 +1021,7 @@ namespace Butterfly.HabboHotel.Rooms
                 {
                     if (moveToUp && SquareHasUsers(X, Y - i))
                         return MovementState.up;
-                    else if (i == 1 && !tileIsWalkable(X, Y - i, false))
+                    else if (i == 1 && !TileIsWalkable(X, Y - i, false))
                         moveToUp = false;
                 }
 
@@ -913,7 +1030,7 @@ namespace Butterfly.HabboHotel.Rooms
                 {
                     if (moveToDown && SquareHasUsers(X, Y + i))
                         return MovementState.down;
-                    else if (i == 1 && !tileIsWalkable(X, Y + i, false))
+                    else if (i == 1 && !TileIsWalkable(X, Y + i, false))
                         moveToDown = false;
                 }
 
@@ -944,7 +1061,7 @@ namespace Butterfly.HabboHotel.Rooms
             {
                 if (state == MovementState.left)
                 {
-                    if (i == 1 && !tileIsWalkable(X - i, Y, false))
+                    if (i == 1 && !TileIsWalkable(X - i, Y, false))
                     {
                         if (itemCanBePlacedHere(X, Y - i))
                             return MovementState.up;
@@ -962,7 +1079,7 @@ namespace Butterfly.HabboHotel.Rooms
                 }
                 else if (state == MovementState.right)
                 {
-                    if (i == 1 && !tileIsWalkable(X + i, Y, false))
+                    if (i == 1 && !TileIsWalkable(X + i, Y, false))
                     {
                         if (itemCanBePlacedHere(X, Y - i))
                             return MovementState.up;
@@ -980,7 +1097,7 @@ namespace Butterfly.HabboHotel.Rooms
                 }
                 else if (state == MovementState.up)
                 {
-                    if (i == 1 && !tileIsWalkable(X, Y - i, false))
+                    if (i == 1 && !TileIsWalkable(X, Y - i, false))
                     {
                         if (itemCanBePlacedHere(X - i, Y))
                             return MovementState.left;
@@ -998,7 +1115,7 @@ namespace Butterfly.HabboHotel.Rooms
                 }
                 else if (state == MovementState.down)
                 {
-                    if (i == 1 && !tileIsWalkable(X, Y + i, false))
+                    if (i == 1 && !TileIsWalkable(X, Y + i, false))
                     {
                         if (itemCanBePlacedHere(X - i, Y))
                             return MovementState.left;
@@ -1022,7 +1139,7 @@ namespace Butterfly.HabboHotel.Rooms
         /// <summary>
         /// Determina si se puede andar/poner furni en una baldosa.
         /// </summary>
-        public bool tileIsWalkable(int pX, int pY, bool isUser, bool endPath = false, bool guildGate = false)
+        public bool TileIsWalkable(int pX, int pY, bool isUser, bool endPath = false, bool guildGate = false)
         {
             // Si hay un usuario en la baldosa.
             // Comprobamos si se puede pisar la baldosa.

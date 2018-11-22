@@ -1635,7 +1635,7 @@ namespace Butterfly.HabboHotel.RoomBots
                     RoomUser user = GetRoom().GetRoomUserManager().GetRoomUserByHabbo(GetBotData().followingUser.HabboId);
                     if (user != null)
                     {
-                        if (GetRoom().GetGameMap().tileIsWalkable(user.SquareInFront.X, user.SquareInFront.Y, true))
+                        if (GetRoom().GetGameMap().TileIsWalkable(user.SquareInFront.X, user.SquareInFront.Y, true))
                         {
                             GetRoomUser().MoveTo(GetBotData().followingUser.SquareInFront);
                         }

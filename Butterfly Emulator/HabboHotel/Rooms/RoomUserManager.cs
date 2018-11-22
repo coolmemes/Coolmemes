@@ -1557,7 +1557,7 @@ namespace Butterfly.HabboHotel.Rooms
                                 }
                             }
 
-                            
+
                         }
 
                         if (User.PathRecalcNeeded && !User.SetStep)
@@ -1574,30 +1574,10 @@ namespace Butterfly.HabboHotel.Rooms
                         {
                             case InteractionType.club_gate:
                                 {
-                                    if (User.Coordinate == item.Coordinate && User.GetClient().GetHabbo().GetClubManager().HasSubscription("club_habbo"))
+                                    if (User.Coordinate == item.Coordinate && User.GetClient().GetHabbo().GetClubManager().UserHasSubscription("club_habbo"))
                                     {
                                         item.ExtraData = "1";
                                         item.UpdateState();
-
-                                        item.InteractingUser = User.GetClient().GetHabbo().Id;
-                                    }
-
-                                    if (item.Coordinate == User.SquareInFront && item.ExtraData == "0" && !User.GetClient().GetHabbo().GetClubManager().HasSubscription("club_habbo"))
-                                    {
-                                        if (User.ShowClubAlert && !User.IsClubAlertShowed)
-                                        {
-                                            ServerMessage ShowClubAlert = new ServerMessage(Outgoing.OtherAlertId);
-                                            ShowClubAlert.AppendInt32(3);
-                                            User.GetClient().SendMessage(ShowClubAlert);
-
-                                            User.IsClubAlertShowed = true;
-                                        }
-
-                                        //User.IsWalking = false;
-                                        //User.RemoveStatus("mv");
-                                        //User.UpdateNeeded = true;
-                                        // ClearMovement(true);  not working
-
                                     }
 
                                     break;
@@ -1605,6 +1585,7 @@ namespace Butterfly.HabboHotel.Rooms
                         }
                     }
                 }
+
                 else
                 {
                     // En el caso de no estar andando, eliminamos el efecto.

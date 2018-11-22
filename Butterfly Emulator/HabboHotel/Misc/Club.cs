@@ -9,7 +9,7 @@ namespace Otanix.HabboHotel.Misc
         {
             int seconds = 0;
 
-            if (Session.GetHabbo().GetClubManager().HasSubscription("club_habbo"))
+            if (Session.GetHabbo().GetClubManager().UserHasSubscription("club_habbo"))
             {
                 if (Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").DaysLeft >= 1)
                     seconds = 86400;
@@ -21,7 +21,7 @@ namespace Otanix.HabboHotel.Misc
                     seconds = 60;
             }
 
-            if ((OtanixEnvironment.GetUnixTimestamp() - Session.GetHabbo().ClubExpirationCycleUpdate) > seconds || !Session.GetHabbo().GetClubManager().HasSubscription("club_habbo"))
+            if ((OtanixEnvironment.GetUnixTimestamp() - Session.GetHabbo().ClubExpirationCycleUpdate) > seconds || !Session.GetHabbo().GetClubManager().UserHasSubscription("club_habbo"))
             {
                 Session.GetHabbo().UpdateHabboClubStatus();
             }

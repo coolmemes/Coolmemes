@@ -126,7 +126,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
 
                     return;
                 }
-                else if (room.GetGameMap().tileIsWalkable(newPoint.X, newPoint.Y, false))
+                else if (room.GetGameMap().TileIsWalkable(newPoint.X, newPoint.Y, false))
                 {
                     room.GetRoomItemHandler().SetFloorItem(null, item, newPoint.X, newPoint.Y, item.Rot, false, false, true, true);
                 }
@@ -146,42 +146,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                             {
                                 if (item.movetodirMovement == MovementDirection.right)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
@@ -189,42 +189,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.left)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
@@ -232,42 +232,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.up)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
@@ -275,42 +275,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.down)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
@@ -318,42 +318,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.upleft)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
@@ -361,42 +361,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.upright)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
@@ -405,42 +405,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.downright)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
@@ -448,42 +448,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.downleft)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
@@ -498,22 +498,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                             {
                                 if (item.movetodirMovement == MovementDirection.right)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
@@ -521,22 +521,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.left)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
@@ -544,22 +544,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.up)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
@@ -567,22 +567,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.down)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
@@ -590,22 +590,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.upleft)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
@@ -613,22 +613,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.upright)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
@@ -637,22 +637,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.downright)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
@@ -660,22 +660,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.downleft)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
@@ -690,42 +690,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                             {
                                 if (item.movetodirMovement == MovementDirection.right)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
@@ -733,42 +733,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.left)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
@@ -776,42 +776,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.up)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
@@ -819,42 +819,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.down)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
@@ -862,42 +862,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.upleft)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
@@ -905,42 +905,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.upright)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
@@ -948,42 +948,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.downright)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
@@ -991,42 +991,42 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.downleft)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
@@ -1041,22 +1041,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                             {
                                 if (item.movetodirMovement == MovementDirection.right)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
@@ -1064,22 +1064,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.left)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
@@ -1087,22 +1087,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.up)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
@@ -1110,22 +1110,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.down)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY, false)) // derecha
                                     {
                                         item.movetodirMovement = MovementDirection.right;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY - 1, false)) // arriba
                                     {
                                         item.movetodirMovement = MovementDirection.up;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY, false)) // izq
                                     {
                                         item.movetodirMovement = MovementDirection.left;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX, item.GetY + 1, false)) // abajo
                                     {
                                         item.movetodirMovement = MovementDirection.down;
                                         break;
@@ -1133,22 +1133,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.upleft)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
@@ -1156,22 +1156,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.upright)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
@@ -1179,22 +1179,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.downright)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
@@ -1202,22 +1202,22 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                                 }
                                 else if (item.movetodirMovement == MovementDirection.downleft)
                                 {
-                                    if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
+                                    if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY + 1, false)) // abajo derecha
                                     {
                                         item.movetodirMovement = MovementDirection.downright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX + 1, item.GetY - 1, false)) // arriba derecha
                                     {
                                         item.movetodirMovement = MovementDirection.upright;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY - 1, false)) // arriba izq
                                     {
                                         item.movetodirMovement = MovementDirection.upleft;
                                         break;
                                     }
-                                    else if (room.GetGameMap().tileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
+                                    else if (room.GetGameMap().TileIsWalkable(item.GetX - 1, item.GetY + 1, false)) // abajo izq
                                     {
                                         item.movetodirMovement = MovementDirection.downleft;
                                         break;

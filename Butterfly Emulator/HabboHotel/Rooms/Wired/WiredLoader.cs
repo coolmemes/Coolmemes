@@ -236,6 +236,8 @@ namespace Butterfly.HabboHotel.Rooms.Wired
                         int time = 5;
                         int.TryParse(wired.StringSettings[0], out time);
 
+                        Console.WriteLine(wired.StringSettings[0]);
+                        Console.WriteLine(wired.StringSettings[1]);
                         int movementInt = 0;
                         int rotationInt = 0;
                         if (wired.StringSettings[1].Length > 0 && wired.StringSettings[1].Contains(","))

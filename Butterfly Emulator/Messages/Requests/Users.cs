@@ -1319,7 +1319,7 @@ namespace Butterfly.Messages
         {
             ServerMessage Message = new ServerMessage(Outgoing.ClubCenterData);
 
-            if (Session.GetHabbo().GetClubManager().HasSubscription("club_habbo"))
+            if (Session.GetHabbo().GetClubManager().UserHasSubscription("club_habbo"))
             {
                 DateTime joinDate = new DateTime(1970, 1, 1, 0, 0, 0, 0).AddSeconds(Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TimestampActivated);
                 Message.AppendInt32(Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").StreakDurationInDays);

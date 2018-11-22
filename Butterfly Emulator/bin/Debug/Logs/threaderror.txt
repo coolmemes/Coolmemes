@@ -94,3 +94,130 @@ System.NullReferenceException: Riferimento a un oggetto non impostato su un'ista
    in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
    in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
 
+
+<21/11/2018 15:04:21> Error in thread Room cycle task for room 106: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.TileIsWalkable(Int32 pX, Int32 pY, Boolean isUser, Boolean endPath, Boolean guildGate, RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Gamemap.cs:riga 1055
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Gamemap.cs:riga 772
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Pathfinding\PathFinder.cs:riga 74
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Pathfinding\PathFinder.cs:riga 18
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1655
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\RoomUserManager.cs:riga 1370
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback) in C:\Users\new4\Desktop\Otanix\Butterfly Emulator\HabboHotel\Rooms\Room.cs:riga 690
+
+
+<21/11/2018 15:23:30> Error in thread Room cycle task for room 105: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.TileIsWalkable(Int32 pX, Int32 pY, Boolean isUser, Boolean endPath, Boolean guildGate, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<21/11/2018 15:24:10> Error in thread Room cycle task for room 105: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.TileIsWalkable(Int32 pX, Int32 pY, Boolean isUser, Boolean endPath, Boolean guildGate, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<21/11/2018 15:25:07> Error in thread Room cycle task for room 105: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.TileIsWalkable(Int32 pX, Int32 pY, Boolean isUser, Boolean endPath, Boolean guildGate, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<21/11/2018 23:20:43> Error in thread Room cycle task for room 105: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<21/11/2018 23:30:44> Error in thread Room cycle task for room 105: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<22/11/2018 15:56:17> Error in thread Room cycle task for room 90: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<22/11/2018 15:56:18> Error in thread Room cycle task for room 90: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<22/11/2018 15:56:22> Error in thread Room cycle task for room 36: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<22/11/2018 15:56:23> Error in thread Room cycle task for room 36: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<22/11/2018 15:56:54> Error in thread Room cycle task for room 36: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<22/11/2018 16:52:52> Error in thread Room cycle task for room 112: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.Gamemap.IsValidStep(Vector2D From, Vector2D To, Boolean EndOfPath, RoomUser User, Boolean GeneratingPath, Boolean DiagMove)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPathReversed(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Pathfinding.PathFinder.FindPath(Boolean Diag, Gamemap Map, Vector2D Start, Vector2D End, RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.GenerateNewPath(RoomUser User)
+   in Butterfly.HabboHotel.Rooms.RoomUserManager.OnCycle(Int32& idleCount)
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+
+
+<22/11/2018 16:59:58> Error in thread Room cycle task for room 106: 
+System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in Butterfly.HabboHotel.Rooms.RoomItemHandling.SetFloorItem(GameClient Session, RoomItem Item, Int32 newX, Int32 newY, Int32 newRot, Boolean newItem, Boolean OnRoller, Boolean sendMessage, Boolean updateRoomUserStatuses, Boolean SpecialMove, Boolean isPi?ata)
+   in Butterfly.HabboHotel.Rooms.RoomItemHandling.SetFloorItem(GameClient Session, RoomItem Item, Int32 newX, Int32 newY, Int32 newRot, Boolean newItem, Boolean OnRoller, Boolean sendMessage, Boolean SpecialMove, Boolean isPi?ata)
+   in Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects.MoveRotate.HandleMovement(RoomItem item)
+   in Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects.MoveRotate.HandleItems()
+   in Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects.MoveRotate.OnCycle()
+   in Butterfly.HabboHotel.Rooms.Wired.WiredHandler.OnCycle()
+   in Butterfly.HabboHotel.Rooms.Room.ProcessRoom(Object pCallback)
+

@@ -40,7 +40,7 @@ namespace Butterfly.HabboHotel.Subscriptions.HabboClub
             }
         }
 
-        internal bool HasSubscription(string SubscriptionId)
+        internal bool UserHasSubscription(string SubscriptionId)
         {
             if (!clubSubscriptions.ContainsKey(SubscriptionId))
             {
@@ -100,7 +100,7 @@ namespace Butterfly.HabboHotel.Subscriptions.HabboClub
                 Session.GetHabbo().SpentCredits += Cost;
 
                 var fuse = new ServerMessage(Outgoing.Fuserights);
-                fuse.AppendInt32(Session.GetHabbo().GetClubManager().HasSubscription("club_habbo") ? 2 : 1); // normal|hc|vip
+                fuse.AppendInt32(Session.GetHabbo().GetClubManager().UserHasSubscription("club_habbo") ? 2 : 1); // normal|hc|vip
                 fuse.AppendUInt(Session.GetHabbo().Rank);
                 fuse.AppendBoolean(Session.GetHabbo().HasFuse("fuse_ambassador")); // embajador ?
                 // fuserights.AppendInt32(0); // New Identity (1 == 1 min and Alert!)
@@ -126,7 +126,7 @@ namespace Butterfly.HabboHotel.Subscriptions.HabboClub
                     Length += (OtanixEnvironment.UnixTimeStampToDateTime(Club.TimestampExpire) - OtanixEnvironment.UnixTimeStampToDateTime(Club.TimestampActivated)).Days;
                 }
 
-                if (HasSubscription("club_habbo"))
+                if (UserHasSubscription("club_habbo"))
                 {
                     Club Active = clubSubscriptions.FirstOrDefault().Value;
                     if (Active != null)

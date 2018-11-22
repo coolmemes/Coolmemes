@@ -143,7 +143,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
 
             if (newPoint != item.Coordinate && newRotation == item.Rot)
             {
-                if (room.GetGameMap().tileIsWalkable(newPoint.X, newPoint.Y, false))
+                if (room.GetGameMap().TileIsWalkable(newPoint.X, newPoint.Y, false))
                     return room.GetRoomItemHandler().SetFloorItem(null, item, newPoint.X, newPoint.Y, newRotation, false, false, true, true);
 
                 if (room.GetGameMap().SquareHasUsers(newPoint.X, newPoint.Y))
@@ -164,7 +164,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
             }
             else if (newPoint != item.Coordinate)
             {
-                if (room.GetGameMap().tileIsWalkable(newPoint.X, newPoint.Y, false))
+                if (room.GetGameMap().TileIsWalkable(newPoint.X, newPoint.Y, false))
                     return room.GetRoomItemHandler().SetFloorItem(null, item, newPoint.X, newPoint.Y, newRotation, false, false, true, false);
             }
             else if (newRotation != item.Rot)

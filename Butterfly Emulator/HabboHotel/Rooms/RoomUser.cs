@@ -55,7 +55,7 @@ namespace Butterfly.HabboHotel.Rooms
         internal int GiveHanditemCoordinateY;
         internal bool ShowClubAlert = false;
         internal bool IsClubAlertShowed = false;
-        internal bool BlockedMovementToClubGate = true;
+        internal bool BlockedMovementToClubGateLeft = true;
 
         internal RoomUser GiverUser;
         internal RoomUser ToGiveUser;
@@ -852,7 +852,7 @@ namespace Butterfly.HabboHotel.Rooms
             }
 
             // Si hay un usuario o un item, evitamos crear un nuevo path.
-            if (!GetRoom().GetGameMap().tileIsWalkable(pX, pY, true, false, guildGateUser) && !AllowOverride && walkingToPet == null)
+            if (!GetRoom().GetGameMap().TileIsWalkable(pX, pY, true, false, guildGateUser) && !AllowOverride && walkingToPet == null)
             {
                 Unidle();
                 return;

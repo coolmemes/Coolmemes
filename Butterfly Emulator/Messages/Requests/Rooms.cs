@@ -1310,29 +1310,23 @@ namespace Butterfly.Messages
                                 }
                                 break;
                             }
+                        case InteractionType.club_gate:
+                            {
+                                if (!User.GetClient().GetHabbo().GetClubManager().UserHasSubscription("club_habbo") && item.ExtraData == "0")
+                                {
+                                    ServerMessage ShowClubAlert = new ServerMessage(Outgoing.OtherAlertId);
+                                    ShowClubAlert.AppendInt32(3);
+                                    User.GetClient().SendMessage(ShowClubAlert);
+
+                                    return;
+                                }
+                                break;
+                            }
                     }
                 }
             }
 
-            foreach (RoomItem item in Room.GetRoomItemHandler().mFloorItems.Values)
-            {
-                switch (item.GetBaseItem().InteractionType)
-                {
-                    case InteractionType.club_gate:
-                        {
-                            if (MoveY == item.SquareBehind.Y && MoveX == item.SquareBehind.X)
-                                User.ShowClubAlert = false;
-
-                            else
-                            {
-                                User.ShowClubAlert = true;
-                                User.IsClubAlertShowed = false;
-                            }
-
-                            break;
-                        }
-                }
-            }
+            User.IsClubAlertShowed = false;
 
             User.MoveTo(MoveX, MoveY);
             Room.GetRoomUserManager().UpdateUserStatus(User, false);
@@ -3840,7 +3834,7 @@ namespace Butterfly.Messages
             var X = Request.PopWiredInt32();
             var Y = Request.PopWiredInt32();
 
-            if (!Room.GetGameMap().tileIsWalkable(X, Y, true))
+            if (!Room.GetGameMap().TileIsWalkable(X, Y, true))
             {
                 return;
             }
@@ -4157,7 +4151,7 @@ namespace Butterfly.Messages
             var X = Request.PopWiredInt32();
             var Y = Request.PopWiredInt32();
 
-            if (!Room.GetGameMap().tileIsWalkable(X, Y, false))
+            if (!Room.GetGameMap().TileIsWalkable(X, Y, false))
             {
                 return;
             }

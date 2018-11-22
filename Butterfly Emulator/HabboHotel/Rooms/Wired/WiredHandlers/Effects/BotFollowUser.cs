@@ -119,7 +119,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
                             bot.BotData.followingUser = user;
                             if (user != null && !user.IsBot)
                             {
-                                if (room.GetGameMap().tileIsWalkable(user.SquareInFront.X, user.SquareInFront.Y, true))
+                                if (room.GetGameMap().TileIsWalkable(user.SquareInFront.X, user.SquareInFront.Y, true))
                                     bot.MoveTo(user.SquareInFront);
                                 else
                                     bot.MoveTo(user.SquareBehind);

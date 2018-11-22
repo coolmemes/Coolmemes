@@ -211,7 +211,7 @@ namespace Butterfly.HabboHotel.Catalogs
             }
 
             DateTime future = DateTime.Now;
-            if (PageID == EmuSettings.CLUB_PAGE_ID && Session.GetHabbo().GetClubManager().HasSubscription("club_habbo"))
+            if (PageID == EmuSettings.CLUB_PAGE_ID && Session.GetHabbo().GetClubManager().UserHasSubscription("club_habbo"))
             {
                 double Expire = Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TimestampExpire;
                 double TimeLeft = Expire - OtanixEnvironment.GetUnixTimestamp();

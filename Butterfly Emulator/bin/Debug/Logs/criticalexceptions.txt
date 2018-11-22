@@ -1,0 +1,24 @@
+
+<21/11/2018 23:54:46> Invalid Dario bug duing user login: System.InvalidCastException: Impossibile eseguire il cast dell'oggetto da DBNull ad altri tipi.
+   in System.DBNull.System.IConvertible.ToUInt32(IFormatProvider provider)
+   in Butterfly.HabboHotel.Users.UserDataManagement.UserDataFactory.GetUserData(String sessionTicket)
+   in Butterfly.HabboHotel.GameClients.GameClient.tryLogin(String AuthTicket)
+
+
+<22/11/2018 17:09:59> [Otanix] @ Alerta de erro: ERRO MARIO INVALIDO NO LOBO DO JOGO:    in System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   in System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.MoveNext()
+   in System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   in System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   in Butterfly.HabboHotel.Users.Messenger.HabboMessenger.OnStatusChanged()
+   in Butterfly.HabboHotel.GameClients.GameClientManager.handleConsoleUpdates()
+   in Butterfly.HabboHotel.GameClients.GameClientManager.OnCycle()
+   in Butterfly.HabboHotel.Game.MainGameLoop() - La raccolta ? stata modificata. L'operazione di enumerazione potrebbe non essere eseguita. - System.InvalidOperationException: La raccolta ? stata modificata. L'operazione di enumerazione potrebbe non essere eseguita.
+   in System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   in System.Collections.Generic.Dictionary`2.KeyCollection.Enumerator.MoveNext()
+   in System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   in System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   in Butterfly.HabboHotel.Users.Messenger.HabboMessenger.OnStatusChanged()
+   in Butterfly.HabboHotel.GameClients.GameClientManager.handleConsoleUpdates()
+   in Butterfly.HabboHotel.GameClients.GameClientManager.OnCycle()
+   in Butterfly.HabboHotel.Game.MainGameLoop()
+

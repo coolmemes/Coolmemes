@@ -379,8 +379,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired
 
                         var junk3 = clientMessage.PopWiredBoolean();
                         var junk2 = clientMessage.PopWiredBoolean();
-                        int furniCount;
-                        var items = GetItems(clientMessage, room, out furniCount);
+                        var items = GetItems(clientMessage, room, out int furniCount);
                         var delay = clientMessage.PopWiredInt32();
 
                         IWiredTrigger handler = new MoveRotate(movement, rotation, items, delay, room, room.GetWiredHandler(), item);

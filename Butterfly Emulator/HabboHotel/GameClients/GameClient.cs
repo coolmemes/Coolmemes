@@ -210,7 +210,7 @@ namespace Butterfly.HabboHotel.GameClients
                 response.AppendResponse(roomAccessConfig);
 
                 var fuserights = new ServerMessage(Outgoing.Fuserights);
-                fuserights.AppendInt32(GetHabbo().GetClubManager().HasSubscription("club_habbo") ? 2 : 1); // normal|hc|vip
+                fuserights.AppendInt32(GetHabbo().GetClubManager().UserHasSubscription("club_habbo") ? 2 : 1); // normal|hc|vip
                 fuserights.AppendUInt(GetHabbo().Rank);
                 fuserights.AppendBoolean(GetHabbo().HasFuse("fuse_ambassador")); // embajador ?
                 // fuserights.AppendInt32(0); // New Identity (1 == 1 min and Alert!)
@@ -415,7 +415,7 @@ namespace Butterfly.HabboHotel.GameClients
 
                 UsersCache.enterProvisionalRoom(this);
 
-                if (DateTime.Now.Day == 15 && Habbo.GetClubManager().HasSubscription("club_habbo") && Habbo.GetClubManager().GetSubscription("club_habbo").TotalSpent(Habbo.SpentCredits) > 0 && !Habbo.GetClubManager().GetSubscription("club_habbo").ReceivedPay)
+                if (DateTime.Now.Day == 15 && Habbo.GetClubManager().UserHasSubscription("club_habbo") && Habbo.GetClubManager().GetSubscription("club_habbo").TotalSpent(Habbo.SpentCredits) > 0 && !Habbo.GetClubManager().GetSubscription("club_habbo").ReceivedPay)
                 {
                     string c = "";
 
@@ -444,7 +444,7 @@ namespace Butterfly.HabboHotel.GameClients
                     using (var dbClient = OtanixEnvironment.GetDatabaseManager().getQueryreactor())
                         dbClient.runFastQuery("UPDATE user_subscriptions SET received_pay = 0");
 
-                    if (Habbo.GetClubManager().HasSubscription("club_habbo"))
+                    if (Habbo.GetClubManager().UserHasSubscription("club_habbo"))
                         Habbo.GetClubManager().GetSubscription("club_habbo").ReceivedPay = false;
                 }
 

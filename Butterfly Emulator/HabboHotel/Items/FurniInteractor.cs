@@ -358,7 +358,7 @@ namespace Butterfly.HabboHotel.Items.Interactors
                 return;
             }
 
-            if (!Item.GetRoom().GetGameMap().tileIsWalkable(Item.SquareBehind.X, Item.SquareBehind.Y, true))
+            if (!Item.GetRoom().GetGameMap().TileIsWalkable(Item.SquareBehind.X, Item.SquareBehind.Y, true))
             {
                 return;
             }
@@ -586,16 +586,16 @@ namespace Butterfly.HabboHotel.Items.Interactors
 
         internal static void DoAnimation(RoomItem Item)
         {
-            if (Item.ExtraData == string.Empty)
-                Item.ExtraData = "0";
+            int.TryParse(Item.ExtraData, out int nextMode);
 
-            if (Item.ExtraData == "0")
-                Item.ExtraData = "1";
+            if (nextMode == 0)
+                nextMode = 1;
 
             else
-                Item.ExtraData = "0";
+                nextMode = 0;
 
-            Item.UpdateState(false, true);
+            Item.ExtraData = nextMode.ToString();
+            Item.UpdateState();
         }
     }
 
@@ -662,7 +662,7 @@ namespace Butterfly.HabboHotel.Items.Interactors
 
             if (newMode == 0)
             {
-                if (!Item.GetRoom().GetGameMap().tileIsWalkable(Item.GetX, Item.GetY, false))
+                if (!Item.GetRoom().GetGameMap().TileIsWalkable(Item.GetX, Item.GetY, false))
                     return;
             }
 
@@ -724,7 +724,7 @@ namespace Butterfly.HabboHotel.Items.Interactors
 
             if (newMode == 0)
             {
-                if (!Item.GetRoom().GetGameMap().tileIsWalkable(Item.GetX, Item.GetY, false))
+                if (!Item.GetRoom().GetGameMap().TileIsWalkable(Item.GetX, Item.GetY, false))
                     return;
             }
 

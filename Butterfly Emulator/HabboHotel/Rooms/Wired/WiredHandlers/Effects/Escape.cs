@@ -94,7 +94,7 @@ namespace Butterfly.HabboHotel.Rooms.Wired.WiredHandlers.Effects
 
             if (newPoint != item.Coordinate)
             {
-                if (room.GetGameMap().tileIsWalkable(newPoint.X, newPoint.Y, false))
+                if (room.GetGameMap().TileIsWalkable(newPoint.X, newPoint.Y, false))
                 {
                     room.GetRoomItemHandler().SetFloorItem(null, item, newPoint.X, newPoint.Y, item.Rot, false, false, true, true);
                 }

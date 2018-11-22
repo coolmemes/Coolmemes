@@ -219,7 +219,7 @@ namespace Butterfly.HabboHotel.Achievements
 
         public void TryProgressHabboClubAchievements(GameClient Session, int MonthProgress)
         {
-            if (Session.GetHabbo() == null || !Session.GetHabbo().GetClubManager().HasSubscription("club_habbo"))
+            if (Session.GetHabbo() == null || !Session.GetHabbo().GetClubManager().UserHasSubscription("club_habbo"))
                 return;
 
             UserAchievement ClubACH = Session.GetHabbo().GetAchievementData("ACH_VipHC");

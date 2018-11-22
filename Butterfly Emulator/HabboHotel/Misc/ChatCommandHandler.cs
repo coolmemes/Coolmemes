@@ -722,7 +722,7 @@ namespace Butterfly.HabboHotel.Misc
                 List<RoomItem> ItemsOnSquare = TargetRoom.GetGameMap().GetCoordinatedItems(new Point(TargetRoomUser.X, TargetRoomUser.Y));
 
                 //Sentamos al usuario.
-                TargetRoomUser.AddStatus("sit", "0.5");
+                TargetRoomUser.AddStatus("sit", "0.55");
                 TargetRoomUser.Z = TargetRoom.GetGameMap().SqAbsoluteHeight(TargetRoomUser.X, TargetRoomUser.Y, ItemsOnSquare);
                 TargetRoomUser.sentadoBol = true;
                 TargetRoomUser.UpdateNeeded = true;
@@ -1364,7 +1364,7 @@ namespace Butterfly.HabboHotel.Misc
             Point squareInFrontOfUserInFront = CoordinationUtil.GetDoublePointInFront(TargetRoomUser.Coordinate, TargetRoomUser.RotBody);
 
             // Si la baldosa no es andable.
-            if (!TargetRoom.GetGameMap().tileIsWalkable(squareInFrontOfUserInFront.X, squareInFrontOfUserInFront.Y, true))
+            if (!TargetRoom.GetGameMap().TileIsWalkable(squareInFrontOfUserInFront.X, squareInFrontOfUserInFront.Y, true))
                 return;
 
             // No podemos pushear a un usuario que tenga más rango.

@@ -166,7 +166,7 @@ namespace Butterfly.Messages
                     Session.GetMessageHandler().SendResponse();
                 }
 
-            if (DateTime.Now.Day == 15 && Session.GetHabbo().GetClubManager().HasSubscription("club_habbo") && Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TotalSpent(Session.GetHabbo().SpentCredits) > 0)
+            if (DateTime.Now.Day == 15 && Session.GetHabbo().GetClubManager().UserHasSubscription("club_habbo") && Session.GetHabbo().GetClubManager().GetSubscription("club_habbo").TotalSpent(Session.GetHabbo().SpentCredits) > 0)
             {
                 string c = "";
 
